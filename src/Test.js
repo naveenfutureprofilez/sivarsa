@@ -5,13 +5,14 @@ export default function Test() {
 
    useEffect(() => {
       const cube = document.querySelector('.cube');
-      cube.style.transform = 'rotateX(0deg) rotateY(0deg) rotateZ(0deg)';
+      if(cube){
+         cube.style.transform = 'rotateX(0deg) rotateY(0deg) rotateZ(0deg)';
+      }
    }, []);
 
   return (
     <div className='bg-black min-h-screen flex justify-center items-center'>
       <div className="container">
-        <div className="flex">
           <div className="cube">
             <div className="wall text-white front">Front</div>
             <div className="wall text-white back">Back</div>
@@ -21,7 +22,6 @@ export default function Test() {
             <div className="wall text-white bottom">Bottom</div>
           </div>
         </div>
-      </div>
     </div>
   )
 }

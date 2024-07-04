@@ -26,7 +26,7 @@ body {
 .cube {
   position: relative;
   width: 1px;
-  height: 1px; transition: 1s;
+  height: 1px; transition: 0.5s;
   margin: 0 80px 0 0;
   transform-style: preserve-3d;
   transform: rotateX(0deg) rotateY(-90deg) rotateZ(0deg)
@@ -59,28 +59,5 @@ body {
 .bottom {
   transform: translateY(calc(80px / 2)) rotateX(-90deg);
 }
-
-/* .flex:nth-of-type(1) .cube:nth-of-type(1) {
-  animation: rotation 3s cubic-bezier(0.215, 0.61, 0.355, 1) 0.8s forwards;
-} */
-
-@keyframes rotation {
-  100% {
-    transform: rotateX(270deg) rotateY(10deg);
-  }
-}
-
-.wall {
-  /* animation: color 2s linear 1.5s forwards; */
-}
-
-/* 
-.cube {
-  position: relative;
-  width: 1px;
-  height: 1px;
-  margin: 0 80px 0 0;
-  transform-style: preserve-3d;
-  transform: rotateX(270deg) rotateY(0deg) rotateZ(-90deg);
-  /* transform: rotateX(270deg) rotateY(0deg) rotateZ(0deg); 
-} */
+ 
+ 
