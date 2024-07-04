@@ -2,8 +2,8 @@ import React from 'react'
 
 export default function Page() {
   return (
-    <div className="bg-red-500 text-gray-200 lowercase">
-        HOME
+    <div className="grid h-screen gap-4 grid-cols-3 grid-rows-4">
+        <div className=""></div>
     </div>
   )
 }
