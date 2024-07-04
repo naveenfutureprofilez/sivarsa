@@ -57,7 +57,9 @@ export default function Page() {
 
 
        <div className="thumbnailBox h-full bg-[#171717] p-4">
-          <div className="font-GoshaSans text-xl text-[#fff]">sivarsa</div>
+          <div className="font-GoshaSans text-xl text-[#fff]">
+          <div className=""dangerouslySetInnerHTML={{ __html: arrowblack }}></div>
+          </div>
        </div>
 
        
