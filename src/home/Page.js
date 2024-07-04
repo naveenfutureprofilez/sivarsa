@@ -22,15 +22,12 @@ export default function Page() {
           dangerouslySetInnerHTML={{ __html: weaving }}
         ></div>
       </div> */}
-      <div className="thumbnailBox h-full relative bg-[#171717] p-4">
-          <div className="cube thumbnailBox h-full relative bg-[##545454] p-4" >
+      <div className="thumbnailBox h-full relative ">
+          <div className="cube thumbnailBox h-full relative p-4" >
               <div className="wall text-white front"></div>
               <div className="wall text-white back"></div>
               <div className="wall text-white left">
                 Weaving software into magical journeys.
-                {/* <div className="weavingsoft" dangerouslySetInnerHTML={{ __html: weaving }}>
-
-                </div> */}
                 </div>
               <div className="wall text-white right"></div>
               <div className="wall text-white top"></div>
