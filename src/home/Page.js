@@ -75,7 +75,7 @@ export default function Page() {
       </div>
 
       <div className="relative thumbnailBox h-full bg-[#171717] p-4 min-h-[255px]">
-        <Link to={'/page2'} className="absolute bottom-6 right-5 text-[#B5AAF3] font-neuebit text-5xl">
+        <Link to={'/2'} className="absolute bottom-6 right-5 text-[#B5AAF3] font-neuebit text-5xl">
           Next
         </Link>
         <div className="absolute top-0 bottom-0 left-0">
