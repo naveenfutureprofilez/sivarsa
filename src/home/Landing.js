@@ -90,7 +90,9 @@ export default function Landing() {
               <div className="wall text-white bottom"></div>
           </div>
       </div>
+
       <div className="thumbnailBox h-full bg-[#171717] p-4 min-h-[250px]"></div>
+      
         <Link to="/" className="relative thumbnailBox h-full bg-[#171717] p-2 sm:p-3 md:p-4 lg:p-6 min-h-[255px]">
           <div className="absolute bottom-6 left-5 text-[#B5AAF3] font-neuebit text-xl md:text-3xl lg:text-4xl xl:text-5xl z-10">
             Prev
