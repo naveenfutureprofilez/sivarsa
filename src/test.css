@@ -10,7 +10,7 @@
    transition:0.5s; 
 }
 .wall{position:absolute;width:100%;height:100%;line-height:100%;}
-.front{transform:translateZ(50%);background:#2d2d2d;}
+.front{transform:translateZ(100px);background:#2d2d2d;}
 .back{transform:translateZ(-50%) rotateY(180deg);background:#545454;}
 .right{transform:translateX(50%) rotateY(90deg);background:#080808;}
 .left{transform:translateX(-50%) rotateY(-90deg);}

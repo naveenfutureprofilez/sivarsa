@@ -1,9 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { arrowblackRT, arrowblackDW,arrowblackUP,weavingSoft } from "../Icons";
-import weaving from "../images/weaving.png"
-import previcon from "../images/previcon.png"
-import sivarsalogo from "../images/sivarsalogo.png"
-import nexticon from "../images/nexticon.png"
+import { arrowblackRT, arrowblackDW,arrowblackUP,weavingSoft,PreBg,nextBg,sivarsaLogo,messageUs } from "../Icons";
 import messageus from "../images/messageus.png"
 import { Link } from "react-router-dom";
 export default function MobilePage1() {
@@ -17,12 +13,12 @@ export default function MobilePage1() {
 
 
   return (
-    <div className="grid 111h-screen gap-1 grid-cols-3 grid-rows-4 bg-black">
+    <div className="grid w-full h-screen gap-1 grid-cols-3 grid-rows-custome bg-black">
       
 
 
 
-      <div className="thumbnailBox h-full bg-[#171717] min-h-[250px]"></div>
+      <div className="thumbnailBox h-full bg-[#171717] "></div>
       
       <div className={`${rotate ? "rotate" : ""} thumbnailBox h-full relative `}>
         <div className="cube h-full relative " >
@@ -43,7 +39,7 @@ export default function MobilePage1() {
         </div>
       </div>
 
-      <div className="thumbnailBox h-full bg-[#171717] p-4 min-h-[250px]"></div>
+      <div className="thumbnailBox h-full bg-[#171717] p-4 "></div>
 
       <div className={`${rotate ? "rotate" : ""} thumbnailBox h-full relative `}>
         <div className="cube h-full relative " >
@@ -95,7 +91,7 @@ export default function MobilePage1() {
       </div>
       </div>
 
-      <div className="thumbnailBox h-full bg-[#171717] p-4 min-h-[250px]"></div>
+      <div className="thumbnailBox h-full bg-[#171717] p-4 "></div>
 
       <div className={`${rotate ? "rotate" : ""} thumbnailBox h-full relative `}>
       <div className={`${rotate ? "rotate" : ""} thumbnailBox h-full relative `}>
@@ -117,33 +113,36 @@ export default function MobilePage1() {
        
       </div>
 
-      <div className="thumbnailBox h-full bg-[#171717] p-4 min-h-[250px]"></div>
+      <div className="thumbnailBox h-full bg-[#171717] p-4 "></div>
 
 
 
-      <Link to="/" className="relative thumbnailBox h-full bg-[#171717] p-2 sm:p-3 md:p-4 lg:p-6 min-h-[255px]">
+      <Link to="/" className="relative thumbnailBox h-full bg-[#171717] p-2 sm:p-3 md:p-4 lg:p-6 ">
           <div className="absolute bottom-6 left-5 text-[#B5AAF3] font-neuebit text-xl md:text-3xl lg:text-4xl xl:text-5xl z-10">
             Prev
           </div>
           <div className="absolute top-0 bottom-0 right-0">
-            <img className="m-auto" src={previcon} />
+          
+          <div
+          className="absolute top-0 bottom-0 right-0 h-full nextpreimg"
+          dangerouslySetInnerHTML={{ __html: PreBg }}></div>
           </div>
         </Link>
-        <div className="thumbnailBox h-full bg-[#171717] p-2 sm:p-3 md:p-4 lg:p-6 min-h-[250px] relative">
+        <div className="thumbnailBox h-full bg-[#171717] p-2 sm:p-3 md:p-4 lg:p-6  relative">
           <div className="absolute top-5 left-5 right-0 font-GoshaSans text-xl text-[#fff]">sivarsa</div>
-          <div className="absolute top-16  md:top-4  lg:top-2 xl:top-5 right-2 sm:right-3 md:right-4 lg:right-5">
-            <img alt="icon" src={messageus} />
+          <div className="absolute top-16  md:top-4  lg:top-2 xl:top-5 right-2 sm:right-3 md:right-4 lg:right-5"  dangerouslySetInnerHTML={{ __html: messageUs }}>
           </div>
-          <div className="absolute bottom-0 left-0 right-0 m-auto"><img alt="icon" className="m-auto" src={sivarsalogo} /></div>
+
+          
+          <div className="flex absolute bottom-0 left-0 right-0 m-auto justify-center sivrsalogo"  dangerouslySetInnerHTML={{ __html: sivarsaLogo }}></div>
       
         </div>
-        <Link to="/mobile-web-devlopment" className="relative thumbnailBox h-full bg-[#171717] p-2 sm:p-3 md:p-4 lg:p-6 min-h-[255px]">
+        <Link to="/mobile-web-devlopment" className="relative thumbnailBox h-full bg-[#171717] p-2 sm:p-3 md:p-4 lg:p-6 ">
           <div className="absolute bottom-6 right-5 text-[#B5AAF3] font-neuebit font-neuebit text-xl md:text-3xl lg:text-4xl xl:text-5xl z-10">
             Next
           </div>
-          <div className="absolute top-0 bottom-0 left-0">
-            <img alt="icon" className="m-auto" src={nexticon} />
-          </div> 
+          <div className="absolute top-0 bottom-0 left-0 h-full nextpreimg"
+          dangerouslySetInnerHTML={{ __html: nextBg }}></div>
         </Link>
 
     </div>
