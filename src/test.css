@@ -1,18 +1,10 @@
-.rotate .cube {
-   transition: 1s;
-   transform: rotateX(0deg) rotateY(90deg) rotateZ(0deg);
-}
-/* body{height:100vh;margin:0;display:flex;justify-content:center;align-items:center;background-color:#f0f0f0;} */
-.container{ perspective:1000px;}
-.cube{
-   position:relative;width:100%;height:100%;transform-style:preserve-3d;
-   transform:rotateX(0deg) rotateY(0deg) rotateZ(0deg);
-   transition:0.5s; 
-}
+.container{perspective:1000px;}
+.cube{position:relative;width:100%;height:100%;transform-style:preserve-3d;transform:rotateX(0deg) rotateY(180deg) rotateZ(0deg);transition:0.5s;}
 .wall{position:absolute;width:100%;height:100%;line-height:100%;}
 .front{transform:translateZ(50%);background:#2d2d2d;}
-.back{transform:translateZ(-50%) rotateY(180deg);background:#545454;}
-.right{transform:translateX(50%) rotateY(90deg);background:#080808;}
+.back{transform:translateZ(-50%) rotateY(180deg);background:#373535;}
+.right{transform:translateX(50%) rotateY(90deg);background:#373535;}
 .left{transform:translateX(-50%) rotateY(-90deg);}
 .top{transform:translateY(-50%) rotateX(90deg);background:#131212;}
 .bottom{transform:translateY(50%) rotateX(-90deg);background:#1a1919;}
+.rotate .cube{transition:1s;transform:rotateX(0deg) rotateY(90deg) rotateZ(0deg);}
