@@ -121,32 +121,31 @@ export default function MobilePage1() {
 
 
 
-      <div className="relative thumbnailBox h-full bg-[#171717] p-2 sm:p-3 md:p-4 lg:p-6 min-h-[255px]">
-        <div className="absolute bottom-6 left-5 text-[#B5AAF3] font-neuebit text-xl md:text-3xl lg:text-4xl xl:text-5xl z-10">
-          Prev
-        </div>
-        <div className="absolute top-0 bottom-0 right-0">
-          <img className="m-auto" src={previcon} />
-        </div>
-      </div>
-
-      <div className="thumbnailBox h-full bg-[#171717] p-2 sm:p-3 md:p-4 lg:p-6 min-h-[250px] relative">
-        <div className="absolute top-5 left-5 right-0 font-GoshaSans text-xl text-[#fff]">sivarsa</div>
-        <div className="absolute top-16  md:top-4  lg:top-2 xl:top-5 right-2 sm:right-3 md:right-4 lg:right-5">
-          <img src={messageus} />
-        </div>
-        <div className="absolute bottom-0 left-0 right-0 m-auto"><img className="m-auto" src={sivarsalogo} /></div>
-     
-      </div>
-
-      <div className="relative thumbnailBox h-full bg-[#171717] p-2 sm:p-3 md:p-4 lg:p-6 min-h-[255px]">
-        <Link className="absolute bottom-6 right-5 text-[#B5AAF3] font-neuebit font-neuebit text-xl md:text-3xl lg:text-4xl xl:text-5xl z-10">
-          Next
+      <Link to="/" className="relative thumbnailBox h-full bg-[#171717] p-2 sm:p-3 md:p-4 lg:p-6 min-h-[255px]">
+          <div className="absolute bottom-6 left-5 text-[#B5AAF3] font-neuebit text-xl md:text-3xl lg:text-4xl xl:text-5xl z-10">
+            Prev
+          </div>
+          <div className="absolute top-0 bottom-0 right-0">
+            <img className="m-auto" src={previcon} />
+          </div>
         </Link>
-        <div className="absolute top-0 bottom-0 left-0">
-          <img className="m-auto" src={nexticon} />
+        <div className="thumbnailBox h-full bg-[#171717] p-2 sm:p-3 md:p-4 lg:p-6 min-h-[250px] relative">
+          <div className="absolute top-5 left-5 right-0 font-GoshaSans text-xl text-[#fff]">sivarsa</div>
+          <div className="absolute top-16  md:top-4  lg:top-2 xl:top-5 right-2 sm:right-3 md:right-4 lg:right-5">
+            <img alt="icon" src={messageus} />
+          </div>
+          <div className="absolute bottom-0 left-0 right-0 m-auto"><img alt="icon" className="m-auto" src={sivarsalogo} /></div>
+      
         </div>
-      </div>
+        <Link to="/mobile-web-devlopment" className="relative thumbnailBox h-full bg-[#171717] p-2 sm:p-3 md:p-4 lg:p-6 min-h-[255px]">
+          <div className="absolute bottom-6 right-5 text-[#B5AAF3] font-neuebit font-neuebit text-xl md:text-3xl lg:text-4xl xl:text-5xl z-10">
+            Next
+          </div>
+          <div className="absolute top-0 bottom-0 left-0">
+            <img alt="icon" className="m-auto" src={nexticon} />
+          </div> 
+        </Link>
+
     </div>
   );
 }
