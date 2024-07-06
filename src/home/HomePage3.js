@@ -23,7 +23,7 @@ export default function HomePage3() {
     <div className="wall text-white front">  
     </div>
     <div className="wall text-white back"></div>
-    <div className="wall text-white left h-full   bg-[#171717] sm:p-3 md:p-4 lg:p-6">
+    <div className="wall text-white left h-full bg-[#171717] sm:p-3 md:p-4 lg:p-6">
     <div className=" journeyimg" dangerouslySetInnerHTML={{ __html: ourJourney }}></div>
   <div className="z-10  absolute bottom-1 left-6  font-neuebit text-base sm:text-1xl md:text-2xl lg:text-4xl xl:text-6xl leading-1 md:leading-1 lg:leading-9 xl:leading-10 text-[#F5F5F5] mb-5">
   Our <br/> Journey

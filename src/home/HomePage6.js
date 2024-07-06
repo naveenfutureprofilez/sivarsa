@@ -169,7 +169,7 @@ export default function HomePage6() {
         ></div>
       </div>
       <Link
-        to="/home/7"
+        to="/"
         className="relative thumbnailBox h-full bg-[#171717] p-2 sm:p-3 md:p-4 lg:p-6 "
       >
         <div className="absolute bottom-6 right-5 text-[#B5AAF3] font-neuebit font-neuebit text-xl md:text-3xl lg:text-4xl xl:text-5xl z-10">
