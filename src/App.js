@@ -8,6 +8,7 @@ import HomePage3 from './home/HomePage3';
 import HomePage4 from './home/HomePage4';
 import HomePage5 from './home/HomePage5';
 import HomePage6 from './home/HomePage6';
+import HomePage7 from './home/HomePage7';
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
      <Route path="/home/4" element={<HomePage4 />} />
      <Route path="/home/5" element={<HomePage5 />} />
      <Route path="/home/6" element={<HomePage6 />} />
+     <Route path="/home/7" element={<HomePage7 />} />
      <Route path="/mobile-web-devlopment" element={<MobilePage1 />} />
      </Routes>
   </Router>
