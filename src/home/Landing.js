@@ -10,6 +10,7 @@ import founderbg from "../images/founderbg.svg"
 import boyicon from "../images/boyicon.png"
 import menicon from "../images/menicon.png"
 import ourjourney from "../images/ourjourney.png"
+import cloud from "../video/cloud.mov"
 import { Link } from "react-router-dom";
 export default function Landing() {
 
@@ -27,18 +28,20 @@ export default function Landing() {
 
       <div className={`${rotate ? "rotate" : ""} thumbnailBox h-full relative `}>
           <div className="cube h-full relative bg-[#545454]" >
-              <div className="wall text-white front">Front  
+              <div className="wall text-white front">  
               </div>
-              <div className="wall text-white back">Back</div>
+              <div className="wall text-white back"></div>
               <div className="wall text-white left  bg-[#545454] p-2 sm:p-3 md:p-4 lg:p-6">
               <p className="font-GoshaSans text-sm ms:text-xl lg:text-1xl xl:text-2xl text-[#F5F5F5CC]">Weaving software <br/> into magical <br/> journeys.</p>
               
-              <div className="absolute bottom-2 sm:bottom-4 md:bottom-6 lg:bottom-8 right-2 sm:right-4 md:right-6 lg:right-8  w-20 sm:w-24 md:w-32 lg:w-32 xl:w-40     h-20 sm:h-24 md:h-32 lg:h-32 xl:h-40" dangerouslySetInnerHTML={{ __html: weavingSoft }}></div>
+              <div className="absolute bottom-2 sm:bottom-4 md:bottom-6 lg:bottom-8 right-2 sm:right-4 md:right-6 lg:right-8  w-20 sm:w-24 md:w-32 lg:w-32 xl:w-40     h-20 sm:h-24 md:h-32 lg:h-32 xl:h-40">
+              <video src={cloud} width="600" height="300" controls="controls" autoplay="true" />
+              </div>
                </div>
                
-              <div className="wall text-white right">Right</div>
-              <div className="wall text-white top">Top</div>
-              <div className="wall text-white bottom">Bottom</div>
+              <div className="wall text-white right"></div>
+              <div className="wall text-white top"></div>
+              <div className="wall text-white bottom"></div>
           </div>
       </div>
 
@@ -441,7 +444,7 @@ export default function Landing() {
           <div className="flex justify-center items-end m-auto justify-center sivrsalogo overflow-hidden"  dangerouslySetInnerHTML={{ __html: sivarsaLogo }}></div>
       
         </div>
-        <Link to="/mobile-web-devlopment" className="relative thumbnailBox h-full bg-[#171717] p-2 sm:p-3 md:p-4 lg:p-6 ">
+        <Link to="/home/2" className="relative thumbnailBox h-full bg-[#171717] p-2 sm:p-3 md:p-4 lg:p-6 ">
           <div className="absolute bottom-6 right-5 text-[#B5AAF3] font-neuebit font-neuebit text-xl md:text-3xl lg:text-4xl xl:text-5xl z-10">
             Next
           </div>

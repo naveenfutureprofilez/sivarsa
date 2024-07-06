@@ -14,8 +14,6 @@ export default function MobilePage1() {
 
   return (
     <div className="grid w-full h-screen gap-1 grid-cols-3 grid-rows-custome bg-black">
-      
-
 
 
       <div className="thumbnailBox h-full bg-[#171717] "></div>
