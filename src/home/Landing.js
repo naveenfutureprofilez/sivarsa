@@ -23,16 +23,17 @@ export default function Landing() {
 
   return (
     <div className="grid w-full h-screen gap-1 grid-cols-3 grid-rows-custome bg-black">
-      {/* <div className="thumbnailBox h-full"></div>
+      <div className="thumbnailBox h-full"></div>
 
       <div className={`${rotate ? "rotate" : ""} thumbnailBox h-full relative `}>
           <div className="cube h-full relative bg-[#545454]" >
-              <div className="wall text-white front">Front  <p className="font-GoshaSans text-sm ms:text-xl lg:text-1xl xl:text-2xl text-[#F5F5F5CC]">Weaving software <br/> into magical <br/> journeys.</p>
-              
-              <div className="absolute bottom-2 sm:bottom-4 md:bottom-6 lg:bottom-8 right-2 sm:right-4 md:right-6 lg:right-8  w-20 sm:w-24 md:w-32 lg:w-32 xl:w-40     h-20 sm:h-24 md:h-32 lg:h-32 xl:h-40" dangerouslySetInnerHTML={{ __html: weavingSoft }}></div></div>
+              <div className="wall text-white front">Front  
+              </div>
               <div className="wall text-white back">Back</div>
               <div className="wall text-white left  bg-[#545454] p-2 sm:p-3 md:p-4 lg:p-6">
-              Left
+              <p className="font-GoshaSans text-sm ms:text-xl lg:text-1xl xl:text-2xl text-[#F5F5F5CC]">Weaving software <br/> into magical <br/> journeys.</p>
+              
+              <div className="absolute bottom-2 sm:bottom-4 md:bottom-6 lg:bottom-8 right-2 sm:right-4 md:right-6 lg:right-8  w-20 sm:w-24 md:w-32 lg:w-32 xl:w-40     h-20 sm:h-24 md:h-32 lg:h-32 xl:h-40" dangerouslySetInnerHTML={{ __html: weavingSoft }}></div>
                </div>
                
               <div className="wall text-white right">Right</div>
@@ -96,7 +97,7 @@ export default function Landing() {
               <div className="wall text-white top"></div>
               <div className="wall text-white bottom"></div>
           </div>
-      </div> */}
+      </div>
 
 
 
@@ -365,7 +366,7 @@ export default function Landing() {
 
      
 {/* Next Screen 8 */}
-<div className="thumbnailBox h-full bg-[#212121] p-5 ">
+{/* <div className="thumbnailBox h-full bg-[#212121] p-5 ">
   <h2 className="font-neuebit  text-base sm:text-1xl md:text-2xl lg:text-4xl xl:text-5xl leading-none text-[#F5F5F5] mb-5">Drop a <br></br> Message</h2>
 </div>
 
@@ -415,7 +416,7 @@ export default function Landing() {
 
    
   </div>
-  </div>
+  </div> */}
 
 {/* end */}
 
