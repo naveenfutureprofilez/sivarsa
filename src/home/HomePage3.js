@@ -14,44 +14,120 @@ export default function HomePage3() {
     <div className="grid w-full h-screen gap-1 grid-cols-3 grid-rows-custome bg-black">
     <div className="thumbnailBox h-full bg-[#171717] "></div>
 
-    <div className="thumbnailBox h-full bg-[#171717] "></div>
-  
-    <div className="thumbnailBox h-full bg-[#171717] relative ">
-      <div className="block h-full journeyimg " dangerouslySetInnerHTML={{ __html: ourJourney }}></div>
-      <div className="z-10  absolute bottom-1 left-6  font-neuebit text-base sm:text-1xl md:text-2xl lg:text-4xl xl:text-6xl leading-1 md:leading-1 lg:leading-9 xl:leading-none text-[#F5F5F5] mb-5">
-      Our <br/> Journey
-      </div>
-    
+<div className="thumbnailBox h-full bg-[#171717] "></div>
+
+
+<div className={`${rotate ? "rotate" : ""} thumbnailBox h-full  relative `}>
+
+  <div className="cube h-full relative " >
+    <div className="wall text-white front">  
     </div>
-  
-  
-  <div className="thumbnailBox h-full bg-[#171717] "></div>
-  
-  <div className="thumbnailBox h-full bg-[#6FF04A]  p-2 sm:p-3 md:p-4 lg:p-5">
-    <h2 className="relative font-neuebit font-size-200 leading-none text-[#0B6222] leading-normal mb-1">1000 <span className="absolute top-0 sm:top-1 md:top-5 lg:top-6 xl:top-7 text-xl md:text-3xl lg:text-4xl xl:text-5xl">+</span></h2>
-    <h3 className="font-neuebit text-base sm:text-1xl md:text-2xl lg:text-3xl leading-none text-[#0B6222] mb-5">Coffees consumed</h3>
+    <div className="wall text-white back"></div>
+    <div className="wall text-white left h-full   bg-[#171717] sm:p-3 md:p-4 lg:p-6">
+    <div className=" journeyimg" dangerouslySetInnerHTML={{ __html: ourJourney }}></div>
+  <div className="z-10  absolute bottom-1 left-6  font-neuebit text-base sm:text-1xl md:text-2xl lg:text-4xl xl:text-6xl leading-1 md:leading-1 lg:leading-9 xl:leading-10 text-[#F5F5F5] mb-5">
+  Our <br/> Journey
   </div>
-  
-  <div className="thumbnailBox h-full bg-[#171717] "></div>
-  
-  
-  
-  <div className="thumbnailBox h-full bg-[#763DF8]  p-2 sm:p-3 md:p-4 lg:p-5">
-    <h2 className="relative font-neuebit font-size-200 leading-none text-[#CFB8E5] leading-normal mb-1">9 <span className="absolute top-0 sm:top-1 md:top-5 lg:top-6 xl:top-7 text-xl md:text-3xl lg:text-4xl xl:text-5xl">+</span></h2>
-    <h3 className="font-neuebit text-base sm:text-1xl md:text-2xl lg:text-3xl leading-none text-[#CFB8E5] mb-5">Projects Delivered</h3>
+    </div>
+
+    <div className="wall text-white right"></div>
+    <div className="wall text-white top"></div>
+    <div className="wall text-white bottom"></div>
   </div>
-  
-  
-  <div className="thumbnailBox h-full bg-[#C7BDFA]  p-2 sm:p-3 md:p-4 lg:p-5">
-    <h2 className="relative font-neuebit font-size-200 leading-none text-[#763DF8] leading-normal mb-1">1k <span className="absolute top-0 sm:top-1 md:top-5 lg:top-6 xl:top-7 text-xl md:text-3xl lg:text-4xl xl:text-5xl">+</span></h2>
-    <h3 className="font-neuebit text-base sm:text-1xl md:text-2xl lg:text-3xl leading-none text-[#763DF8] mb-5">recruits</h3>
+</div>
+
+
+
+
+<div className="thumbnailBox h-full bg-[#171717]  p-2 sm:p-3 md:p-4 lg:p-5 "></div>
+
+
+<div className={`${rotate ? "rotate" : ""} thumbnailBox h-full bg-[#171717]  relative `}>
+
+  <div className="cube h-full relative" >
+    <div className="wall text-white front">  
+    </div>
+    <div className="wall text-white back"></div>
+    <div className="wall text-white left  bg-[#6FF04A] p-2 sm:p-3 md:p-4 lg:p-6">
+          <h2 className="relative font-neuebit text-[#0B6222] text-base sm:text-1xl md:text-3xl lg:text-6xl xl:text-9xl leading-none mb-1">1000 <span className="absolute top-0 sm:top-1 md:top-5 lg:top-6 xl:top-7 text-xl md:text-3xl lg:text-4xl xl:text-5xl">+</span></h2>
+        <h3 className="font-neuebit text-base sm:text-1xl md:text-2xl lg:text-3xl leading-none text-[#0B6222] mb-5">Coffees consumed</h3>
+    </div>
+
+    <div className="wall text-white right"></div>
+    <div className="wall text-white top"></div>
+    <div className="wall text-white bottom"></div>
   </div>
-  
-  
-  <div className="thumbnailBox h-full bg-[#545454]  p-2 sm:p-3 md:p-4 lg:p-5">
-    <h2 className="relative font-neuebit font-size-200 leading-none text-[#F5F5F5] leading-normal mb-1">15 <span className="absolute top-0 sm:top-1 md:top-5 lg:top-6 xl:top-7 text-xl md:text-3xl lg:text-4xl xl:text-5xl">+</span></h2>
-    <h3 className="font-neuebit text-base sm:text-1xl md:text-2xl lg:text-3xl leading-none text-[#F5F5F5] mb-5">Coffees consumed</h3>
+</div>
+
+
+
+<div className="thumbnailBox h-full bg-[#171717] "></div>
+
+
+
+
+
+<div className={`${rotate ? "rotate" : ""} thumbnailBox h-full bg-[#171717]  relative `}>
+
+  <div className="cube h-full relative bg-[#545454]" >
+    <div className="wall text-white front">  
+    </div>
+    <div className="wall text-white back"></div>
+    <div className="wall text-white left  bg-[#763DF8] p-2 sm:p-3 md:p-4 lg:p-6">
+          <h2 className="relative font-neuebit text-base sm:text-1xl md:text-3xl lg:text-6xl xl:text-9xl text-[#CFB8E5] leading-normal mb-1">9 <span className="absolute top-0 sm:top-1 md:top-5 lg:top-6 xl:top-7 text-xl md:text-3xl lg:text-4xl xl:text-5xl">+</span></h2>
+      <h3 className="font-neuebit text-base sm:text-1xl md:text-2xl lg:text-3xl leading-none text-[#CFB8E5] mb-5">Projects Delivered</h3>
+    </div>
+
+    <div className="wall text-white right"></div>
+    <div className="wall text-white top"></div>
+    <div className="wall text-white bottom"></div>
   </div>
+</div>
+
+
+<div className={`${rotate ? "rotate" : ""} thumbnailBox h-full bg-[#171717]  relative `}>
+
+  <div className="cube h-full relative bg-[#545454]" >
+    <div className="wall text-white front">  
+    </div>
+    <div className="wall text-white back"></div>
+    <div className="wall text-white left  bg-[#C7BDFA] p-2 sm:p-3 md:p-4 lg:p-6">
+        <h2 className="relative font-neuebit text-base sm:text-1xl md:text-3xl lg:text-6xl xl:text-9xl text-[#763DF8] leading-normal mb-1">1k <span className="absolute top-0 sm:top-1 md:top-5 lg:top-6 xl:top-7 text-xl md:text-3xl lg:text-4xl xl:text-5xl">+</span></h2>
+      <h3 className="font-neuebit text-base sm:text-1xl md:text-2xl lg:text-3xl leading-none text-[#763DF8] mb-5">recruits</h3>
+    </div>
+
+    <div className="wall text-white right"></div>
+    <div className="wall text-white top"></div>
+    <div className="wall text-white bottom"></div>
+  </div>
+</div>
+
+
+
+<div className={`${rotate ? "rotate" : ""} thumbnailBox h-full bg-[#171717]  relative `}>
+
+  <div className="cube h-full relative bg-[#545454]" >
+    <div className="wall text-white front">  
+    </div>
+    <div className="wall text-white back"></div>
+    <div className="wall text-white left  bg-[#545454] p-2 sm:p-3 md:p-4 lg:p-6">
+              <h2 className="relative font-neuebit text-base sm:text-1xl md:text-3xl lg:text-6xl xl:text-9xl text-[#F5F5F5] leading-normal mb-1">15 <span className="absolute top-0 sm:top-1 md:top-5 lg:top-6 xl:top-7 text-xl md:text-3xl lg:text-4xl xl:text-5xl">+</span></h2>
+          <h3 className="font-neuebit text-base sm:text-1xl md:text-2xl lg:text-3xl leading-none text-[#F5F5F5] mb-5">Coffees consumed</h3>
+    </div>
+
+    <div className="wall text-white right"></div>
+    <div className="wall text-white top"></div>
+    <div className="wall text-white bottom"></div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
   <Link to="/home/2" className="relative thumbnailBox h-full bg-[#171717] p-2 sm:p-3 md:p-4 lg:p-6 ">
             <div className="absolute bottom-6 left-5 text-[#B5AAF3] font-neuebit text-xl md:text-3xl lg:text-4xl xl:text-5xl z-10">
               Prev
