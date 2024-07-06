@@ -25,7 +25,7 @@ export default function Landing() {
               <div className="wall text-white left  bg-[#545454] p-2 sm:p-3 md:p-4 lg:p-6">
               Left
                </div>
-               
+                              
               <div className="wall text-white right">Right</div>
               <div className="wall text-white top">Top</div>
               <div className="wall text-white bottom">Bottom</div>
