@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { arrowblackRT, arrowblackDW,arrowblackUP,weavingSoft,PreBg,nextBg,sivarsaLogo,messageUs,ourJourney } from "../Icons";
+import { arrowblackRT, arrowblackDW,arrowblackUP,weavingSoft,PreBg,nextBg,sivarsaLogo,messageUs,ourJourney,instagram,twitter,gmail,whatsapp,linkedin } from "../Icons";
 import oedgegrid from "../images/oedgegrid.svg"
 import gavs from "../images/gavs.svg"
 import hestus from "../images/hestus.svg"
@@ -9,6 +9,7 @@ import rabit from "../images/rabit.png"
 import founderbg from "../images/founderbg.svg"
 import boyicon from "../images/boyicon.png"
 import menicon from "../images/menicon.png"
+import ourjourney from "../images/ourjourney.png"
 import { Link } from "react-router-dom";
 export default function Landing() {
 
@@ -104,13 +105,13 @@ export default function Landing() {
 
 {/* Next Screen 4 */}
 
-  <div className="thumbnailBox h-full bg-[#171717] "></div>
+  {/* <div className="thumbnailBox h-full bg-[#171717] "></div>
 
   <div className="thumbnailBox h-full bg-[#171717] "></div>
 
   <div className="thumbnailBox h-full bg-[#171717] relative ">
     <div className="block h-full journeyimg " dangerouslySetInnerHTML={{ __html: ourJourney }}></div>
-    <div className="z-10  absolute bottom-1 left-6  font-neuebit text-base sm:text-1xl md:text-2xl lg:text-4xl xl:text-6xl leading-1 md:leading-1 lg:leading-9 xl:leading-none text-[#F5F5F5] mb-5">
+    <div className="z-10  absolute bottom-1 left-6  font-neuebit text-base sm:text-1xl md:text-2xl lg:text-4xl xl:text-6xl leading-1 md:leading-1 lg:leading-9 xl:leading-10 text-[#F5F5F5] mb-5">
     Our <br/> Journey
     </div>
   
@@ -120,7 +121,7 @@ export default function Landing() {
 <div className="thumbnailBox h-full bg-[#171717] "></div>
 
 <div className="thumbnailBox h-full bg-[#6FF04A]  p-2 sm:p-3 md:p-4 lg:p-5">
-  <h2 className="relative font-neuebit font-size-200 leading-none text-[#0B6222] leading-normal mb-1">1000 <span className="absolute top-0 sm:top-1 md:top-5 lg:top-6 xl:top-7 text-xl md:text-3xl lg:text-4xl xl:text-5xl">+</span></h2>
+  <h2 className="relative font-neuebit text-[#0B6222] text-base sm:text-1xl md:text-3xl lg:text-6xl xl:text-9xl leading-none mb-1">1000 <span className="absolute top-0 sm:top-1 md:top-5 lg:top-6 xl:top-7 text-xl md:text-3xl lg:text-4xl xl:text-5xl">+</span></h2>
   <h3 className="font-neuebit text-base sm:text-1xl md:text-2xl lg:text-3xl leading-none text-[#0B6222] mb-5">Coffees consumed</h3>
 </div>
 
@@ -129,21 +130,21 @@ export default function Landing() {
 
 
 <div className="thumbnailBox h-full bg-[#763DF8]  p-2 sm:p-3 md:p-4 lg:p-5">
-  <h2 className="relative font-neuebit font-size-200 leading-none text-[#CFB8E5] leading-normal mb-1">9 <span className="absolute top-0 sm:top-1 md:top-5 lg:top-6 xl:top-7 text-xl md:text-3xl lg:text-4xl xl:text-5xl">+</span></h2>
+  <h2 className="relative font-neuebit text-base sm:text-1xl md:text-3xl lg:text-6xl xl:text-9xl text-[#CFB8E5] leading-normal mb-1">9 <span className="absolute top-0 sm:top-1 md:top-5 lg:top-6 xl:top-7 text-xl md:text-3xl lg:text-4xl xl:text-5xl">+</span></h2>
   <h3 className="font-neuebit text-base sm:text-1xl md:text-2xl lg:text-3xl leading-none text-[#CFB8E5] mb-5">Projects Delivered</h3>
 </div>
 
 
 <div className="thumbnailBox h-full bg-[#C7BDFA]  p-2 sm:p-3 md:p-4 lg:p-5">
-  <h2 className="relative font-neuebit font-size-200 leading-none text-[#763DF8] leading-normal mb-1">1k <span className="absolute top-0 sm:top-1 md:top-5 lg:top-6 xl:top-7 text-xl md:text-3xl lg:text-4xl xl:text-5xl">+</span></h2>
+  <h2 className="relative font-neuebit text-base sm:text-1xl md:text-3xl lg:text-6xl xl:text-9xl text-[#763DF8] leading-normal mb-1">1k <span className="absolute top-0 sm:top-1 md:top-5 lg:top-6 xl:top-7 text-xl md:text-3xl lg:text-4xl xl:text-5xl">+</span></h2>
   <h3 className="font-neuebit text-base sm:text-1xl md:text-2xl lg:text-3xl leading-none text-[#763DF8] mb-5">recruits</h3>
 </div>
 
 
 <div className="thumbnailBox h-full bg-[#545454]  p-2 sm:p-3 md:p-4 lg:p-5">
-  <h2 className="relative font-neuebit font-size-200 leading-none text-[#F5F5F5] leading-normal mb-1">15 <span className="absolute top-0 sm:top-1 md:top-5 lg:top-6 xl:top-7 text-xl md:text-3xl lg:text-4xl xl:text-5xl">+</span></h2>
+  <h2 className="relative font-neuebit text-base sm:text-1xl md:text-3xl lg:text-6xl xl:text-9xl text-[#F5F5F5] leading-normal mb-1">15 <span className="absolute top-0 sm:top-1 md:top-5 lg:top-6 xl:top-7 text-xl md:text-3xl lg:text-4xl xl:text-5xl">+</span></h2>
   <h3 className="font-neuebit text-base sm:text-1xl md:text-2xl lg:text-3xl leading-none text-[#F5F5F5] mb-5">Coffees consumed</h3>
-</div>
+</div> */}
 
 
 {/* end */}
@@ -155,7 +156,7 @@ export default function Landing() {
 
 {/* Next Screen 15 */}
 
-<div className="thumbnailBox h-full bg-[#171717] ">
+{/* <div className="thumbnailBox h-full bg-[#171717] ">
   <h2 className="font-neuebit text-base sm:text-1xl md:text-2xl lg:text-4xl xl:text-5xl leading-none text-[#CFB8E5] mb-5">Latest <br/> Work</h2>
 </div>
 
@@ -204,7 +205,7 @@ export default function Landing() {
 
 <div className="thumbnailBox h-full bg-[#171717] ">
 
-</div>
+</div> */}
 
 
 {/* end */}
@@ -212,7 +213,7 @@ export default function Landing() {
 
 
 {/* Next Screen 6 */}
-<div className="relative thumbnailBox h-full bg-[#F5F5F5] p-2 sm:p-3 md:p-4 lg:p-6">
+{/* <div className="relative thumbnailBox h-full bg-[#F5F5F5] p-2 sm:p-3 md:p-4 lg:p-6">
     <h2 className="font-neuebit  text-base sm:text-1xl md:text-2xl lg:text-4xl xl:text-5xl leading-none text-[#171717] mb-5">Client <br/> words</h2>
   <div className="absolute bottom-1 right-1">
       <img src={rabit} alt="img" />
@@ -284,7 +285,7 @@ export default function Landing() {
   <h3 className="font-italianno  italic text-sm sm:text-sm md:text-base lg:text-lg xl:text-xl leading-none text-[#F5F5F5]">James K</h3>
   </div>
   </div>
-</div>
+</div> */}
 
 
 
@@ -293,7 +294,7 @@ export default function Landing() {
 
 
 {/* Next Screen 7 */}
-<div className="thumbnailBox h-full bg-[#171717] ">
+{/* <div className="thumbnailBox h-full bg-[#171717] ">
 
 </div>
 
@@ -358,11 +359,66 @@ export default function Landing() {
   <div className="absolute bottom-0 right-0">
       <img src={menicon} alt="img"/>
     </div>
-</div>
+</div> */}
 
 {/* end */}
 
      
+{/* Next Screen 8 */}
+<div className="thumbnailBox h-full bg-[#212121] p-5 ">
+  <h2 className="font-neuebit  text-base sm:text-1xl md:text-2xl lg:text-4xl xl:text-5xl leading-none text-[#F5F5F5] mb-5">Drop a <br></br> Message</h2>
+</div>
+
+<div className="thumbnailBox h-full bg-[#212121] p-5 ">
+  <div className="flex h-full items-start"  dangerouslySetInnerHTML={{ __html: instagram }}></div>
+</div>
+
+<div className="thumbnailBox h-full bg-[#212121] p-5 ">
+  <div className="flex h-full items-start"  dangerouslySetInnerHTML={{ __html: twitter }}></div>
+</div>
+
+<div className="thumbnailBox h-full bg-[#212121] p-5 ">
+  <div className="flex h-full items-start"  dangerouslySetInnerHTML={{ __html: gmail }}></div>
+</div>
+
+<div className="thumbnailBox h-full bg-[#212121] p-5 ">
+  <div className="flex h-full items-start"  dangerouslySetInnerHTML={{ __html: whatsapp }}></div>
+</div>
+
+<div className="thumbnailBox h-full bg-[#212121] p-5 ">
+  <div className="flex h-full items-start"  dangerouslySetInnerHTML={{ __html: linkedin }}></div>
+</div>
+
+
+<div className="thumbnailBox h-full bg-[#212121] p-2 md:p-3 lg:p-4 xl:p-5 ">
+  <div className="flex flex-col flex-wrap h-full items-start content-start justify-end">
+  <p className="font-GoshaSans text-sm  xl:text-base leading-none text-[#F5F5F54D] mb-2">Contact: +91-9259108248</p>
+
+  <p className="font-GoshaSans text-sm  xl:text-base leading-none text-[#F5F5F54D] text-[#F5F5F54D]" >Address: C1-1201, 12th Floor, JKG Palm <br/> Court, Sector 16C, Noida, UP, 201301, India</p>
+   
+  </div>
+</div>
+
+
+<div className="thumbnailBox h-full bg-[#212121] p-5 ">
+</div>
+
+<div className="thumbnailBox h-full bg-[#212121] p-2 md:p-3 lg:p-4 xl:p-5 ">
+  <div className="flex flex-col flex-wrap h-full items-start content-start justify-end">
+  <p className="font-GoshaSans  text-sm sm:text-sm md:text-base lg:text-lg xl:text-xl leading-none text-[#F5F5F54D]" mb-1>Privacy Policy</p>
+
+  <p className="font-GoshaSans text-sm  xl:text-base leading-none text-[#F5F5F54D] mb-2">Terms & <br/> Conditions</p>
+
+
+<p className="font-GoshaSans text-sm  xl:text-base leading-none text-[#F5F5F54D] mb-2">Made with passion by © <br/> 2024 Sivarsa Technologies <br/> LLP. All rights reserved.</p>
+
+
+   
+  </div>
+  </div>
+
+{/* end */}
+
 
         <Link to="/" className="relative thumbnailBox h-full bg-[#171717] p-2 sm:p-3 md:p-4 lg:p-6 ">
           <div className="absolute bottom-6 left-5 text-[#B5AAF3] font-neuebit text-xl md:text-3xl lg:text-4xl xl:text-5xl z-10">
