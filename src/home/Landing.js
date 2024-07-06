@@ -21,7 +21,6 @@ export default function Landing() {
     },100);
   },[])
 
-
   return (
     <div className="grid w-full h-screen gap-1 grid-cols-3 grid-rows-custome bg-black">
       <div className="thumbnailBox h-full"></div>
