@@ -435,15 +435,20 @@ export default function Landing() {
           dangerouslySetInnerHTML={{ __html: PreBg }}></div>
           </div>
         </Link>
-        <div className="thumbnailBox h-full bg-[#171717] px-2 sm:px-3 md:px-4 lg:px-6 pb-0  relative">
-          <div className="absolute top-5 left-5 right-0 font-GoshaSans text-xl text-[#fff]">sivarsa</div>
-          <div className="messageusbtn absolute top-16  md:top-4  lg:top-2 xl:top-5 right-1 sm:right-3 md:right-4 lg:right-5"  dangerouslySetInnerHTML={{ __html: messageUs }}>
-          </div>
-
-          
-          <div className="flex justify-center items-end m-auto justify-center sivrsalogo overflow-hidden"  dangerouslySetInnerHTML={{ __html: sivarsaLogo }}></div>
-      
+        <div className="thumbnailBox h-full bg-[#171717] p-2 sm:p-3 md:p-4 lg:p-6  relative">
+        <div className="absolute top-5 left-5 right-0 font-GoshaSans text-xl text-[#fff]">
+          sivarsa
         </div>
+        <div
+          className="messageusbtn absolute top-16  md:top-4  lg:top-2 xl:top-5 right-2 sm:right-3 md:right-4 lg:right-5"
+          dangerouslySetInnerHTML={{ __html: messageUs }}
+        ></div>
+
+        <div
+          className="flex absolute bottom-0 left-0 right-0 m-auto justify-center sivrsalogo"
+          dangerouslySetInnerHTML={{ __html: sivarsaLogo }}
+        ></div>
+      </div>
         <Link to="/home/2" className="relative thumbnailBox h-full bg-[#171717] p-2 sm:p-3 md:p-4 lg:p-6 ">
           <div className="absolute bottom-6 right-5 text-[#B5AAF3] font-neuebit font-neuebit text-xl md:text-3xl lg:text-4xl xl:text-5xl z-10">
             Next

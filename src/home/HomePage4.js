@@ -75,36 +75,75 @@ export default function HomePage4() {
 
 
 
+<div className={`${rotate ? "rotate" : ""} thumbnailBox h-full bg-[#171717]  relative `}>
 
-<div className="thumbnailBox h-full bg-[#171717] ">
-  <div className="h-full flex items-center justify-center">
-    <img src={gavs} alt="img"/>
+  <div className="cube h-full relative bg-[#545454]" >
+    <div className="wall text-white front">  
+    </div>
+    <div className="wall text-white back"></div>
+    <div className="wall text-white left  bg-[#171717] p-2 sm:p-3 md:p-4 lg:p-6">
+        <div className="h-full flex items-center justify-center">
+        <img src={gavs} alt="img"/>
+      </div>
+    </div>
+
+    <div className="wall text-white right"></div>
+    <div className="wall text-white top"></div>
+    <div className="wall text-white bottom"></div>
   </div>
 </div>
 
+
+
 <div className="thumbnailBox h-full bg-[#171717] ">
 
 </div>
 
 
+<div className={`${rotate ? "rotate" : ""} thumbnailBox h-full bg-[#171717]  relative `}>
 
-<div className="thumbnailBox h-full bg-[#171717] ">
-  <div className="h-full flex items-center justify-center">
-    <img src={hestus} alt="img"/>
+  <div className="cube h-full relative bg-[#545454]" >
+    <div className="wall text-white front">  
+    </div>
+    <div className="wall text-white back"></div>
+    <div className="wall text-white left  bg-[#171717] p-2 sm:p-3 md:p-4 lg:p-6">
+        <div className="h-full flex items-center justify-center">
+        <img src={hestus} alt="img"/>
+      </div>
+    </div>
+
+    <div className="wall text-white right"></div>
+    <div className="wall text-white top"></div>
+    <div className="wall text-white bottom"></div>
   </div>
 </div>
 
 
+
 <div className="thumbnailBox h-full bg-[#171717] ">
 
 </div>
 
 
-<div className="thumbnailBox h-full bg-[#171717] ">
-  <div className="h-full flex items-center justify-center">
-    <img src={congn} alt="img"/>
+<div className={`${rotate ? "rotate" : ""} thumbnailBox h-full bg-[#171717]  relative `}>
+
+  <div className="cube h-full relative bg-[#545454]" >
+    <div className="wall text-white front">  
+    </div>
+    <div className="wall text-white back"></div>
+    <div className="wall text-white left  bg-[#171717] p-2 sm:p-3 md:p-4 lg:p-6">
+        <div className="h-full flex items-center justify-center">
+        <img src={congn} alt="img"/>
+      </div>
+    </div>
+
+    <div className="wall text-white right"></div>
+    <div className="wall text-white top"></div>
+    <div className="wall text-white bottom"></div>
   </div>
 </div>
+
+
 
 <div className="thumbnailBox h-full bg-[#171717] ">
 
@@ -136,7 +175,10 @@ export default function HomePage4() {
           dangerouslySetInnerHTML={{ __html: messageUs }}
         ></div>
 
-<div className="flex justify-center items-end m-auto justify-center sivrsalogo overflow-hidden"  dangerouslySetInnerHTML={{ __html: sivarsaLogo }}></div>
+        <div
+          className="flex absolute bottom-0 left-0 right-0 m-auto justify-center sivrsalogo"
+          dangerouslySetInnerHTML={{ __html: sivarsaLogo }}
+        ></div>
       </div>
       <Link
         to="/home/5"
