@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import "../src/test.css"
+// import "../src/test.css"
 
 export default function Test() {
 

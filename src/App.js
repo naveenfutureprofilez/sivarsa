@@ -1,5 +1,5 @@
 import './App.css';
-import './test.css';
+import './cube.css';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Landing from './home/Landing';
 import MobilePage1 from './mobile/MobilePage1';
@@ -10,6 +10,8 @@ import HomePage5 from './home/HomePage5';
 import HomePage6 from './home/HomePage6';
 import HomePage7 from './home/HomePage7';
 import Test from './Test';
+import Screen1 from './home/Screen1';
+import Screen2 from './home/Screen2';
 
 
 function App() {
@@ -25,6 +27,8 @@ function App() {
      <Route path="/home/7" element={<HomePage7 />} />
      <Route path="/mobile-web-devlopment" element={<MobilePage1 />} />
      <Route path="/test" element={<Test />} />
+     <Route path="/test2" element={<Screen1 />} />
+     <Route path="/test3" element={<Screen2 />} />
      </Routes>
   </Router>
   );

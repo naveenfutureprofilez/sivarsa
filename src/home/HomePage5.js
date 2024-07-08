@@ -56,10 +56,6 @@ export default function HomePage5() {
 
       <div className="thumbnailBox h-full bg-[#171717] "></div>
 
-
-
-
-
       <div className={`${rotate ? "rotate" : ""} thumbnailBox h-full bg-[#171717]  relative `}>
         <div className="cube h-full relative bg-[#545454]" >
           <div className="wall text-white front">  

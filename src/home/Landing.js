@@ -26,21 +26,15 @@ export default function Landing() {
       <div className="thumbnailBox h-full"></div>
 
       <div className={`${rotate ? "rotate" : ""} thumbnailBox h-full relative `}>
-          <div className="cube h-full relative bg-[#545454]" >
-              <div className="wall text-white front">  
-              </div>
-              <div className="wall text-white back"></div>
-              <div className="wall text-white left  bg-[#545454] p-2 sm:p-3 md:p-4 lg:p-6">
-              <p className="font-GoshaSans text-sm ms:text-xl lg:text-1xl xl:text-2xl text-[#F5F5F5CC]">Weaving software <br/> into magical <br/> journeys.</p>
+          <div className="cube h-full relative" >
+              <div className="wall text-white front"> Front</div>
+              <div className="wall text-white back">Back</div>
+              <div className="wall text-white left p-2 sm:p-3 md:p-4 lg:p-6">LEFT</div>
+              <div className="wall text-white right">Right</div>
+
               
-              <div className="absolute bottom-2 sm:bottom-4 md:bottom-6 lg:bottom-8 right-2 sm:right-4 md:right-6 lg:right-8  w-20 sm:w-24 md:w-32 lg:w-32 xl:w-40     h-20 sm:h-24 md:h-32 lg:h-32 xl:h-40">
-              <video src={cloud} width="600" height="300" controls="controls" autoplay="true" />
-              </div>
-               </div>
-               
-              <div className="wall text-white right"></div>
-              <div className="wall text-white top"></div>
-              <div className="wall text-white bottom"></div>
+              {/* <div className="wall text-white top">Top</div> */}
+              {/* <div className="wall text-white bottom">Bottom</div> */}
           </div>
       </div>
 
@@ -144,7 +138,7 @@ export default function Landing() {
 </div>
 
 
-<div className="thumbnailBox h-full bg-[#545454]  p-2 sm:p-3 md:p-4 lg:p-5">
+<div className="thumbnailBox h-full  p-2 sm:p-3 md:p-4 lg:p-5">
   <h2 className="relative font-neuebit text-base sm:text-1xl md:text-3xl lg:text-6xl xl:text-9xl text-[#F5F5F5] leading-normal mb-1">15 <span className="absolute top-0 sm:top-1 md:top-5 lg:top-6 xl:top-7 text-xl md:text-3xl lg:text-4xl xl:text-5xl">+</span></h2>
   <h3 className="font-neuebit text-base sm:text-1xl md:text-2xl lg:text-3xl leading-none text-[#F5F5F5] mb-5">Coffees consumed</h3>
 </div> */}
