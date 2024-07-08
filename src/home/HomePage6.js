@@ -32,35 +32,70 @@ export default function HomePage6() {
     <div className="grid w-full h-screen gap-1 grid-cols-3 grid-rows-custome bg-black">
       <div className="thumbnailBox h-full bg-[#171717] "></div>
 
-      <div className="thumbnailBox h-full bg-[#f5f5f5] ">
-        <h2 className="absolute font-neuebit  text-base sm:text-1xl md:text-2xl lg:text-4xl xl:text-6xl leading-none text-[#F5F5F5] mb-5">
-          Founders
-        </h2>
-        <div className="h-full founderbg">
-          <img src={founderbg} alt="img" />
+
+
+
+      <div className={`${rotate ? "rotate" : ""} thumbnailBox h-full bg-[#171717]  relative `}>
+        <div className="cube h-full relative bg-[#545454]" >
+          <div className="wall text-white front">  
+          </div>
+          <div className="wall text-white back"></div>
+          <div className="wall text-white left  bg-[#f5f5f5]">
+              <h2 className="absolute font-neuebit  text-base sm:text-1xl md:text-2xl lg:text-4xl xl:text-6xl leading-none text-[#F5F5F5] mb-5">
+              Founders
+            </h2>
+            <div className="h-full founderbg">
+              <img src={founderbg} alt="img" />
+            </div>
+          </div>
+
+          <div className="wall text-white right"></div>
+          <div className="wall text-white top"></div>
+          <div className="wall text-white bottom"></div>
+        </div>
+        </div>
+
+
+
+      
+
+      <div className="thumbnailBox h-full bg-[#171717] "></div>
+
+
+      <div className={`${rotate ? "rotate" : ""} thumbnailBox h-full bg-[#171717]  relative `}>
+        <div className="cube h-full relative bg-[#545454]" >
+          <div className="wall text-white front">  
+          </div>
+          <div className="wall text-white back"></div>
+            <div className="wall text-white left  bg-[#2D68FF] p-2 sm:p-3 md:p-4 lg:p-6">
+            <div className=" relative ">
+            <div className="position top-0 left-0">
+              <img src={quoteicon} alt="img" />
+            </div>
+            <div className="ps-0 md:ps-3 lg:ps-4 xl:ps-5">
+              <p className="font-GoshaSans text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl leading-none text-[#F5F5F5] mb-2">
+                Transforming ideas into seamless <br /> software experiences
+              </p>
+              <h3 className="font-italianno  italic text-sm sm:text-sm md:text-base lg:text-lg xl:text-xl leading-none text-[#F5F5F5]">
+                Rishab
+              </h3>
+            </div>
+          </div>
+          <div className="absolute bottom-0 right-0">
+            <img src={boyicon} alt="img" />
+          </div>
+          </div>
+
+          <div className="wall text-white right"></div>
+          <div className="wall text-white top"></div>
+          <div className="wall text-white bottom"></div>
         </div>
       </div>
 
-      <div className="thumbnailBox h-full bg-[#171717] "></div>
 
-      <div className="relative thumbnailBox h-full bg-[#2D68FF]  p-2 sm:p-3 md:p-4 lg:p-6">
-        <div className=" relative ">
-          <div className="position top-0 left-0">
-            <img src={quoteicon} alt="img" />
-          </div>
-          <div className="ps-0 md:ps-3 lg:ps-4 xl:ps-5">
-            <p className="font-GoshaSans text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl leading-none text-[#F5F5F5] mb-2">
-              Transforming ideas into seamless <br /> software experiences
-            </p>
-            <h3 className="font-italianno  italic text-sm sm:text-sm md:text-base lg:text-lg xl:text-xl leading-none text-[#F5F5F5]">
-              Rishab
-            </h3>
-          </div>
-        </div>
-        <div className="absolute bottom-0 right-0">
-          <img src={boyicon} alt="img" />
-        </div>
-      </div>
+
+
+    
 
       <div className="thumbnailBox h-full bg-[#171717] "></div>
 
@@ -70,8 +105,16 @@ export default function HomePage6() {
 
       <div className="thumbnailBox h-full bg-[#171717] "></div>
 
-      <div className="relative thumbnailBox h-full bg-[#763DF8]  p-2 sm:p-3 md:p-4 lg:p-6">
-        <div className=" relative ">
+
+
+      <div className={`${rotate ? "rotate" : ""} thumbnailBox h-full bg-[#171717]  relative `}>
+
+<div className="cube h-full relative bg-[#545454]" >
+  <div className="wall text-white front">  
+  </div>
+  <div className="wall text-white back"></div>
+  <div className="wall text-white left  bg-[#763DF8]  p-2 sm:p-3 md:p-4 lg:p-6">
+  <div className=" relative ">
           <div className="position top-0 left-0">
             <img src={quoteicon} alt="img" />
           </div>
@@ -87,7 +130,16 @@ export default function HomePage6() {
         <div className="absolute bottom-0 right-0">
           <img src={menicon} alt="img" />
         </div>
-      </div>
+  </div>
+
+  <div className="wall text-white right"></div>
+  <div className="wall text-white top"></div>
+  <div className="wall text-white bottom"></div>
+</div>
+</div>
+
+
+
       <Link
         to="/home/5"
         className="relative thumbnailBox h-full bg-[#171717] p-2 sm:p-3 md:p-4 lg:p-6 "
@@ -102,17 +154,17 @@ export default function HomePage6() {
           ></div>
         </div>
       </Link>
-      <div className="thumbnailBox h-full bg-[#171717] px-2 sm:px-3 md:px-4 lg:px-6 pb-0  relative">
+      <div className="thumbnailBox h-full bg-[#171717] p-2 sm:p-3 md:p-4 lg:p-6  relative">
         <div className="absolute top-5 left-5 right-0 font-GoshaSans text-xl text-[#fff]">
           sivarsa
         </div>
         <div
-          className="messageusbtn absolute top-16  md:top-4  lg:top-2 xl:top-5 right-1 sm:right-3 md:right-4 lg:right-5"
+          className="messageusbtn absolute top-16  md:top-4  lg:top-2 xl:top-5 right-2 sm:right-3 md:right-4 lg:right-5"
           dangerouslySetInnerHTML={{ __html: messageUs }}
         ></div>
 
         <div
-          className="flex justify-center items-end m-auto justify-center sivrsalogo overflow-hidden"
+          className="flex absolute bottom-0 left-0 right-0 m-auto justify-center sivrsalogo"
           dangerouslySetInnerHTML={{ __html: sivarsaLogo }}
         ></div>
       </div>

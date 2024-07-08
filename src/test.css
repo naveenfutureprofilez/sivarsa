@@ -2,17 +2,35 @@
    transition: 1s;
    transform: rotateX(0deg) rotateY(90deg) rotateZ(0deg);
 }
+@keyframes load {
+   0%{opacity: 0;}
+   100%{opacity: 1;}
+}
+/* .cube {
+   animation: load 0.3s linear forwards;
+} */
+body{
+   background:#000;
+}
 /* body{height:100vh;margin:0;display:flex;justify-content:center;align-items:center;background-color:#f0f0f0;} */
 .container{ perspective:1000px;}
-.cube{
-   position:relative;width:100%;height:100%;transform-style:preserve-3d;
-   transform:rotateX(0deg) rotateY(0deg) rotateZ(0deg);
-   transition:0.5s; 
-}
+.cube{position:relative;width:100%;height:100%;transform-style:preserve-3d;transform:rotateX(0deg) rotateY(0deg) rotateZ(0deg);transition:0.5s;}
 .wall{position:absolute;width:100%;height:100%;line-height:100%;}
-.front{transform:translateZ(100px);background:#2d2d2d;}
+.front {
+   transform: translateZ(100px);
+   background: #1f1e1e;
+}
 .back{transform:translateZ(-50%) rotateY(180deg);background:#545454;}
 .right{transform:translateX(50%) rotateY(90deg);background:#080808;}
 .left{transform:translateX(-50%) rotateY(-90deg);}
 .top{transform:translateY(-50%) rotateX(90deg);background:#131212;}
 .bottom{transform:translateY(50%) rotateX(-90deg);background:#1a1919;}
+
+.journeyimg svg {
+   width: 100%;
+   height: 100%;
+}
+
+.wall {
+   overflow: hidden;
+}

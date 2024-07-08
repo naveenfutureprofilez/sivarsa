@@ -30,56 +30,109 @@ export default function HomePage5() {
   }, []);
   return (
     <div className="grid w-full h-screen gap-1 grid-cols-3 grid-rows-custome bg-black">
-      <div className="relative thumbnailBox h-full bg-[#F5F5F5] p-2 sm:p-3 md:p-4 lg:p-6">
-        <h2 className="font-neuebit  text-base sm:text-1xl md:text-2xl lg:text-4xl xl:text-5xl leading-none text-[#171717] mb-5">
-          Client <br /> words
-        </h2>
-        <div className="absolute bottom-1 right-1">
-          <img src={rabit} alt="img" />
+
+
+      <div className={`${rotate ? "rotate" : ""} thumbnailBox h-full bg-[#171717]  relative `}>
+        <div className="cube h-full relative bg-[#545454]" >
+          <div className="wall text-white front">  
+          </div>
+          <div className="wall text-white back"></div>
+          <div className="wall text-white left  bg-[#F5F5F5] p-2 sm:p-3 md:p-4 lg:p-6">
+              <h2 className="font-neuebit  text-base sm:text-1xl md:text-2xl lg:text-4xl xl:text-5xl leading-none text-[#171717] mb-5">
+              Client <br /> words
+            </h2>
+            <div className="absolute bottom-1 right-1">
+              <img src={rabit} alt="img" />
+            </div>
+          </div>
+
+          <div className="wall text-white right"></div>
+          <div className="wall text-white top"></div>
+          <div className="wall text-white bottom"></div>
         </div>
       </div>
 
+
+
       <div className="thumbnailBox h-full bg-[#171717] "></div>
 
-      <div className="thumbnailBox h-full bg-[#171717]  p-2 sm:p-3 md:p-4 lg:p-6">
-        <div className=" relative ">
-          <div className="position top-0 left-0">
-            <img src={quoteicon} alt="img" />
+
+
+
+
+      <div className={`${rotate ? "rotate" : ""} thumbnailBox h-full bg-[#171717]  relative `}>
+        <div className="cube h-full relative bg-[#545454]" >
+          <div className="wall text-white front">  
           </div>
-          <div className="ps-0 md:ps-3 lg:ps-4 xl:ps-5">
-            <p className="font-GoshaSans text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl leading-none text-[#F5F5F5] mb-2">
-              Their AI and design <br /> solutions transformed our <br />{" "}
-              business. Highly <br /> recommended!
-            </p>
-            <h3 className="font-italianno  italic text-sm sm:text-sm md:text-base lg:text-lg xl:text-xl leading-none text-[#F5F5F5]">
-              Hestus
-            </h3>
+          <div className="wall text-white back"></div>
+          <div className="wall text-white left  bg-[#171717] p-2 sm:p-3 md:p-4 lg:p-6">
+              <div className=" relative ">
+              <div className="position top-0 left-0">
+                <img src={quoteicon} alt="img" />
+              </div>
+              <div className="ps-0 md:ps-3 lg:ps-4 xl:ps-5">
+                <p className="font-GoshaSans text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl leading-none text-[#F5F5F5] mb-2">
+                  Their AI and design <br /> solutions transformed our <br />{" "}
+                  business. Highly <br /> recommended!
+                </p>
+                <h3 className="font-italianno  italic text-sm sm:text-sm md:text-base lg:text-lg xl:text-xl leading-none text-[#F5F5F5]">
+                  Hestus
+                </h3>
+              </div>
+            </div>
           </div>
+
+          <div className="wall text-white right"></div>
+          <div className="wall text-white top"></div>
+          <div className="wall text-white bottom"></div>
         </div>
-      </div>
-
-      <div className="thumbnailBox h-full bg-[#171717] "></div>
-
-      <div className="thumbnailBox h-full bg-[#171717]  p-2 sm:p-3 md:p-4 lg:p-6">
-        <div className=" relative ">
-          <div className="position top-0 left-0">
-            <img src={quoteicon} alt="img" />
-          </div>
-          <div className="ps-0 md:ps-3 lg:ps-4 xl:ps-5">
-            <p className="font-GoshaSans text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl leading-none text-[#F5F5F5] mb-2">
-              Unmatched tech and design <br /> expertise. Our go-to firm!
-            </p>
-            <h3 className="font-italianno  italic text-sm sm:text-sm md:text-base lg:text-lg xl:text-xl leading-none text-[#F5F5F5]">
-              Petco
-            </h3>
-          </div>
         </div>
-      </div>
 
       <div className="thumbnailBox h-full bg-[#171717] "></div>
 
-      <div className="thumbnailBox h-full bg-[#171717]  p-2 sm:p-3 md:p-4 lg:p-6">
-        <div className=" relative ">
+
+
+
+      <div className={`${rotate ? "rotate" : ""} thumbnailBox h-full bg-[#171717]  relative `}>
+          <div className="cube h-full relative bg-[#545454]" >
+            <div className="wall text-white front">  
+            </div>
+            <div className="wall text-white back"></div>
+            <div className="wall text-white left  bg-[#171717]  p-2 sm:p-3 md:p-4 lg:p-6">
+            <div className=" relative ">
+                    <div className="position top-0 left-0">
+                      <img src={quoteicon} alt="img" />
+                    </div>
+                    <div className="ps-0 md:ps-3 lg:ps-4 xl:ps-5">
+                      <p className="font-GoshaSans text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl leading-none text-[#F5F5F5] mb-2">
+                        Unmatched tech and design <br /> expertise. Our go-to firm!
+                      </p>
+                      <h3 className="font-italianno  italic text-sm sm:text-sm md:text-base lg:text-lg xl:text-xl leading-none text-[#F5F5F5]">
+                        Petco
+                      </h3>
+                    </div>
+                  </div>
+            </div>
+
+            <div className="wall text-white right"></div>
+            <div className="wall text-white top"></div>
+            <div className="wall text-white bottom"></div>
+          </div>
+</div>
+
+
+
+
+      <div className="thumbnailBox h-full bg-[#171717] "></div>
+
+
+      <div className={`${rotate ? "rotate" : ""} thumbnailBox h-full bg-[#171717]  relative `}>
+        <div className="cube h-full relative bg-[#545454]" >
+          <div className="wall text-white front">  
+          </div>
+          <div className="wall text-white back"></div>
+          <div className="wall text-white left  bg-[#171717]  p-2 sm:p-3 md:p-4 lg:p-6">
+          <div className=" relative ">
           <div className="position top-0 left-0">
             <img src={quoteicon} alt="img" />
           </div>
@@ -93,26 +146,49 @@ export default function HomePage5() {
             </h3>
           </div>
         </div>
+          </div>
+
+          <div className="wall text-white right"></div>
+          <div className="wall text-white top"></div>
+          <div className="wall text-white bottom"></div>
+        </div>
       </div>
+
+
+
 
       <div className="thumbnailBox h-full bg-[#171717] "></div>
 
-      <div className="thumbnailBox h-full bg-[#171717]  p-2 sm:p-3 md:p-4 lg:p-6">
-        <div className=" relative ">
-          <div className="position top-0 left-0">
-            <img src={quoteicon} alt="img" />
+
+
+      <div className={`${rotate ? "rotate" : ""} thumbnailBox h-full bg-[#171717]  relative `}>
+        <div className="cube h-full relative bg-[#545454]" >
+          <div className="wall text-white front">  
           </div>
-          <div className="ps-0 md:ps-3 lg:ps-4 xl:ps-5">
-            <p className="font-GoshaSans text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl leading-none text-[#F5F5F5] mb-2">
-              Professional, responsive, <br /> and creative. Perfect blend{" "}
-              <br /> of tech and design!
-            </p>
-            <h3 className="font-italianno  italic text-sm sm:text-sm md:text-base lg:text-lg xl:text-xl leading-none text-[#F5F5F5]">
-              James K
-            </h3>
+          <div className="wall text-white back"></div>
+          <div className="wall text-white left  bg-[#171717] p-2 sm:p-3 md:p-4 lg:p-6">
+              <div className=" relative ">
+              <div className="position top-0 left-0">
+                <img src={quoteicon} alt="img" />
+              </div>
+              <div className="ps-0 md:ps-3 lg:ps-4 xl:ps-5">
+                <p className="font-GoshaSans text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl leading-none text-[#F5F5F5] mb-2">
+                  Professional, responsive, <br /> and creative. Perfect blend{" "}
+                  <br /> of tech and design!
+                </p>
+                <h3 className="font-italianno  italic text-sm sm:text-sm md:text-base lg:text-lg xl:text-xl leading-none text-[#F5F5F5]">
+                  James K
+                </h3>
+              </div>
+            </div>
           </div>
+
+          <div className="wall text-white right"></div>
+          <div className="wall text-white top"></div>
+          <div className="wall text-white bottom"></div>
         </div>
-      </div>
+        </div>
+
       <Link
         to="/home/4"
         className="relative thumbnailBox h-full bg-[#171717] p-2 sm:p-3 md:p-4 lg:p-6 "
