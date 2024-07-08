@@ -9,6 +9,7 @@ import HomePage4 from './home/HomePage4';
 import HomePage5 from './home/HomePage5';
 import HomePage6 from './home/HomePage6';
 import HomePage7 from './home/HomePage7';
+import Test from './Test';
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
      <Route path="/home/6" element={<HomePage6 />} />
      <Route path="/home/7" element={<HomePage7 />} />
      <Route path="/mobile-web-devlopment" element={<MobilePage1 />} />
+     <Route path="/test" element={<Test />} />
      </Routes>
   </Router>
   );
