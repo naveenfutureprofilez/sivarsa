@@ -131,7 +131,7 @@ export default function HomePage4() {
     <div className="wall text-white front">  
     </div>
     <div className="wall text-white back"></div>
-    <div className="wall text-white left  bg-[#171717] p-2 sm:p-3 md:p-4 lg:p-6">
+      <div className="wall text-white left  bg-[#171717] p-2 sm:p-3 md:p-4 lg:p-6">
         <div className="h-full flex items-center justify-center">
         <img src={congn} alt="img"/>
       </div>

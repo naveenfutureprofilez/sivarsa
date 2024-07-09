@@ -213,7 +213,7 @@ export default function Screen2() {
         <div className={`thumbnailBox relative menu-parent flip-1 box ${flipClass}`} >
           {count > 3 ? 
           <>
-        <div className="four text-white left  bg-[#171717] p-2 sm:p-3 md:p-4 lg:p-6">
+          <div className="four text-white left  bg-[#171717] p-2 sm:p-3 md:p-4 lg:p-6">
             <div className="h-full flex items-center justify-center">
             <img src={hestus} alt="img"/>
           </div>
@@ -231,11 +231,9 @@ export default function Screen2() {
             <div className="three blank text-white left h-full bg-[#171717] "></div>
           </>}
         </div>
-       
 
 
-
-        <div onClick={prevupdateFlip}  className="relative thumbnailBox h-full p-2 sm:p-3 md:p-4 lg:p-6 ">
+        <div onClick={prevupdateFlip}  className="cursor-pointer  relative thumbnailBox h-full p-2 sm:p-3 md:p-4 lg:p-6 ">
           <div className="absolute bottom-6 left-5 text-[#B5AAF3] font-neuebit text-xl md:text-3xl lg:text-4xl xl:text-5xl z-10">
             Prev
           </div>

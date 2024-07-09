@@ -5,7 +5,7 @@
 body{background: #272727;}
 .container{perspective:1000px;}
 .cube{position:relative;width:100%;height:100%;transform-style:preserve-3d;
-  transform:rotateX(0deg) rotateY(0deg) rotateZ(0deg);transition:0.5s;}
+  transform:rotateX(0deg) rotateY(0deg) rotateZ(0deg);transition:0.8s;}
 .wall{position:absolute;width:100%;height:100%;line-height:100%;}
 /* .wall {background: #272727;} */
 /* .front{transform: translateZ(-50%); } */

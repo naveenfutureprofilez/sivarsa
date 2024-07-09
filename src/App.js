@@ -13,13 +13,16 @@ import Test from './Test';
 import Screen1 from './home/Screen1';
 import Screen2 from './home/Screen2';
 import Demo from './Demo';
+import Aos1 from './aos/Aos1';
+import Aos2 from './aos/Aos2';
+import Aos3 from './aos/Aos3';
 
 
 function App() {
   return (
     <Router basename="/">
      <Routes>
-     <Route path="/" element={<Landing />} />
+     <Route path="/demo" element={<Demo />} />
      <Route path="/home/2" element={<HomePage2 />} />
      <Route path="/home/3" element={<HomePage3 />} />
      <Route path="/home/4" element={<HomePage4 />} />
@@ -30,7 +33,10 @@ function App() {
      <Route path="/test" element={<Test />} />
      <Route path="/test2" element={<Screen1 />} />
      <Route path="/test3" element={<Screen2 />} />
-     <Route path="/demo" element={<Demo />} />
+
+     <Route path="/aos1" element={<Aos1 />} />
+     <Route path="/aos2" element={<Aos2 />} />
+     <Route path="/aos3" element={<Aos3 />} />
      </Routes>
   </Router>
   );
