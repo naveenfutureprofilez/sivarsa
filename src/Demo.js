@@ -36,11 +36,11 @@ const App = () => {
   }, []);
 
   const handleNext = () => {
-    setRotation(rotation + 90);
+    setRotation(rotation - 90);
   };
 
   const handlePrev = () => {
-    setRotation(rotation - 90);
+    setRotation(rotation + 90);
   };
 
   const calculatePerspective = () => {
