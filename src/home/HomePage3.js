@@ -4,8 +4,8 @@ import messageus from "../images/messageus.png"
 import { Link } from "react-router-dom";
 
 export function OUR_JOURNRY(){
-  return <div className={` thumbnailBox h-full w-full bg-[#171717]  relative `}>
-    <div className="w-full" dangerouslySetInnerHTML={{ __html: ourJourney }}></div>
+  return <div className={` thumbnailBox h-full w-full bg-[#171717] max-h-[24vh]  relative overflow-hidden `}>
+    <div className="ourJourney-logo" dangerouslySetInnerHTML={{ __html: ourJourney }}></div>
     <div className="z-10  absolute bottom-1 left-6  font-neuebit text-base sm:text-1xl md:text-2xl lg:text-4xl xl:text-6xl leading-1 md:leading-1 lg:leading-9 xl:leading-10 text-[#F5F5F5] mb-5 sm:p-3 md:p-4 lg:p-6">
     Our Journey
     </div>

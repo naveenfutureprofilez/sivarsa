@@ -1,5 +1,6 @@
 import './App.css';
 // import './cube.css';
+import './flip.css';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 import MobilePage1 from './mobile/MobilePage1';
