@@ -114,10 +114,9 @@ const App = () => {
 
       {loading ? <Loader /> : ''}
 
-      <style>{`
-        .max-w { max-width:${windowHeight}px }
-      `}</style>
-
+        <style>{`
+        .max-w { max-width:${windowHeight}px; }
+        `}</style>
         <div className={`demo grid grid-cols-3 max-w w-full h-[100vh] md:h-[90vh] md:mb-4`}>
             <div className="box" style={{ height: `${cubeSize.height+5}px`  }}>
                 <div className={`scene `} style={{ '--cube-width': `${cubeSize.width}px`, '--cube-height': `${cubeSize.height}px` }}>

@@ -7,8 +7,8 @@ export default function Test() {
     const cube = document.querySelector('.cube');
     setTimeout(() => {
       cube.classList.add('rotate');
-    }, 1000); // Delay to ensure the cube is rendered before rotation starts
-  }, []);
+    }, 1000);
+  }, []); 
 
   return (
     <div className="scene">

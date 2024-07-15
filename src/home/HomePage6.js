@@ -21,100 +21,43 @@ import boyicon from "../images/boyicon.png";
 import menicon from "../images/menicon.png";
 import { Link } from "react-router-dom";
 
-export default function HomePage6() {
-  const [rotate, setrotate] = useState(false);
-  useEffect(() => {
-    setTimeout(() => {
-      setrotate(true);
-    }, 100);
-  }, []);
-  return (
-    <div className="grid w-full h-screen gap-1 grid-cols-3 grid-rows-custome bg-black">
-      <div className="thumbnailBox h-full bg-[#171717] "></div>
-
-
-
-
-      <div className={`${rotate ? "rotate" : ""} thumbnailBox h-full bg-[#171717]  relative `}>
-        <div className="cube h-full relative bg-[#545454]" >
-          <div className="wall text-white front">  
-          </div>
-          <div className="wall text-white back"></div>
-          <div className="wall text-white left  bg-[#f5f5f5]">
-              <h2 className="absolute font-neuebit  text-base sm:text-1xl md:text-2xl lg:text-4xl xl:text-6xl leading-none text-[#F5F5F5] mb-5">
-              Founders
-            </h2>
-            <div className="h-full founderbg">
-              <img src={founderbg} alt="img" />
-            </div>
-          </div>
-
-          <div className="wall text-white right"></div>
-          <div className="wall text-white top"></div>
-          <div className="wall text-white bottom"></div>
-        </div>
-        </div>
-
-
-
-      
-
-      <div className="thumbnailBox h-full bg-[#171717] "></div>
-
-
-      <div className={`${rotate ? "rotate" : ""} thumbnailBox h-full bg-[#171717]  relative `}>
-        <div className="cube h-full relative bg-[#545454]" >
-          <div className="wall text-white front">  
-          </div>
-          <div className="wall text-white back"></div>
-            <div className="wall text-white left  bg-[#2D68FF] p-2 sm:p-3 md:p-4 lg:p-6">
-            <div className=" relative ">
-            <div className="position top-0 left-0">
-              <img src={quoteicon} alt="img" />
-            </div>
-            <div className="ps-0 md:ps-3 lg:ps-4 xl:ps-5">
-              <p className="font-GoshaSans text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl leading-none text-[#F5F5F5] mb-2">
-                Transforming ideas into seamless <br /> software experiences
-              </p>
-              <h3 className="font-italianno  italic text-sm sm:text-sm md:text-base lg:text-lg xl:text-xl leading-none text-[#F5F5F5]">
-                Rishab
-              </h3>
-            </div>
-          </div>
-          <div className="absolute bottom-0 right-0">
-            <img src={boyicon} alt="img" />
-          </div>
-          </div>
-
-          <div className="wall text-white right"></div>
-          <div className="wall text-white top"></div>
-          <div className="wall text-white bottom"></div>
-        </div>
+export function FOUNDER() {
+  return <div className={` thumbnailBox h-full bg-[#f5f5f5] relative p-6`}>
+    <div className="text-white">
+        <h2 className="font-neuebit relative z-10 text-base sm:text-1xl md:text-2xl lg:text-4xl xl:text-6xl leading-none text-[#F5F5F5] mb-5">
+        Founders
+      </h2>
+      <div className="h-full absolute w-full top-0 left-0 founderbg">
+        <img src={founderbg} alt="img" />
       </div>
-
-
-
-
-    
-
-      <div className="thumbnailBox h-full bg-[#171717] "></div>
-
-      <div className="thumbnailBox h-full bg-[#171717] "></div>
-
-      <div className="thumbnailBox h-full bg-[#171717] "></div>
-
-      <div className="thumbnailBox h-full bg-[#171717] "></div>
-
-
-
-      <div className={`${rotate ? "rotate" : ""} thumbnailBox h-full bg-[#171717]  relative `}>
-
-<div className="cube h-full relative bg-[#545454]" >
-  <div className="wall text-white front">  
+    </div>
   </div>
-  <div className="wall text-white back"></div>
-  <div className="wall text-white left  bg-[#763DF8]  p-2 sm:p-3 md:p-4 lg:p-6">
-  <div className=" relative ">
+}
+export function TRANSFORMING() {
+  return <div className={`thumbnailBox h-full bg-[#2d68ff] `}>
+  <div className="cube h-full relative " >
+    <div className="wall text-white left p-2 sm:p-3 md:p-4 lg:p-6">
+        <div className="position top-0 left-0">
+          <img src={quoteicon} alt="img" />
+        </div>
+        <div className="ps-0 md:ps-3 lg:ps-4 xl:ps-5">
+          <p className="font-GoshaSans text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl leading-none text-[#F5F5F5] mb-2">
+            Transforming ideas into seamless <br /> software experiences
+          </p>
+          <h3 className="font-italianno  italic text-sm sm:text-sm md:text-base lg:text-lg xl:text-xl leading-none text-[#F5F5F5]">
+            Rishab
+          </h3>
+        </div>
+      <div className="absolute bottom-0 right-0">
+        <img src={boyicon} alt="img" />
+      </div>
+    </div>
+  </div>
+</div>
+}
+export function UNMATCHED() {
+  return  <div className={`thumbnailBox h-full bg-[#763df8] relative `}>
+      <div className="cube h-full relative p-6" >
           <div className="position top-0 left-0">
             <img src={quoteicon} alt="img" />
           </div>
@@ -126,17 +69,28 @@ export default function HomePage6() {
               Rishab
             </h3>
           </div>
-        </div>
-        <div className="absolute bottom-0 right-0">
-          <img src={menicon} alt="img" />
-        </div>
+          <div className="absolute bottom-0 right-0">
+            <img src={menicon} alt="img" />
+          </div>
+      </div>
   </div>
+}
 
-  <div className="wall text-white right"></div>
-  <div className="wall text-white top"></div>
-  <div className="wall text-white bottom"></div>
-</div>
-</div>
+
+
+export default function HomePage6() {
+  const [rotate, setrotate] = useState(false);
+  useEffect(() => {
+    setTimeout(() => {
+      setrotate(true);
+    }, 100);
+  }, []);
+
+  return (
+    <div className="grid w-full h-screen gap-1 grid-cols-3 grid-rows-custome bg-black">
+       
+
+      
 
 
 

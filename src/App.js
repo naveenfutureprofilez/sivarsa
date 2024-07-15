@@ -1,42 +1,44 @@
 import './App.css';
 // import './cube.css';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Landing from './home/Landing';
+
 import MobilePage1 from './mobile/MobilePage1';
-import HomePage2 from './home/HomePage2';
-import HomePage3 from './home/HomePage3';
-import HomePage4 from './home/HomePage4';
-import HomePage5 from './home/HomePage5';
-import HomePage6 from './home/HomePage6';
-import HomePage7 from './home/HomePage7';
 import Test from './Test';
-import Screen1 from './home/Screen1';
-import Screen2 from './home/Screen2';
 import Demo from './Demo';
+
 import Aos1 from './aos/Aos1';
 import Aos2 from './aos/Aos2';
 import Aos3 from './aos/Aos3';
 
+import Screen from './flip/Screen';
+import Screen2 from './flip/Screen2';
+import Screen3 from './flip/Screen3';
+import Screen4 from './flip/Screen4';
+import Screen5 from './flip/Screen5';
+import Screen6 from './flip/Screen6';
+import Screen7 from './flip/Screen7';
 
 function App() {
   return (
     <Router basename="/">
      <Routes>
-     <Route path="/demo" element={<Demo />} />
-     <Route path="/home/2" element={<HomePage2 />} />
-     <Route path="/home/3" element={<HomePage3 />} />
-     <Route path="/home/4" element={<HomePage4 />} />
-     <Route path="/home/5" element={<HomePage5 />} />
-     <Route path="/home/6" element={<HomePage6 />} />
-     <Route path="/home/7" element={<HomePage7 />} />
-     <Route path="/mobile-web-devlopment" element={<MobilePage1 />} />
-     <Route path="/test" element={<Test />} />
-     <Route path="/test2" element={<Screen1 />} />
-     <Route path="/test3" element={<Screen2 />} />
 
-     <Route path="/aos1" element={<Aos1 />} />
-     <Route path="/aos2" element={<Aos2 />} />
-     <Route path="/aos3" element={<Aos3 />} />
+        <Route path="/mobile-web-devlopment" element={<MobilePage1 />} />
+        <Route path="/demo" element={<Demo />} />
+        <Route path="/test" element={<Test />} />
+
+        <Route path="/aos1" element={<Aos1 />} />
+        <Route path="/aos2" element={<Aos2 />} />
+        <Route path="/aos3" element={<Aos3 />} /> 
+
+        <Route path="/" element={<Screen />} />
+        <Route path="/services/2" element={<Screen2 />} />
+        <Route path="/services/3" element={<Screen3 />} />
+        <Route path="/services/4" element={<Screen4 />} />
+        <Route path="/services/5" element={<Screen5 />} />
+        <Route path="/services/6" element={<Screen6 />} />
+        <Route path="/services/7" element={<Screen7 />} />
+        
      </Routes>
   </Router>
   );
