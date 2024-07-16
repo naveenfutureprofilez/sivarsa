@@ -18,6 +18,7 @@ import Screen4 from './flip/Screen4';
 import Screen5 from './flip/Screen5';
 import Screen6 from './flip/Screen6';
 import Screen7 from './flip/Screen7';
+import Editor from './Editor';
 
 function App() {
   return (
@@ -40,6 +41,10 @@ function App() {
         <Route path="/services/6" element={<Screen6 />} />
         <Route path="/services/7" element={<Screen7 />} />
         
+
+
+        {/* dummy */}
+        <Route path="/editor" element={<Editor />} />
      </Routes>
   </Router>
   );

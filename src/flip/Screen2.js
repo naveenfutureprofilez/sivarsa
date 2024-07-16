@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import {  PreBg,nextBg,sivarsaLogo,messageUs } from "../Icons";
 import Blank from "../contents/Blank";
 
-import ReactCardFlip from 'react-card-flip';
+import ReactCardFlip from '../Flip';
 import { Link } from 'react-router-dom';
 
 import { PAGE_ONE_BOX2, PAGE_ONE_BOX4  } from "../home/Landing";
@@ -20,7 +20,7 @@ export default function Screen2() {
 
         {/* ROW 1 */}
         <Blank />
-        <ReactCardFlip isFlipped={rotate} flipDirection="horizontal">
+        <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="0.9" flipSpeedFrontToBack="0.9" flipDirection={'verticle'}>
             <PAGE_ONE_BOX2 />
             <WEBDEV />
         </ReactCardFlip>
@@ -28,31 +28,31 @@ export default function Screen2() {
 
 
         {/* ROW 2 */}
-        <ReactCardFlip isFlipped={rotate} flipDirection="horizontal">
+        <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="0.9" flipSpeedFrontToBack="0.9" flipDirection={'verticle'}>
             <Blank />
             <AISERVICES />
         </ReactCardFlip>
          
         <PAGE_ONE_BOX4 />
 
-        <ReactCardFlip isFlipped={rotate} flipDirection="horizontal">
+        <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="0.9" flipSpeedFrontToBack="0.9" flipDirection={'verticle'}>
             <Blank />
             <BACKEND_SERVICES />
         </ReactCardFlip>
 
 
         {/* ROW 3 */}
-        <ReactCardFlip isFlipped={rotate} flipDirection="horizontal">
+        <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="0.9" flipSpeedFrontToBack="0.9" flipDirection={'verticle'}>
             <AISERVICES />
             <Blank />
         </ReactCardFlip>
          
-        <ReactCardFlip isFlipped={rotate} flipDirection="horizontal">
+        <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="0.9" flipSpeedFrontToBack="0.9" flipDirection={'verticle'}>
             <Blank />
             <UX_SERVICE />
         </ReactCardFlip>
 
-        <ReactCardFlip isFlipped={rotate} flipDirection="horizontal">
+        <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="0.9" flipSpeedFrontToBack="0.9" flipDirection={'verticle'}>
             <BACKEND_SERVICES />
             <Blank />
         </ReactCardFlip>

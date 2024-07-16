@@ -21,42 +21,42 @@ export default function Screen3() {
 
         {/* ROW 1 */}
         <Blank />
-        <ReactCardFlip isFlipped={rotate} flipDirection="horizontal">
+        <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="0.9" flipSpeedFrontToBack="0.9"   flipDirection="vertical">
             <WEBDEV />
             <Blank />
         </ReactCardFlip>
-        <ReactCardFlip isFlipped={rotate} flipDirection="horizontal">
+        <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="0.9" flipSpeedFrontToBack="0.9"   flipDirection="vertical">
             <Blank />
             <OUR_JOURNRY />
         </ReactCardFlip>
 
         {/* ROW 2 */}
-        <ReactCardFlip isFlipped={rotate} flipDirection="horizontal">
+        <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="0.9" flipSpeedFrontToBack="0.9"   flipDirection="vertical">
             <AISERVICES />
             <Blank />
         </ReactCardFlip>
-        <ReactCardFlip isFlipped={rotate} flipDirection="horizontal">
+        <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="0.9" flipSpeedFrontToBack="0.9"   flipDirection="vertical">
             <PAGE_ONE_BOX4 />
             <COFFEE />
         </ReactCardFlip>
-        <ReactCardFlip isFlipped={rotate} flipDirection="horizontal">
+        <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="0.9" flipSpeedFrontToBack="0.9"   flipDirection="vertical">
             <BACKEND_SERVICES />
             <Blank />
         </ReactCardFlip>
 
 
         {/* ROW 3 */}
-        <ReactCardFlip isFlipped={rotate} flipDirection="horizontal">
+        <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="0.9" flipSpeedFrontToBack="0.9"   flipDirection="vertical">
             <Blank />
             <PROJECTS_DELIVERED />
         </ReactCardFlip>
          
-        <ReactCardFlip isFlipped={rotate} flipDirection="horizontal">
+        <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="0.9" flipSpeedFrontToBack="0.9"   flipDirection="vertical">
             <UX_SERVICE />
             <COFEE2 />
         </ReactCardFlip>
 
-        <ReactCardFlip isFlipped={rotate} flipDirection="horizontal">
+        <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="0.9" flipSpeedFrontToBack="0.9"   flipDirection="vertical">
             <Blank />
             <TEAMS />
         </ReactCardFlip>
