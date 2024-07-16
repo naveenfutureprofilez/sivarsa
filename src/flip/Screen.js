@@ -15,7 +15,7 @@ export default function Screen() {
       <div className="grid w-full overflow-hidden h-screen gap-1 grid-cols-3 grid-rows-custome bg-black">
         {/* ROW 1 */}
         <Blank />
-        <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="0.9" flipSpeedFrontToBack="0.9"   flipDirection={'verticle'}>
+        <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="0.9" flipSpeedFrontToBack="0.9"   flipDirection={'vertical-reverse'}>
             <Blank />
             <PAGE_ONE_BOX2 />
         </ReactCardFlip>
@@ -23,19 +23,19 @@ export default function Screen() {
 
         {/* ROW 2 */}
         <Blank />
-        <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="0.9" flipSpeedFrontToBack="0.9"   flipDirection={'verticle'}>
+        <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="0.9" flipSpeedFrontToBack="0.9"   flipDirection={'vertical-reverse'}>
             <Blank />
             <PAGE_ONE_BOX4 />
         </ReactCardFlip>
         <Blank />
 
         {/* ROW 3 */}
-        <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="0.9" flipSpeedFrontToBack="0.9"   flipDirection={'verticle'}>
+        <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="0.9" flipSpeedFrontToBack="0.9"   flipDirection={'vertical-reverse'}>
             <Blank />
             <PAGE_ONE_BOX7/>
         </ReactCardFlip>
         <Blank />
-        <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="0.9" flipSpeedFrontToBack="0.9"   flipDirection={'verticle'}>
+        <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="0.9" flipSpeedFrontToBack="0.9"   flipDirection={'vertical-reverse'}>
             <Blank />
             <PAGE_ONE_BOX9 />
         </ReactCardFlip>
