@@ -40,7 +40,7 @@ export function PAGE_ONE_BOX7 () {
 }
 
 export function PAGE_ONE_BOX9 () {
-  return <div className={` thumbnailBox h-full relative bg-[#2D68FF]`}>
+  return <Link to='/services/staffing' className={`block thumbnailBox h-full relative bg-[#2D68FF]`}>
           <div className=" text-white front"></div>
           <div className=" text-white back"></div>
           <div className=" text-white left p-2 sm:p-3 md:p-4 lg:p-6 ">       
@@ -54,7 +54,7 @@ export function PAGE_ONE_BOX9 () {
           <div className=" text-white right"></div>
           <div className=" text-white top"></div>
           <div className=" text-white bottom"></div>
-  </div>
+  </Link>
 }
 
  
