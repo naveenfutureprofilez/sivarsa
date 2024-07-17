@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useState } from "react";
 import { arrowblackRT, arrowblackDW,arrowblackUP,weavingSoft,PreBg,nextBg,sivarsaLogo,messageUs } from "../Icons";
 import Blank from "../contents/Blank";
 
-import ReactCardFlip from 'react-card-flip';
+import ReactCardFlip from '../Flip';
 import { Link, useNavigate } from 'react-router-dom';
 
 import { PAGE_ONE_BOX2, PAGE_ONE_BOX4, PAGE_ONE_BOX7, PAGE_ONE_BOX9 } from "../home/Landing";
@@ -25,9 +25,9 @@ export default function Screen6() {
 
    const navigate = useNavigate();
    const handleNext = () => {
-      setDirection({flipDirection});
+      setDirection('vertical');
       setRotate(prevRotate => !prevRotate);
-      navigate("/");
+      // navigate("/");
     };
 
     const handlePrev = () => {

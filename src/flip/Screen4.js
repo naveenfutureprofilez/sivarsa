@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useState } from "react";
 import { arrowblackRT, arrowblackDW,arrowblackUP,weavingSoft,PreBg,nextBg,sivarsaLogo,messageUs } from "../Icons";
 import Blank from "../contents/Blank";
 
-import ReactCardFlip from 'react-card-flip';
+import ReactCardFlip from '../Flip';
 import { Link, useNavigate } from 'react-router-dom';
 
 import { WEBDEV, AISERVICES, BACKEND_SERVICES, UX_SERVICE } from "../home/HomePage2";
