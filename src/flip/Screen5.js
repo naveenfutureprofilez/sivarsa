@@ -39,44 +39,44 @@ export default function Screen5() {
       <div className="grid w-full overflow-hidden h-screen gap-1 grid-cols-3 grid-rows-custome bg-black">
 
         {/* ROW 1 */}
-        <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="0.5" flipSpeedFrontToBack="0.5"   flipDirection={flipDirection}>
+        <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="0.4" flipSpeedFrontToBack="0.4"   flipDirection={flipDirection}>
             <PAST_WORK />
             <CLIENT_WORDS />
         </ReactCardFlip>
          <Blank />
-        <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="0.5" flipSpeedFrontToBack="0.5"   flipDirection={flipDirection}>
+        <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="0.4" flipSpeedFrontToBack="0.4"   flipDirection={flipDirection}>
             <OED />
             <REVIEW1 />
         </ReactCardFlip>
 
 
         {/* ROW 2 */}
-        <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="0.5" flipSpeedFrontToBack="0.5"   flipDirection={flipDirection}>
+        <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="0.4" flipSpeedFrontToBack="0.4"   flipDirection={flipDirection}>
             <GAVS />
             <Blank />
         </ReactCardFlip>
-        <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="0.5" flipSpeedFrontToBack="0.5"   flipDirection={flipDirection}>
+        <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="0.4" flipSpeedFrontToBack="0.4"   flipDirection={flipDirection}>
             <Blank />
             <REVIEW2 />
         </ReactCardFlip>
-        <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="0.5" flipSpeedFrontToBack="0.5"   flipDirection={flipDirection}>
+        <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="0.4" flipSpeedFrontToBack="0.4"   flipDirection={flipDirection}>
             <HESTUS />
             <Blank />
         </ReactCardFlip>
 
 
         {/* ROW 3 */}
-        <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="0.5" flipSpeedFrontToBack="0.5"   flipDirection={flipDirection}>
+        <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="0.4" flipSpeedFrontToBack="0.4"   flipDirection={flipDirection}>
             <Blank />
             <REVIEW3 />
         </ReactCardFlip>
 
-        <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="0.5" flipSpeedFrontToBack="0.5"   flipDirection={flipDirection}>
+        <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="0.4" flipSpeedFrontToBack="0.4"   flipDirection={flipDirection}>
             <CONGO />
             <Blank />
         </ReactCardFlip>
 
-        <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="0.5" flipSpeedFrontToBack="0.5"   flipDirection={flipDirection}>
+        <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="0.4" flipSpeedFrontToBack="0.4"   flipDirection={flipDirection}>
             <Blank />
             <REVIEW4 />
         </ReactCardFlip>
