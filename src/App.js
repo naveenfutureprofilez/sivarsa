@@ -19,34 +19,34 @@ import Screen5 from './flip/Screen5';
 import Screen6 from './flip/Screen6';
 import Screen7 from './flip/Screen7';
 import Editor from './Editor';
+import { MyProvider } from './context/Mycontext';
 
 function App() {
   return (
     <Router basename="/">
-     <Routes>
+          <MyProvider>
+              <Routes>
+                  <Route path="/mobile-web-devlopment" element={<MobilePage1 />} />
+                  <Route path="/demo" element={<Demo />} />
+                  <Route path="/test" element={<Test />} />
 
-        <Route path="/mobile-web-devlopment" element={<MobilePage1 />} />
-        <Route path="/demo" element={<Demo />} />
-        <Route path="/test" element={<Test />} />
+                  <Route path="/aos1" element={<Aos1 />} />
+                  <Route path="/aos2" element={<Aos2 />} />
+                  <Route path="/aos3" element={<Aos3 />} /> 
 
-        <Route path="/aos1" element={<Aos1 />} />
-        <Route path="/aos2" element={<Aos2 />} />
-        <Route path="/aos3" element={<Aos3 />} /> 
-
-        <Route path="/" element={<Screen />} />
-        <Route path="/services/2" element={<Screen2 />} />
-        <Route path="/services/3" element={<Screen3 />} />
-        <Route path="/services/4" element={<Screen4 />} />
-        <Route path="/services/5" element={<Screen5 />} />
-        <Route path="/services/6" element={<Screen6 />} />
-        <Route path="/services/7" element={<Screen7 />} />
-        
-
-
-        {/* dummy */}
-        <Route path="/editor" element={<Editor />} />
-     </Routes>
-  </Router>
+                  <Route path="/" element={<Screen />} />
+                  <Route path="/services/2" element={<Screen2 />} />
+                  <Route path="/services/3" element={<Screen3 />} />
+                  <Route path="/services/4" element={<Screen4 />} />
+                  <Route path="/services/5" element={<Screen5 />} />
+                  <Route path="/services/6" element={<Screen6 />} />
+                  <Route path="/services/7" element={<Screen7 />} />
+                  
+                  {/* dummy */}
+                  <Route path="/editor" element={<Editor />} />
+              </Routes>
+          </MyProvider>
+        </Router>
   );
 }
 

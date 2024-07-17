@@ -66,12 +66,10 @@ var ReactCardFlip = function (props) {
     var backRotateY = "rotateY(".concat(infinite ? rotation + 180 : isFlipped ? 0 : -180, "deg)");
     var frontRotateX = "rotateX(".concat(infinite ? rotation : isFlipped ? 180 : 0, "deg)");
     var backRotateX = "rotateX(".concat(infinite ? rotation + 180 : isFlipped ? 0 : -180, "deg)");
-    var frontRotateYReverse = "rotateY(".concat(infinite ? rotation : isFlipped ? -180 : 0, "deg)");
-    var backRotateYReverse = "rotateY(".concat(infinite ? rotation - 180 : isFlipped ? 0 : 180, "deg)");
     var frontRotateXReverse = "rotateX(".concat(infinite ? rotation : isFlipped ? -180 : 0, "deg)");
     var backRotateXReverse = "rotateX(".concat(infinite ? rotation - 180 : isFlipped ? 0 : 180, "deg)");
     var styles = {
-        back: __assign({ WebkitBackfaceVisibility: 'hidden', backfaceVisibility: 'hidden', height: '100%', left: '0', position: isFlipped ? 'relative' : 'absolute', top: '0', transform: flipDirection === 'horizontal' ? backRotateY : flipDirection === 'horizontal-reverse' ? backRotateYReverse : flipDirection === 'vertical' ? backRotateX : flipDirection === 'vertical-reverse' ? backRotateXReverse : "", transformStyle: 'preserve-3d', transition: "".concat(flipSpeedFrontToBack, "s"), width: '100%', zIndex: isFlipped ? '2' : '1' }, back),
+        back: __assign({ WebkitBackfaceVisibility: 'hidden', backfaceVisibility: 'hidden', height: '100%', left: '0', position: isFlipped ? 'relative' : 'absolute', top: '0', transform: flipDirection === 'horizontal' ? backRotateY : flipDirection === 'vertical-reverse' ? backRotateXReverse : backRotateX, transformStyle: 'preserve-3d', transition: "".concat(flipSpeedFrontToBack, "s"), width: '100%', zIndex: isFlipped ? '2' : '1' }, back),
         container: {
             zIndex: "".concat(cardZIndex),
         },
@@ -81,7 +79,7 @@ var ReactCardFlip = function (props) {
             position: 'relative',
             width: '100%',
         },
-        front: __assign({ WebkitBackfaceVisibility: 'hidden', backfaceVisibility: 'hidden', height: '100%', left: '0', position: isFlipped ? 'absolute' : 'relative', top: '0', transform: flipDirection === 'horizontal' ? frontRotateY : flipDirection === 'horizontal-reverse' ? frontRotateYReverse : flipDirection === 'vertical' ? frontRotateX : flipDirection === 'vertical-reverse' ? frontRotateXReverse : "", transformStyle: 'preserve-3d', transition: "".concat(flipSpeedBackToFront, "s"), width: '100%', zIndex: '2' }, front),
+        front: __assign({ WebkitBackfaceVisibility: 'hidden', backfaceVisibility: 'hidden', height: '100%', left: '0', position: isFlipped ? 'absolute' : 'relative', top: '0', transform: flipDirection === 'horizontal' ? frontRotateY : flipDirection === 'vertical-reverse' ? frontRotateXReverse : frontRotateX, transformStyle: 'preserve-3d', transition: "".concat(flipSpeedBackToFront, "s"), width: '100%', zIndex: '2' }, front),
     };
     return (React.createElement("div", { className: getContainerClassName, style: __assign(__assign({}, styles.container), containerStyle) },
         React.createElement("div", { className: "react-card-flipper", style: styles.flipper },
