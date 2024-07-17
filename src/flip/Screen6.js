@@ -42,7 +42,7 @@ export default function Screen6() {
 
         {/* ROW 1 */}
         <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="0.9" flipSpeedFrontToBack="0.9"   flipDirection="vertical">
-            <CLIENT_WORDS />
+        {direction === 'vertical' ? <CLIENT_WORDS /> : <Blank />}
             <Blank />
         </ReactCardFlip>
              
@@ -52,7 +52,7 @@ export default function Screen6() {
         </ReactCardFlip>
 
         <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="0.9" flipSpeedFrontToBack="0.9"   flipDirection="vertical">
-            <REVIEW1 />
+        {direction === 'vertical' ? <REVIEW1 /> : <Blank />}
             <Blank />
         </ReactCardFlip>
 
@@ -64,7 +64,7 @@ export default function Screen6() {
             <TRANSFORMING />
         </ReactCardFlip>
         <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="0.9" flipSpeedFrontToBack="0.9"   flipDirection="vertical">
-            <REVIEW2 />
+        {direction === 'vertical' ? <REVIEW2 /> : <Blank />}
             <Blank />
         </ReactCardFlip>
             <Blank />
@@ -79,7 +79,7 @@ export default function Screen6() {
          <Blank />
 
         <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="0.9" flipSpeedFrontToBack="0.9"   flipDirection="vertical">
-            <REVIEW4 />
+        {direction === 'vertical' ? <REVIEW4 /> : <Blank />}
             <UNMATCHED />
         </ReactCardFlip>
 

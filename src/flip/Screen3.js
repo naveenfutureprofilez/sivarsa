@@ -41,7 +41,7 @@ export default function Screen3() {
         {/* ROW 1 */}
         <Blank />
         <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="0.9" flipSpeedFrontToBack="0.9"   flipDirection={flipDirection}>
-            <WEBDEV />
+            {direction === 'vertical' ?  <WEBDEV /> :  <Blank /> }
             <Blank />
         </ReactCardFlip>
         <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="0.9" flipSpeedFrontToBack="0.9"   flipDirection={flipDirection}>
@@ -51,15 +51,15 @@ export default function Screen3() {
 
         {/* ROW 2 */}
         <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="0.9" flipSpeedFrontToBack="0.9"   flipDirection={flipDirection}>
-            <AISERVICES />
+        {direction === 'vertical' ?  <AISERVICES /> :  <Blank /> }
             <Blank />
         </ReactCardFlip>
         <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="0.9" flipSpeedFrontToBack="0.9"   flipDirection={flipDirection}>
-            <PAGE_ONE_BOX4 />
+        {direction === 'vertical' ?  <PAGE_ONE_BOX4 /> :  <Blank /> }
             <COFFEE />
         </ReactCardFlip>
         <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="0.9" flipSpeedFrontToBack="0.9"   flipDirection={flipDirection}>
-            <BACKEND_SERVICES />
+        {direction === 'vertical' ?  <BACKEND_SERVICES /> :  <Blank /> }
             <Blank />
         </ReactCardFlip>
 
@@ -71,7 +71,7 @@ export default function Screen3() {
         </ReactCardFlip>
          
         <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="0.9" flipSpeedFrontToBack="0.9"   flipDirection={flipDirection}>
-            <UX_SERVICE />
+        {direction === 'vertical' ?  <UX_SERVICE /> :  <Blank /> }
             <COFEE2 />
         </ReactCardFlip>
 

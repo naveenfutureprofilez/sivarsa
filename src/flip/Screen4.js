@@ -53,7 +53,7 @@ export default function Screen4() {
             <GAVS />
         </ReactCardFlip>
         <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="0.9" flipSpeedFrontToBack="0.9" flipDirection={flipDirection}>
-            {direction === 'vertical' ?  <COFFEE />  :  <Blank /> }
+            {direction === 'vertical' ?  <COFFEE /> :  <Blank /> }
             <Blank />
         </ReactCardFlip>
         <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="0.9" flipSpeedFrontToBack="0.9" flipDirection={flipDirection}>

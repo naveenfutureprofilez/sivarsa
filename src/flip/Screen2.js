@@ -38,7 +38,7 @@ export default function Screen2() {
         {/* ROW 1 */}
         <Blank />
         <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="0.9" flipSpeedFrontToBack="0.9" flipDirection={flipDirection}>
-            <PAGE_ONE_BOX2 />
+            {direction === 'vertical' ?   <PAGE_ONE_BOX2 /> : <Blank />}
             <WEBDEV />
         </ReactCardFlip>
         <Blank />
@@ -60,7 +60,7 @@ export default function Screen2() {
 
         {/* ROW 3 */}
         <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="0.9" flipSpeedFrontToBack="0.9" flipDirection={flipDirection}>
-            <AISERVICES />
+            {direction === 'vertical' ?  <AISERVICES /> : <Blank />}
             <Blank />
         </ReactCardFlip>
          
@@ -70,7 +70,7 @@ export default function Screen2() {
         </ReactCardFlip>
 
         <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="0.9" flipSpeedFrontToBack="0.9" flipDirection={flipDirection}>
-            <BACKEND_SERVICES />
+        {direction === 'vertical' ?   <BACKEND_SERVICES /> : <Blank />}
             <Blank />
         </ReactCardFlip>
          

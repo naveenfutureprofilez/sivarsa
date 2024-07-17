@@ -40,19 +40,19 @@ export default function Screen5() {
 
         {/* ROW 1 */}
         <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="0.9" flipSpeedFrontToBack="0.9"   flipDirection={flipDirection}>
-            <PAST_WORK />
+        {direction === 'vertical' ? <PAST_WORK /> : <Blank />}
             <CLIENT_WORDS />
         </ReactCardFlip>
          <Blank />
         <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="0.9" flipSpeedFrontToBack="0.9"   flipDirection={flipDirection}>
-            <OED />
+        {direction === 'vertical' ? <OED /> : <Blank />}
             <REVIEW1 />
         </ReactCardFlip>
 
 
         {/* ROW 2 */}
         <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="0.9" flipSpeedFrontToBack="0.9"   flipDirection={flipDirection}>
-            <GAVS />
+        {direction === 'vertical' ? <GAVS /> : <Blank />}
             <Blank />
         </ReactCardFlip>
         <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="0.9" flipSpeedFrontToBack="0.9"   flipDirection={flipDirection}>
@@ -60,7 +60,7 @@ export default function Screen5() {
             <REVIEW2 />
         </ReactCardFlip>
         <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="0.9" flipSpeedFrontToBack="0.9"   flipDirection={flipDirection}>
-            <HESTUS />
+        {direction === 'vertical' ? <HESTUS /> : <Blank />}
             <Blank />
         </ReactCardFlip>
 
@@ -72,7 +72,7 @@ export default function Screen5() {
         </ReactCardFlip>
 
         <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="0.9" flipSpeedFrontToBack="0.9"   flipDirection={flipDirection}>
-            <CONGO />
+        {direction === 'vertical' ? <CONGO /> : <Blank />}
             <Blank />
         </ReactCardFlip>
 
