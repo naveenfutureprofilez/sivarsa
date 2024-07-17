@@ -18,9 +18,9 @@ export default function Staffing1(){
 
      const navigate = useNavigate();
      const handleNext = () => {
-        setDirection("vertical");
-        setRotate(prevRotate => !prevRotate);
-        navigate("/services/staffing");
+        setDirection("vertical-reverse");
+        // setRotate(prevRotate => !prevRotate);
+        // navigate("/services/staffing");
       };
 
       const handlePrev = () => {
@@ -32,12 +32,12 @@ export default function Staffing1(){
     return <>
       <div className="grid w-full overflow-hidden h-screen gap-1 grid-cols-3 grid-rows-custome bg-black">
         {/* ROW 1 */}
-        <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="0.4" flipSpeedFrontToBack="0.4" flipDirection={flipDirection}>
+        <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="0.9" flipSpeedFrontToBack="0.9" flipDirection={flipDirection}>
             <Blank />
             <TURNING />
         </ReactCardFlip>
 
-        <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="0.4" flipSpeedFrontToBack="0.4" flipDirection={flipDirection}>
+        <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="0.9" flipSpeedFrontToBack="0.9" flipDirection={flipDirection}>
             <PAGE_ONE_BOX2 />
             <Blank />
         </ReactCardFlip>
@@ -46,19 +46,19 @@ export default function Staffing1(){
 
         {/* ROW 2 */}
         <Blank />
-        <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="0.4" flipSpeedFrontToBack="0.4" flipDirection={flipDirection}>
+        <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="0.9" flipSpeedFrontToBack="0.9" flipDirection={flipDirection}>
             <PAGE_ONE_BOX4 />
             <STAFFINGVIDEO_ONE />
         </ReactCardFlip>
         <Blank />
 
         {/* ROW 3 */}
-        <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="0.4" flipSpeedFrontToBack="0.4" flipDirection={flipDirection}>
+        <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="0.9" flipSpeedFrontToBack="0.9" flipDirection={flipDirection}>
             <PAGE_ONE_BOX7/>
             <Blank />
         </ReactCardFlip>
         <Blank />
-        <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="0.4" flipSpeedFrontToBack="0.4" flipDirection={flipDirection}>
+        <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="0.9" flipSpeedFrontToBack="0.9" flipDirection={flipDirection}>
             <PAGE_ONE_BOX9 />
             <TALENT_TAP />
         </ReactCardFlip>
@@ -79,7 +79,7 @@ export default function Staffing1(){
           </div>
           <div className="flex absolute bottom-0 left-0 right-0 m-auto justify-center sivrsalogo"  dangerouslySetInnerHTML={{ __html: sivarsaLogo }}></div>
         </div>
-        <div  className="relative thumbnailBox h-full bg-[#171717] p-2 sm:p-3 md:p-4 lg:p-6 ">
+        <div onClick={handleNext} className="relative thumbnailBox h-full bg-[#171717] p-2 sm:p-3 md:p-4 lg:p-6 ">
           <div className="absolute bottom-6 right-5 text-[#B5AAF3] font-neuebit font-neuebit text-xl md:text-3xl lg:text-4xl xl:text-5xl z-10">
             Next
           </div>
