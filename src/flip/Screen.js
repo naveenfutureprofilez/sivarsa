@@ -32,7 +32,7 @@ export default function Screen() {
       <div className="grid w-full overflow-hidden h-screen gap-1 grid-cols-3 grid-rows-custome bg-black">
         {/* ROW 1 */}
         <Blank />
-        <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="0.9" flipSpeedFrontToBack="0.9"   flipDirection={flipDirection}>
+        <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="0.5" flipSpeedFrontToBack="0.5"   flipDirection={flipDirection}>
             <Blank />
             <PAGE_ONE_BOX2 />
         </ReactCardFlip>
@@ -40,27 +40,28 @@ export default function Screen() {
 
         {/* ROW 2 */}
         <Blank />
-        <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="0.9" flipSpeedFrontToBack="0.9"   flipDirection={flipDirection}>
+        <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="0.5" flipSpeedFrontToBack="0.5"   flipDirection={flipDirection}>
             <Blank />
             <PAGE_ONE_BOX4 />
         </ReactCardFlip>
         <Blank />
 
         {/* ROW 3 */}
-        <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="0.9" flipSpeedFrontToBack="0.9"   flipDirection={flipDirection}>
+        <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="0.5" flipSpeedFrontToBack="0.5"   flipDirection={flipDirection}>
             <Blank />
             <PAGE_ONE_BOX7/>
         </ReactCardFlip>
         <Blank />
-        <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="0.9" flipSpeedFrontToBack="0.9"   flipDirection={flipDirection}>
+        <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="0.5" flipSpeedFrontToBack="0.5"   flipDirection={flipDirection}>
             <Blank />
             <PAGE_ONE_BOX9 />
         </ReactCardFlip>
 
+
         {/* BOTTOM */}
-        <div onClick={handlePrev} className="relative thumbnailBox h-full bg-[#171717] p-2 sm:p-3 md:p-4 lg:p-6 ">
+        <div className="relative thumbnailBox h-full bg-[#171717] p-2 sm:p-3 md:p-4 lg:p-6 ">
           <div className="absolute bottom-6 left-5 text-[#B5AAF3] font-neuebit text-xl md:text-3xl lg:text-4xl xl:text-5xl z-10">
-            Prev
+            Prev 
           </div>
           <div className="absolute top-0 bottom-0 right-0">
             <div className="absolute top-0 bottom-0 right-0 h-full nextpreimg" dangerouslySetInnerHTML={{ __html: PreBg }}></div>

@@ -37,7 +37,7 @@ export default function Screen2() {
 
         {/* ROW 1 */}
         <Blank />
-        <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="0.9" flipSpeedFrontToBack="0.9" flipDirection={flipDirection}>
+        <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="0.5" flipSpeedFrontToBack="0.5" flipDirection={flipDirection}>
             <PAGE_ONE_BOX2 />
             <WEBDEV />
         </ReactCardFlip>
@@ -45,31 +45,31 @@ export default function Screen2() {
 
 
         {/* ROW 2 */}
-        <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="0.9" flipSpeedFrontToBack="0.9" flipDirection={flipDirection}>
+        <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="0.5" flipSpeedFrontToBack="0.5" flipDirection={flipDirection}>
             <Blank />
             <AISERVICES />
         </ReactCardFlip>
          
         <PAGE_ONE_BOX4 />
 
-        <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="0.9" flipSpeedFrontToBack="0.9" flipDirection={flipDirection}>
+        <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="0.5" flipSpeedFrontToBack="0.5" flipDirection={flipDirection}>
             <Blank />
             <BACKEND_SERVICES />
         </ReactCardFlip>
 
 
         {/* ROW 3 */}
-        <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="0.9" flipSpeedFrontToBack="0.9" flipDirection={flipDirection}>
+        <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="0.5" flipSpeedFrontToBack="0.5" flipDirection={flipDirection}>
             <AISERVICES />
             <Blank />
         </ReactCardFlip>
          
-        <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="0.9" flipSpeedFrontToBack="0.9" flipDirection={flipDirection}>
+        <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="0.5" flipSpeedFrontToBack="0.5" flipDirection={flipDirection}>
             <Blank />
             <UX_SERVICE />
         </ReactCardFlip>
 
-        <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="0.9" flipSpeedFrontToBack="0.9" flipDirection={flipDirection}>
+        <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="0.5" flipSpeedFrontToBack="0.5" flipDirection={flipDirection}>
             <BACKEND_SERVICES />
             <Blank />
         </ReactCardFlip>

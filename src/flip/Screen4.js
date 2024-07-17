@@ -37,47 +37,47 @@ export default function Screen4() {
       <div className="grid w-full overflow-hidden h-screen gap-1 grid-cols-3 grid-rows-custome bg-black">
 
         {/* ROW 1 */}
-        <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="0.9" flipSpeedFrontToBack="0.9"   flipDirection={flipDirection}>
+        <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="0.5" flipSpeedFrontToBack="0.5"   flipDirection={flipDirection}>
             <Blank />
             <PAST_WORK />
         </ReactCardFlip>
 
-        <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="0.9" flipSpeedFrontToBack="0.9"   flipDirection={flipDirection}>
+        <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="0.5" flipSpeedFrontToBack="0.5"   flipDirection={flipDirection}>
             <WEBDEV />
             <Blank />
         </ReactCardFlip>
-        <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="0.9" flipSpeedFrontToBack="0.9"   flipDirection={flipDirection}>
+        <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="0.5" flipSpeedFrontToBack="0.5"   flipDirection={flipDirection}>
             <Blank />
             <OED />
         </ReactCardFlip>
 
         {/* ROW 2 */}
-        <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="0.9" flipSpeedFrontToBack="0.9"   flipDirection={flipDirection}>
+        <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="0.5" flipSpeedFrontToBack="0.5"   flipDirection={flipDirection}>
             <Blank />
             <GAVS />
         </ReactCardFlip>
-        <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="0.9" flipSpeedFrontToBack="0.9"   flipDirection={flipDirection}>
+        <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="0.5" flipSpeedFrontToBack="0.5"   flipDirection={flipDirection}>
             <COFFEE />
             <Blank />
         </ReactCardFlip>
-        <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="0.9" flipSpeedFrontToBack="0.9"   flipDirection={flipDirection}>
+        <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="0.5" flipSpeedFrontToBack="0.5"   flipDirection={flipDirection}>
             <Blank />
             <HESTUS />
         </ReactCardFlip>
 
 
         {/* ROW 3 */}
-        <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="0.9" flipSpeedFrontToBack="0.9"   flipDirection={flipDirection}>
+        <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="0.5" flipSpeedFrontToBack="0.5"   flipDirection={flipDirection}>
             <PROJECTS_DELIVERED />
             <Blank />
         </ReactCardFlip>
          
-        <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="0.9" flipSpeedFrontToBack="0.9"   flipDirection={flipDirection}>
+        <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="0.5" flipSpeedFrontToBack="0.5"   flipDirection={flipDirection}>
             <COFEE2 />
             <CONGO />
         </ReactCardFlip>
 
-        <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="0.9" flipSpeedFrontToBack="0.9"   flipDirection={flipDirection}>
+        <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="0.5" flipSpeedFrontToBack="0.5"   flipDirection={flipDirection}>
             <TEAMS />
             <Blank />
         </ReactCardFlip>
