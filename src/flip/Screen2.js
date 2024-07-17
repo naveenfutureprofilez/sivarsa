@@ -50,7 +50,10 @@ export default function Screen2() {
             <AISERVICES />
         </ReactCardFlip>
          
-        <PAGE_ONE_BOX4 />
+        <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="0.9" flipSpeedFrontToBack="0.9" flipDirection={flipDirection}>
+          <PAGE_ONE_BOX4 />
+          <PAGE_ONE_BOX4 />
+        </ReactCardFlip>
 
         <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="0.9" flipSpeedFrontToBack="0.9" flipDirection={flipDirection}>
             <Blank />
