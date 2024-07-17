@@ -79,6 +79,7 @@ export default function Screen() {
           </div>
           <div className="absolute top-0 bottom-0 left-0 h-full nextpreimg" dangerouslySetInnerHTML={{ __html: nextBg }}></div>
         </div>
+        
       </div>
       </>
 }
