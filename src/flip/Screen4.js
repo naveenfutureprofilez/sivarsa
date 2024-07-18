@@ -9,6 +9,7 @@ import { WEBDEV, AISERVICES, BACKEND_SERVICES, UX_SERVICE } from "../home/HomePa
 import { OUR_JOURNRY, COFFEE, PROJECTS_DELIVERED, COFEE2, TEAMS} from "../home/HomePage3";
 import { PAST_WORK,OED, GAVS, HESTUS,CONGO } from "../home/HomePage4";
 import { MyContext } from "../context/Mycontext";
+import { CLIENT_WORDS, REVIEW1, REVIEW2, REVIEW3, REVIEW4} from "../home/HomePage5";
 
 export default function Screen4() {
 
@@ -37,46 +38,87 @@ export default function Screen4() {
       <div className="grid w-full overflow-hidden h-screen gap-1 grid-cols-3 grid-rows-custome bg-black">
 
         {/* ROW 1 */}
-        <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="0.9" flipSpeedFrontToBack="0.9"  flipDirection={flipDirection}>
+        {direction === 'vertical-reverse' ?  
+          <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2"   flipDirection={flipDirection}>
+            <CLIENT_WORDS />
+            <PAST_WORK />
+          </ReactCardFlip>
+          :  
+          <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2"   flipDirection={flipDirection}>
             <Blank />
             <PAST_WORK />
-        </ReactCardFlip>
+          </ReactCardFlip> 
+        }
+
         <Blank /> 
-        <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="0.9" flipSpeedFrontToBack="0.9" flipDirection={flipDirection}>
-            <Blank />
+
+        {direction === 'vertical-reverse' ?
+          <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2"  flipDirection={flipDirection}>
+            <REVIEW1 />
             <OED />
-        </ReactCardFlip>
+          </ReactCardFlip>
+          :
+          <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2"  flipDirection={flipDirection}>
+            <OUR_JOURNRY />
+            <OED />
+          </ReactCardFlip> 
+        }
+
+
 
         {/* ROW 2 */}
-        <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="0.9" flipSpeedFrontToBack="0.9" flipDirection={flipDirection}>
+        <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
             <Blank />
             <GAVS />
         </ReactCardFlip>
-        <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="0.9" flipSpeedFrontToBack="0.9" flipDirection={flipDirection}>
-            {direction === 'vertical' ?  <COFFEE /> :  <Blank /> }
-            <Blank />
-        </ReactCardFlip>
-        <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="0.9" flipSpeedFrontToBack="0.9" flipDirection={flipDirection}>
+
+      { direction === 'vertical-reverse' ? 
+          <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
+              <REVIEW2 /> 
+              <Blank />
+          </ReactCardFlip> 
+          : 
+          <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
+              <COFFEE /> 
+              <Blank />
+          </ReactCardFlip>
+        }
+
+        <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2"  flipDirection={flipDirection}>
             <Blank />
             <HESTUS />
         </ReactCardFlip>
 
 
         {/* ROW 3 */}
-        <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="0.9" flipSpeedFrontToBack="0.9"   flipDirection={flipDirection}>
-            {direction === 'vertical' ? <PROJECTS_DELIVERED /> :  <Blank /> }
+        { direction === 'vertical-reverse' ? 
+          <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2"    flipDirection={flipDirection}>
+            <REVIEW3 />  
             <Blank />
-        </ReactCardFlip>
+          </ReactCardFlip>
+         : 
+          <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2"    flipDirection={flipDirection}>
+           <PROJECTS_DELIVERED />  
+            <Blank />
+          </ReactCardFlip>
+        }
          
-        <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="0.9" flipSpeedFrontToBack="0.9"   flipDirection={flipDirection}>
+        <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2"  flipDirection={flipDirection}>
         {direction === 'vertical' ? <COFEE2 /> :  <Blank /> }
             <CONGO />
         </ReactCardFlip>
 
-        <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="0.9" flipSpeedFrontToBack="0.9"   flipDirection={flipDirection}>
-            {direction === 'vertical' ?   <TEAMS /> :  <Blank /> }
+        { direction === 'vertical-reverse' ? 
+          <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
+            <REVIEW4 /> 
             <Blank />
-        </ReactCardFlip>
+          </ReactCardFlip>
+          : 
+          <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
+            <TEAMS />  
+            <Blank />
+          </ReactCardFlip>
+        }
          
         {/* BOTTOM */}
         <div onClick={handlePrev} className="relative thumbnailBox h-full bg-[#171717] p-2 sm:p-3 md:p-4 lg:p-6 ">
