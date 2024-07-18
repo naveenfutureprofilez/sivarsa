@@ -76,14 +76,14 @@ var ReactCardFlip = function (props) {
         flipper: {
             height: '100%',
             perspective: '1000px',
-            position: 'relative',
+            position: 'relative', 
             width: '100%',
         },
         front: __assign({ WebkitBackfaceVisibility: 'hidden', backfaceVisibility: 'hidden', height: '100%', left: '0', position: isFlipped ? 'absolute' : 'relative', top: '0', transform: flipDirection === 'horizontal' ? frontRotateY : flipDirection === 'vertical-reverse' ? frontRotateXReverse : frontRotateX, transformStyle: 'preserve-3d', transition: "".concat(flipSpeedBackToFront, "s"), width: '100%', zIndex: '2' }, front),
     };
     return (React.createElement("div", { className: getContainerClassName, style: __assign(__assign({}, styles.container), containerStyle) },
         React.createElement("div", { className: "react-card-flipper", style: styles.flipper },
-            React.createElement("div", { className: "react-card-front", style: styles.front }, getComponent(0)),
-            React.createElement("div", { className: "react-card-back", style: styles.back }, getComponent(1)))));
+        React.createElement("div", { className: "react-card-front", style: styles.front }, getComponent(0)),
+        React.createElement("div", { className: "react-card-back", style: styles.back }, getComponent(1)))));
 };
 exports.default = ReactCardFlip;

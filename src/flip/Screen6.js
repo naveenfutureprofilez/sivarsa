@@ -25,13 +25,13 @@ export default function Screen6() {
 
    const navigate = useNavigate();
    const handleNext = () => {
-      setDirection('vertical-reverse');
+      setDirection('HORIZONTAL');
       // setRotate(prevRotate => !prevRotate);
       // navigate("/");
     };
 
     const handlePrev = () => {
-      setDirection("vertical-reverse");
+      setDirection('HORIZONTAL');
       setRotate(prevRotate => !prevRotate);
       navigate("/services/5");
     };
@@ -41,52 +41,52 @@ export default function Screen6() {
       <div className="grid w-full overflow-hidden h-screen gap-1 grid-cols-3 grid-rows-custome bg-black">
 
         {/* ROW 1 */}
-        <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2"    flipDirection="vertical">
-        {direction === 'vertical' ? <CLIENT_WORDS /> : <Blank />}
+        <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="1.5" flipSpeedFrontToBack="1.5"    flipDirection="vertical-reverse">
+        {direction === "vertical-reverse" ? <CLIENT_WORDS /> : <Blank />}
             <Blank />
         </ReactCardFlip>
              
-        {direction === 'vertical-reverse' ? 
-          <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2"    flipDirection="vertical">
+        {direction === 'HORIZONTAL' ? 
+          <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="1.5" flipSpeedFrontToBack="1.5"    flipDirection="vertical-reverse">
             <Blank />
             <FOUNDER />
           </ReactCardFlip>
           :  
-          <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2"    flipDirection="vertical">
+          <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="1.5" flipSpeedFrontToBack="1.5"    flipDirection="vertical-reverse">
             <Blank />
             <FOUNDER />
           </ReactCardFlip>
         }
 
-        <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2"    flipDirection="vertical">
-        {direction === 'vertical' ? <REVIEW1 /> : <Blank />}
+        <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="1.5" flipSpeedFrontToBack="1.5"    flipDirection="vertical-reverse">
+        {direction === "vertical-reverse" ? <REVIEW1 /> : <Blank />}
             <Blank />
         </ReactCardFlip>
 
 
 
         {/* ROW 2 */}
-        <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2"    flipDirection="vertical">
+        <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="1.5" flipSpeedFrontToBack="1.5"    flipDirection="vertical-reverse">
             <Blank />
             <TRANSFORMING />
         </ReactCardFlip>
-        <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2"    flipDirection="vertical">
-        {direction === 'vertical' ? <REVIEW2 /> : <Blank />}
+        <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="1.5" flipSpeedFrontToBack="1.5"    flipDirection="vertical-reverse">
+        {direction === "vertical-reverse" ? <REVIEW2 /> : <Blank />}
           <Blank />
         </ReactCardFlip>
           <Blank />
 
 
         {/* ROW 3 */}
-        <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2"    flipDirection="vertical">
+        <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="1.5" flipSpeedFrontToBack="1.5"    flipDirection="vertical-reverse">
             <REVIEW3 />
             <Blank />
         </ReactCardFlip>
 
          <Blank />
 
-        <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2"    flipDirection="vertical">
-        {direction === 'vertical' ? <REVIEW4 /> : <Blank />}
+        <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="1.5" flipSpeedFrontToBack="1.5"    flipDirection="vertical-reverse">
+        {direction === "vertical-reverse" ? <REVIEW4 /> : <Blank />}
             <UNMATCHED />
         </ReactCardFlip>
 

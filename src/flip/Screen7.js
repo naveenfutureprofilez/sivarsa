@@ -23,17 +23,17 @@ export default function Screen7() {
       <div className="grid w-full overflow-hidden h-screen gap-1 grid-cols-3 grid-rows-custome bg-black">
 
         {/* ROW 1 */}
-        <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2"    flipDirection="vertical">
+        <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="1.5" flipSpeedFrontToBack="1.5"    flipDirection="vertical-reverse">
             <CLIENT_WORDS />
             <Blank />
         </ReactCardFlip>
              
-        <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2"    flipDirection="vertical">
+        <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="1.5" flipSpeedFrontToBack="1.5"    flipDirection="vertical-reverse">
             <Blank />
             <FOUNDER />
         </ReactCardFlip>
 
-        <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2"    flipDirection="vertical">
+        <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="1.5" flipSpeedFrontToBack="1.5"    flipDirection="vertical-reverse">
             <REVIEW1 />
             <Blank />
         </ReactCardFlip>
@@ -41,11 +41,11 @@ export default function Screen7() {
 
 
         {/* ROW 2 */}
-        <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2"    flipDirection="vertical">
+        <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="1.5" flipSpeedFrontToBack="1.5"    flipDirection="vertical-reverse">
             <Blank />
             <TRANSFORMING />
         </ReactCardFlip>
-        <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2"    flipDirection="vertical">
+        <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="1.5" flipSpeedFrontToBack="1.5"    flipDirection="vertical-reverse">
             <REVIEW2 />
             <Blank />
         </ReactCardFlip>
@@ -53,14 +53,14 @@ export default function Screen7() {
 
 
         {/* ROW 3 */}
-        <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2"    flipDirection="vertical">
+        <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="1.5" flipSpeedFrontToBack="1.5"    flipDirection="vertical-reverse">
             <Blank />
             <Blank />
         </ReactCardFlip>
 
          <Blank />
 
-        <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2"    flipDirection="vertical">
+        <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="1.5" flipSpeedFrontToBack="1.5"    flipDirection="vertical-reverse">
             <REVIEW4 />
             <UNMATCHED />
         </ReactCardFlip>
