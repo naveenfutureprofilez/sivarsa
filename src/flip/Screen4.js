@@ -29,7 +29,7 @@ export default function Screen4() {
       };
 
       const handlePrev = () => {
-        setDirection('HORIZONTAL');
+        setDirection('vertical');
         setRotate(prevRotate => !prevRotate);
         navigate("/services/3");
       };
@@ -38,7 +38,7 @@ export default function Screen4() {
       <div className="grid w-full overflow-hidden h-screen gap-1 grid-cols-3 grid-rows-custome bg-black">
 
         {/* ROW 1 */}
-        {direction === 'HORIZONTAL' ?  
+        {direction === 'vertical' ?  
           <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="1.5" flipSpeedFrontToBack="1.5"   flipDirection={flipDirection}>
             <CLIENT_WORDS />
             <PAST_WORK />
@@ -52,7 +52,7 @@ export default function Screen4() {
 
         <Blank /> 
 
-        {direction === 'HORIZONTAL' ?
+        {direction === 'vertical' ?
           <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="1.5" flipSpeedFrontToBack="1.5"  flipDirection={flipDirection}>
             <REVIEW1 />
             <OED />
@@ -72,7 +72,7 @@ export default function Screen4() {
             <GAVS />
         </ReactCardFlip>
 
-      { direction === 'HORIZONTAL' ? 
+      { direction === 'vertical' ? 
           <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="1.5" flipSpeedFrontToBack="1.5" flipDirection={flipDirection}>
               <REVIEW2 /> 
               <Blank />
@@ -91,7 +91,7 @@ export default function Screen4() {
 
 
         {/* ROW 3 */}
-        { direction === 'HORIZONTAL' ? 
+        { direction === 'vertical' ? 
           <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="1.5" flipSpeedFrontToBack="1.5"    flipDirection={flipDirection}>
             <REVIEW3 />  
             <Blank />
@@ -108,7 +108,7 @@ export default function Screen4() {
             <CONGO />
         </ReactCardFlip>
 
-        { direction === 'HORIZONTAL' ? 
+        { direction === 'vertical' ? 
           <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="1.5" flipSpeedFrontToBack="1.5" flipDirection={flipDirection}>
             <REVIEW4 /> 
             <Blank />

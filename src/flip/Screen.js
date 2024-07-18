@@ -25,7 +25,7 @@ export default function Screen() {
       };
 
       const handlePrev = () => {
-        setDirection('HORIZONTAL');
+        setDirection('vertical');
         setRotate(prevRotate => !prevRotate);
         navigate("/");
       };
@@ -35,7 +35,7 @@ export default function Screen() {
         {/* ROW 1 */}
         <Blank />
         
-        {direction === 'HORIZONTAL' ? <>
+        {direction === 'vertical' ? <>
             <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="1.5" flipSpeedFrontToBack="1.5" flipDirection={flipDirection}>
               <WEBDEV />
               <PAGE_ONE_BOX2 />
@@ -52,7 +52,7 @@ export default function Screen() {
 
 
         {/* ROW 2 */}
-        { direction === 'HORIZONTAL' ? <>
+        { direction === 'vertical' ? <>
             <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="1.5" flipSpeedFrontToBack="1.5"    flipDirection={flipDirection}>
               <AISERVICES />
               <Blank />
@@ -62,7 +62,7 @@ export default function Screen() {
           <Blank />
         }
         <PAGE_ONE_BOX4 />
-        { direction === 'HORIZONTAL' ? <>
+        { direction === 'vertical' ? <>
             <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="1.5" flipSpeedFrontToBack="1.5"    flipDirection={flipDirection}>
               <BACKEND_SERVICES />
               <Blank />
@@ -80,7 +80,7 @@ export default function Screen() {
             <PAGE_ONE_BOX7/>
         </ReactCardFlip>
 
-         { direction === 'HORIZONTAL' ?  
+         { direction === 'vertical' ?  
             <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="1.5" flipSpeedFrontToBack="1.5"    flipDirection={flipDirection}>
                 <UX_SERVICE />
                 <Blank />

@@ -25,13 +25,13 @@ export default function Screen6() {
 
    const navigate = useNavigate();
    const handleNext = () => {
-      setDirection('HORIZONTAL');
+      setDirection('vertical');
       // setRotate(prevRotate => !prevRotate);
       // navigate("/");
     };
 
     const handlePrev = () => {
-      setDirection('HORIZONTAL');
+      setDirection('vertical');
       setRotate(prevRotate => !prevRotate);
       navigate("/services/5");
     };
@@ -46,7 +46,7 @@ export default function Screen6() {
             <Blank />
         </ReactCardFlip>
              
-        {direction === 'HORIZONTAL' ? 
+        {direction === 'vertical' ? 
           <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="1.5" flipSpeedFrontToBack="1.5"    flipDirection="vertical-reverse">
             <Blank />
             <FOUNDER />

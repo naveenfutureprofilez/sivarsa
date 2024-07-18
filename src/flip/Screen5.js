@@ -31,7 +31,7 @@ export default function Screen5() {
     };
 
     const handlePrev = () => {
-      setDirection('HORIZONTAL');
+      setDirection('vertical');
       setRotate(prevRotate => !prevRotate);
       navigate("/services/4");
     };
@@ -46,7 +46,7 @@ export default function Screen5() {
         </ReactCardFlip>
 
 
-        {direction === 'HORIZONTAL' ? 
+        {direction === 'vertical' ? 
           <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="1.5" flipSpeedFrontToBack="1.5"   flipDirection={flipDirection}>
             <FOUNDER />
             <Blank />
@@ -64,7 +64,7 @@ export default function Screen5() {
 
         {/* ROW 2 */}
 
-        {direction === 'HORIZONTAL' ?
+        {direction === 'vertical' ?
           <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="1.5" flipSpeedFrontToBack="1.5"    flipDirection={flipDirection}>
             <TRANSFORMING /> 
             <Blank />
@@ -84,7 +84,7 @@ export default function Screen5() {
         </ReactCardFlip>
 
 
-        {direction === 'HORIZONTAL' ?
+        {direction === 'vertical' ?
           <Blank />
           : 
            <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="1.5" flipSpeedFrontToBack="1.5"    flipDirection={flipDirection}>
@@ -95,7 +95,7 @@ export default function Screen5() {
 
 
         {/* ROW 3 */}
-        {direction === 'HORIZONTAL' ?
+        {direction === 'vertical' ?
           <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="1.5" flipSpeedFrontToBack="1.5"    flipDirection={flipDirection}>
             <Blank />
             <REVIEW3 />
@@ -108,7 +108,7 @@ export default function Screen5() {
 
 
 
-        {direction === 'HORIZONTAL' ?
+        {direction === 'vertical' ?
           <Blank />
         : <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="1.5" flipSpeedFrontToBack="1.5"    flipDirection={flipDirection}>
             <CONGO /> 
@@ -116,7 +116,7 @@ export default function Screen5() {
         </ReactCardFlip>}
 
 
-        {direction === 'HORIZONTAL' ? 
+        {direction === 'vertical' ? 
           <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="1.5" flipSpeedFrontToBack="1.5"    flipDirection={flipDirection}>
             <UNMATCHED />
             <REVIEW4 />

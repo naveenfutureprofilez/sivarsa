@@ -18,13 +18,13 @@ export default function Staffing1(){
 
      const navigate = useNavigate();
      const handleNext = () => {
-        setDirection('HORIZONTAL');
+        setDirection('vertical');
         // setRotate(prevRotate => !prevRotate);
         // navigate("/services/staffing");
       };
 
       const handlePrev = () => {
-        setDirection('HORIZONTAL');
+        setDirection('vertical');
         setRotate(prevRotate => !prevRotate);
         navigate("/");
       };
