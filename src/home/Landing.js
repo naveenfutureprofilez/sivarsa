@@ -32,7 +32,7 @@ export function PAGE_ONE_BOX4 () {
 export function PAGE_ONE_BOX7 () {
   return <Link to='/services/staffing' className={`block thumbnailBox h-full relative bg-[#FFC700] `}>
       <div className="text-white left p-2 sm:p-3 md:p-4 lg:p-6 ">
-        <h2 className="font-neuebit text-base sm:text-1xl md:text-2xl lg:text-4xl xl:text-5xl leading-none text-[#9D5209] mb-2 sm:mb-3 md:mb-4 lg:mb-4">Staffing</h2>
+        <h2 className="font-neuebit text-base sm:text-1xl md:text-2xl lg:text-4xl xl:text-5xl leading-none text-[#9D5209] mb-2 ">Staffing</h2>
         <p className="font-GoshaSans text-sm sm:text-sm md:text-base lg:text-lg xl:text-xl leading-none text-[#9D5209]">We provide skilled professionals <br /> across  various domains</p>
         <div className="absolute bottom-2 xm:bottom-4 md:bottom-5 lg:bottom-7 xl:bottom-8 right-2 sm:right-4 md:right-5 lg:right-7 xl:right-8" dangerouslySetInnerHTML={{ __html: arrowblackRT }}></div>
       </div>
@@ -42,7 +42,7 @@ export function PAGE_ONE_BOX7 () {
 export function PAGE_ONE_BOX9 () {
   return <Link to='/services/staffing' className={`block thumbnailBox h-full relative bg-[#2D68FF]`}>
           <div className=" text-white p-2 sm:p-3 md:p-4 lg:p-6 ">       
-            <h2 className="font-neuebit text-base sm:text-1xl md:text-2xl lg:text-4xl xl:text-5xl leading-none text-[#A9D6DD] mb-5">Mobile Application</h2>
+            <h2 className="font-neuebit text-base sm:text-1xl md:text-2xl lg:text-4xl xl:text-5xl leading-none text-[#A9D6DD] mb-2">Mobile Application</h2>
             <p className="font-GoshaSans  text-sm sm:text-sm md:text-base lg:text-lg xl:text-xl leading-none text-[#A9D6DD]">
               We can Craft powerful and <br /> dynamic solutions
             </p>
