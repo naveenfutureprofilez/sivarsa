@@ -44,7 +44,7 @@ export function REVIEW1() {
               <img src={quoteicon} alt="img" />
             </div>
             <div className="ps-0 md:ps-3 lg:ps-4 xl:ps-5">
-              <p className="font-GoshaSans text-xs sm:text-sm md:text-base lg:text-normal xl:text-lg leading-none text-[#F5F5F5] mb-2">
+              <p className="font-GoshaSans text-xs sm:text-sm md:text-base lg:text-normal xl:text-lg leading-none text-[#F5F5F5] mb-2 max-w-[400px]">
                 Their AI and design solutions transformed our  
                 business. Highly recommended!
               </p>
@@ -63,8 +63,8 @@ export function REVIEW2() {
             <img src={quoteicon} alt="img" />
           </div>
           <div className="ps-0 md:ps-3 lg:ps-4 xl:ps-5">
-            <p className="font-GoshaSans text-xs sm:text-sm md:text-base lg:text-normal xl:text-lg leading-none text-[#F5F5F5] mb-2">
-              Unmatched tech and design <br /> expertise. Our go-to firm!
+            <p className="font-GoshaSans text-xs sm:text-sm md:text-base lg:text-normal xl:text-lg leading-none text-[#F5F5F5] mb-2 max-w-[400px]">
+              Unmatched tech and design expertise. <br></br> Our go-to firm!
             </p>
             <h3 className="font-italianno  italic text-sm sm:text-sm md:text-base lg:text-normal xl:text-lg leading-none text-[#F5F5F5]">
               Petco
@@ -84,8 +84,8 @@ export function REVIEW3() {
               <img src={quoteicon} alt="img" />
             </div>
             <div className="ps-0 md:ps-3 lg:ps-4 xl:ps-5">
-              <p className="font-GoshaSans text-xs sm:text-sm md:text-base lg:text-normal xl:text-lg leading-none text-[#F5F5F5] mb-2">
-                Exceptional AI solutions and innovative designs. <br />{" "}
+              <p className="font-GoshaSans text-xs sm:text-sm md:text-base lg:text-normal xl:text-lg leading-none text-[#F5F5F5] mb-2 max-w-[400px]">
+                Exceptional AI solutions and innovative designs. 
                 Exceeded expectations!
               </p>
               <h3 className="font-italianno  italic text-sm sm:text-sm md:text-base lg:text-normal xl:text-lg leading-none text-[#F5F5F5]">
@@ -107,9 +107,8 @@ export function REVIEW4() {
               <img src={quoteicon} alt="img" />
             </div>
             <div className="ps-0 md:ps-3 lg:ps-4 xl:ps-5">
-              <p className="font-GoshaSans text-xs sm:text-sm md:text-base lg:text-normal xl:text-lg leading-none text-[#F5F5F5] mb-2">
-                Professional, responsive, and creative. Perfect blend{" "}
-                <br /> of tech and design!
+              <p className="font-GoshaSans text-xs sm:text-sm md:text-base lg:text-normal xl:text-lg leading-none text-[#F5F5F5] mb-2 max-w-[400px]">
+                Professional, responsive, and creative. Perfect blend of tech and design!
               </p>
               <h3 className="font-italianno  italic text-sm sm:text-sm md:text-base lg:text-normal xl:text-lg leading-none text-[#F5F5F5]">
                 James K
