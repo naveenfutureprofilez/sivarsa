@@ -20,7 +20,7 @@ export function PAGE_ONE_BOX4 () {
           <div className=" text-white front"></div>
           <div className=" text-white back"></div>
           <div className=" text-white left  p-2 sm:p-3 md:p-4 lg:p-6">
-            <h2 className="font-neuebit leading-normal text-xm  md:text-2xl lg:text-6xl xl:text-7xl leading-none text-white">Services <br/> Provided</h2>
+            <h2 className="font-neuebit leading-normal text-xm  md:text-2xl lg:text-4xl xl:text-5xl leading-none text-white">Services <br/> Provided</h2>
           </div>
           <div className=" text-white right"></div>
           <div className=" text-white top"></div>

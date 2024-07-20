@@ -94,8 +94,8 @@ export default function Screen() {
              
          
         <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2"    flipDirection={flipDirection}>
-            <Blank />
-            <PAGE_ONE_BOX9 />
+           <Blank />
+           <PAGE_ONE_BOX9 />
         </ReactCardFlip>
 
 
