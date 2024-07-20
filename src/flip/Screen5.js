@@ -12,15 +12,17 @@ import { PAST_WORK,OED, GAVS, HESTUS,CONGO } from "../home/HomePage4";
 import { CLIENT_WORDS, REVIEW1, REVIEW2, REVIEW3, REVIEW4} from "../home/HomePage5";
 import { MyContext } from "../context/Mycontext";
 import { FOUNDER, TRANSFORMING, UNMATCHED } from "../home/HomePage6";
+import BlankScreen from "./BlankScreen";
 
 export default function Screen5() {
 
-  const { direction, setDirection } = useContext(MyContext);
+  const { direction, setDirection, shouldRatate, setShouldRatate } = useContext(MyContext);
   const [flipDirection, setFlipDirection] = useState(direction);
 
   const [rotate, setRotate] = useState(false);
    useEffect(() => {
     setRotate(true);
+    setShouldRatate(true);
    },[]);
 
    const navigate = useNavigate();
@@ -37,17 +39,19 @@ export default function Screen5() {
     };
   
     return <>
+      {shouldRatate ?
+       
       <div className="grid w-full overflow-hidden h-screen gap-1 grid-cols-3 grid-rows-custome bg-black">
 
         {/* ROW 1 */}
-        <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="1.5" flipSpeedFrontToBack="1.5"    flipDirection={flipDirection}>
+        <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2"    flipDirection={flipDirection}>
         {direction === "vertical-reverse" ? <PAST_WORK /> : <Blank />}
             <CLIENT_WORDS />
         </ReactCardFlip>
 
 
         {direction === 'vertical' ? 
-          <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="1.5" flipSpeedFrontToBack="1.5"   flipDirection={flipDirection}>
+          <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2"   flipDirection={flipDirection}>
             <FOUNDER />
             <Blank />
           </ReactCardFlip>
@@ -56,7 +60,7 @@ export default function Screen5() {
         }
 
 
-        <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="1.5" flipSpeedFrontToBack="1.5"    flipDirection={flipDirection}>
+        <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2"    flipDirection={flipDirection}>
         {direction === "vertical-reverse" ? <OED /> : <Blank />}
             <REVIEW1 />
         </ReactCardFlip>
@@ -65,12 +69,12 @@ export default function Screen5() {
         {/* ROW 2 */}
 
         {direction === 'vertical' ?
-          <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="1.5" flipSpeedFrontToBack="1.5"    flipDirection={flipDirection}>
+          <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2"    flipDirection={flipDirection}>
             <TRANSFORMING /> 
             <Blank />
           </ReactCardFlip>
         : 
-          <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="1.5" flipSpeedFrontToBack="1.5"    flipDirection={flipDirection}>
+          <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2"    flipDirection={flipDirection}>
             <GAVS /> 
             <Blank />
           </ReactCardFlip>
@@ -78,7 +82,7 @@ export default function Screen5() {
         
 
 
-        <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="1.5" flipSpeedFrontToBack="1.5"    flipDirection={flipDirection}>
+        <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2"    flipDirection={flipDirection}>
             <Blank />
             <REVIEW2 />
         </ReactCardFlip>
@@ -87,7 +91,7 @@ export default function Screen5() {
         {direction === 'vertical' ?
           <Blank />
           : 
-           <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="1.5" flipSpeedFrontToBack="1.5"    flipDirection={flipDirection}>
+           <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2"    flipDirection={flipDirection}>
               <HESTUS />
               <Blank />
           </ReactCardFlip>
@@ -96,11 +100,11 @@ export default function Screen5() {
 
         {/* ROW 3 */}
         {direction === 'vertical' ?
-          <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="1.5" flipSpeedFrontToBack="1.5"    flipDirection={flipDirection}>
+          <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2"    flipDirection={flipDirection}>
             <Blank />
             <REVIEW3 />
           </ReactCardFlip>
-        : <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="1.5" flipSpeedFrontToBack="1.5"    flipDirection={flipDirection}>
+        : <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2"    flipDirection={flipDirection}>
             <Blank />
             <REVIEW3 />
           </ReactCardFlip>
@@ -110,19 +114,19 @@ export default function Screen5() {
 
         {direction === 'vertical' ?
           <Blank />
-        : <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="1.5" flipSpeedFrontToBack="1.5"    flipDirection={flipDirection}>
+        : <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2"    flipDirection={flipDirection}>
             <CONGO /> 
             <Blank />
         </ReactCardFlip>}
 
 
         {direction === 'vertical' ? 
-          <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="1.5" flipSpeedFrontToBack="1.5"    flipDirection={flipDirection}>
+          <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2"    flipDirection={flipDirection}>
             <UNMATCHED />
             <REVIEW4 />
           </ReactCardFlip>
           : 
-          <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="1.5" flipSpeedFrontToBack="1.5"    flipDirection={flipDirection}>
+          <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2"    flipDirection={flipDirection}>
             <Blank />
             <REVIEW4 />
           </ReactCardFlip>
@@ -143,13 +147,30 @@ export default function Screen5() {
           </div>
           <div className="flex absolute bottom-0 left-0 right-0 m-auto justify-center sivrsalogo"  dangerouslySetInnerHTML={{ __html: sivarsaLogo }}></div>
         </div>
-        <div onClick={handleNext} className="relative thumbnailBox h-full bg-[#171717] p-2 sm:p-3 md:p-4 lg:p-6 ">
-          <div className="absolute bottom-6 right-5 text-[#B5AAF3] font-neuebit font-neuebit text-xl md:text-3xl lg:text-4xl xl:text-5xl z-10">
-            Next
-          </div>
-          <div className="absolute top-0 bottom-0 left-0 h-full nextpreimg" dangerouslySetInnerHTML={{ __html: nextBg }}></div>
-        </div>
+         
+
+        {direction === 'vertical' ? 
+          <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
+            <Blank />
+            <div onClick={handleNext} className="relative thumbnailBox h-full bg-[#171717] p-2 sm:p-3 md:p-4 lg:p-6 ">
+              <div className="absolute bottom-6 right-5 text-[#B5AAF3] font-neuebit font-neuebit text-xl md:text-3xl lg:text-4xl xl:text-5xl z-10">
+                Next
+              </div>
+              <div className="absolute top-0 bottom-0 left-0 h-full nextpreimg" dangerouslySetInnerHTML={{ __html: nextBg }}></div>
+            </div>  
+          </ReactCardFlip> 
+          :
+          <div onClick={handleNext} className="relative thumbnailBox h-full bg-[#171717] p-2 sm:p-3 md:p-4 lg:p-6 ">
+            <div className="absolute bottom-6 right-5 text-[#B5AAF3] font-neuebit font-neuebit text-xl md:text-3xl lg:text-4xl xl:text-5xl z-10">
+              Next
+            </div>
+            <div className="absolute top-0 bottom-0 left-0 h-full nextpreimg" dangerouslySetInnerHTML={{ __html: nextBg }}></div>
+          </div>  
+        }
 
       </div>
+       : 
+        <BlankScreen />
+       }
       </>
 }

@@ -6,15 +6,17 @@ import { PAGE_ONE_BOX2, PAGE_ONE_BOX4, PAGE_ONE_BOX7, PAGE_ONE_BOX9 } from "../h
 import Blank from "../contents/Blank";
 import { MyContext } from "../context/Mycontext";
 import { AISERVICES, WEBDEV, BACKEND_SERVICES, UX_SERVICE } from "../home/HomePage2";
+import BlankScreen from './BlankScreen';
 
 export default function Screen() {
 
-    const { direction, setDirection } = useContext(MyContext);
-    const [flipDirection, setFlipDirection] = useState(direction);
+  const { direction, setDirection, shouldRatate, setShouldRatate } = useContext(MyContext);
+  const [flipDirection, setFlipDirection] = useState(direction);
 
     const [rotate, setRotate] = useState(false);
      useEffect(() => {
       setRotate(true);
+      setShouldRatate(true);
      },[]);
 
      const navigate = useNavigate();
@@ -31,18 +33,19 @@ export default function Screen() {
       };
   
     return <>
+      {shouldRatate ?
       <div className="grid w-full overflow-hidden h-screen gap-1 grid-cols-3 grid-rows-custome bg-black">
         {/* ROW 1 */}
         <Blank />
         
         {direction === 'vertical' ? <>
-            <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="1.5" flipSpeedFrontToBack="1.5" flipDirection={flipDirection}>
+            <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
               <WEBDEV />
               <PAGE_ONE_BOX2 />
             </ReactCardFlip>
           </> 
           :
-            <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="1.5" flipSpeedFrontToBack="1.5" flipDirection={flipDirection}>
+            <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
               <Blank />
               <PAGE_ONE_BOX2 />
             </ReactCardFlip>
@@ -53,7 +56,7 @@ export default function Screen() {
 
         {/* ROW 2 */}
         { direction === 'vertical' ? <>
-            <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="1.5" flipSpeedFrontToBack="1.5"    flipDirection={flipDirection}>
+            <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2"    flipDirection={flipDirection}>
               <AISERVICES />
               <Blank />
             </ReactCardFlip>
@@ -63,7 +66,7 @@ export default function Screen() {
         }
         <PAGE_ONE_BOX4 />
         { direction === 'vertical' ? <>
-            <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="1.5" flipSpeedFrontToBack="1.5"    flipDirection={flipDirection}>
+            <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2"    flipDirection={flipDirection}>
               <BACKEND_SERVICES />
               <Blank />
             </ReactCardFlip>
@@ -75,13 +78,13 @@ export default function Screen() {
 
 
         {/* ROW 3 */}
-        <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="1.5" flipSpeedFrontToBack="1.5"    flipDirection={flipDirection}>
+        <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2"    flipDirection={flipDirection}>
             <Blank />
             <PAGE_ONE_BOX7/>
         </ReactCardFlip>
 
          { direction === 'vertical' ?  
-            <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="1.5" flipSpeedFrontToBack="1.5"    flipDirection={flipDirection}>
+            <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2"    flipDirection={flipDirection}>
                 <UX_SERVICE />
                 <Blank />
             </ReactCardFlip>
@@ -90,7 +93,7 @@ export default function Screen() {
           }
              
          
-        <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="1.5" flipSpeedFrontToBack="1.5"    flipDirection={flipDirection}>
+        <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2"    flipDirection={flipDirection}>
             <Blank />
             <PAGE_ONE_BOX9 />
         </ReactCardFlip>
@@ -119,5 +122,8 @@ export default function Screen() {
         </div>
         
       </div>
+      : 
+        <BlankScreen />
+      }
       </>
 }

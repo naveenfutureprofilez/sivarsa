@@ -9,19 +9,21 @@ import {  PAGE_ONE_BOX2, PAGE_ONE_BOX4, PAGE_ONE_BOX7, PAGE_ONE_BOX9 } from "../
 import { WEBDEV, AISERVICES, BACKEND_SERVICES, UX_SERVICE } from "../home/HomePage2";
 import { MyContext } from "../context/Mycontext";
 import { OUR_JOURNRY, COFFEE, PROJECTS_DELIVERED, COFEE2, TEAMS} from "../home/HomePage3";
+import BlankScreen from "./BlankScreen";
 
 export default function Screen2() {
-
-      const { direction, setDirection } = useContext(MyContext);
+      
+      const { direction, setDirection, shouldRatate, setShouldRatate } = useContext(MyContext);
       const [flipDirection, setFlipDirection] = useState(direction);
-
       const [rotate, setRotate] = useState(false);
+
       useEffect(() => {
-        setRotate(true);
+          setRotate(true);
+          setShouldRatate(true);
       },[]);
 
       const navigate = useNavigate();
-     const handleNext = () => {
+      const handleNext = () => {
         setDirection("vertical-reverse");
         setRotate(prevRotate => !prevRotate);
         navigate("/services/3");
@@ -34,41 +36,40 @@ export default function Screen2() {
       };
   
     return <>
+      {shouldRatate ?
       <div className="grid w-full overflow-hidden h-screen gap-1 grid-cols-3 grid-rows-custome bg-black">
         {/* ROW 1 */}
         <Blank />
         {direction === "vertical" ? 
-          <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="1.5" flipSpeedFrontToBack="1.5"  flipDirection={flipDirection}>
+          <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront={'1.5'} flipSpeedFrontToBack={'1.5'}  flipDirection={flipDirection}>
             <Blank /> 
             <WEBDEV /> 
           </ReactCardFlip>
             : 
-          <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="1" flipSpeedFrontToBack="1"  flipDirection={flipDirection}>
+          <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront={'1.5'} flipSpeedFrontToBack={'1.5'}  flipDirection={flipDirection}>
             <PAGE_ONE_BOX2 /> 
             <WEBDEV />
           </ReactCardFlip>
         }
         {direction === 'vertical' ? 
-          <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="1.5" flipSpeedFrontToBack="1.5"  flipDirection={flipDirection}>
+          <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront={'1.5'} flipSpeedFrontToBack={'1.5'}  flipDirection={flipDirection}>
             <OUR_JOURNRY />
             <Blank />
           </ReactCardFlip>
         : <Blank />}
 
-
-
         {/* ROW 2 */}
-        <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="1.5" flipSpeedFrontToBack="1.5"  flipDirection={flipDirection}>
+        <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront={'1.5'} flipSpeedFrontToBack={'1.5'}  flipDirection={flipDirection}>
             <Blank />
             <AISERVICES />
         </ReactCardFlip>
          {direction === 'vertical' ? 
-          <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="1.5" flipSpeedFrontToBack="1.5"  flipDirection={flipDirection}>
+          <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront={'1.5'} flipSpeedFrontToBack={'1.5'}  flipDirection={flipDirection}>
             <COFFEE />
             <PAGE_ONE_BOX4 />
           </ReactCardFlip>
         :  <PAGE_ONE_BOX4 /> }
-        <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="1.5" flipSpeedFrontToBack="1.5"  flipDirection={flipDirection}>
+        <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront={'1.5'} flipSpeedFrontToBack={'1.5'}  flipDirection={flipDirection}>
             <Blank />
             <BACKEND_SERVICES />
         </ReactCardFlip>
@@ -77,12 +78,12 @@ export default function Screen2() {
         {/* ROW 3 */}
 
         { direction === 'vertical' ? 
-          <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="1.5" flipSpeedFrontToBack="1.5"  flipDirection={flipDirection}>
+          <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront={'1.5'} flipSpeedFrontToBack={'1.5'}  flipDirection={flipDirection}>
             <PROJECTS_DELIVERED /> 
             <Blank />
           </ReactCardFlip>
           : 
-          <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="1.5" flipSpeedFrontToBack="1.5"  flipDirection={flipDirection}>
+          <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront={'1.5'} flipSpeedFrontToBack={'1.5'}  flipDirection={flipDirection}>
             <PAGE_ONE_BOX7 /> 
             <Blank />
           </ReactCardFlip>
@@ -90,24 +91,24 @@ export default function Screen2() {
         
 
           {direction === 'vertical' ? 
-            <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="1.5" flipSpeedFrontToBack="1.5"  flipDirection={flipDirection}>
+            <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront={'1.5'} flipSpeedFrontToBack={'1.5'}  flipDirection={flipDirection}>
                 <COFEE2 />
                 <UX_SERVICE />
             </ReactCardFlip>
           : 
-            <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="1.5" flipSpeedFrontToBack="1.5"  flipDirection={flipDirection}>
+            <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront={'1.5'} flipSpeedFrontToBack={'1.5'}  flipDirection={flipDirection}>
               <Blank />
               <UX_SERVICE />
             </ReactCardFlip>
           }
 
           {direction === 'vertical' ? 
-            <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="1.5" flipSpeedFrontToBack="1.5"  flipDirection={flipDirection}>
+            <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront={'1.5'} flipSpeedFrontToBack={'1.5'}  flipDirection={flipDirection}>
               <TEAMS />
               <Blank />
             </ReactCardFlip>
           : 
-            <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="1.5" flipSpeedFrontToBack="1.5"  flipDirection={flipDirection}>
+            <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront={'1.5'} flipSpeedFrontToBack={'1.5'}  flipDirection={flipDirection}>
               <PAGE_ONE_BOX9 />
               <Blank />
             </ReactCardFlip>
@@ -142,5 +143,8 @@ export default function Screen2() {
 
 
       </div>
+      : 
+        <BlankScreen />
+      }
       </>
 }
