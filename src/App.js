@@ -21,6 +21,7 @@ import Screen7 from './flip/Screen7';
 import Editor from './Editor';
 import { MyProvider } from './context/Mycontext';
 import Staffing1 from './flip/staffing/Staffing1';
+import Staffing2 from './flip/staffing/Staffing2';
 
 function App() {
   return (
@@ -45,6 +46,7 @@ function App() {
 
                   {/* Staffing */}
                   <Route path="/services/staffing" element={<Staffing1 />} />
+                  <Route path="/services/staffing/2" element={<Staffing2 />} />
 
                   
                   {/* dummy */}
