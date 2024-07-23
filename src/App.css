@@ -4,10 +4,13 @@
 
 
 body{background:#000;}
-.ourJourney-logo  svg {
+.ourJourney-logo svg {
   width: 100%;
   height: 100%;
  }
- .thumbnailBox {
+.thumbnailBox {
   overflow: hidden;
- }
+}
+/* .react-card-flipper {
+  background-color:#171717;
+} */

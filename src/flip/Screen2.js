@@ -1,10 +1,8 @@
 import React, { useContext, useEffect, useState } from "react";
 import {  PreBg,nextBg,sivarsaLogo,messageUs } from "../Icons";
 import Blank from "../contents/Blank";
-
 import ReactCardFlip from '../Flip';
 import { Link, useNavigate } from 'react-router-dom';
-
 import {  PAGE_ONE_BOX2, PAGE_ONE_BOX4, PAGE_ONE_BOX7, PAGE_ONE_BOX9 } from "../home/Landing";
 import { WEBDEV, AISERVICES, BACKEND_SERVICES, UX_SERVICE } from "../home/HomePage2";
 import { MyContext } from "../context/Mycontext";
@@ -40,31 +38,39 @@ export default function Screen2() {
       <div className="grid w-full overflow-hidden h-screen gap-1 grid-cols-3 grid-rows-custome bg-black">
         {/* ROW 1 */}
         <Blank />
+
+
         {direction === "vertical" ? 
-          <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront={'1.5'} flipSpeedFrontToBack={'1.5'}  flipDirection={flipDirection}>
+          <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront={'1.5'} flipSpeedFrontToBack={'1.5'} flipDirection={flipDirection}>
             <Blank /> 
             <WEBDEV /> 
           </ReactCardFlip>
             : 
-          <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront={'1.5'} flipSpeedFrontToBack={'1.5'}  flipDirection={flipDirection}>
+          <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront={'1.5'} flipSpeedFrontToBack={'1.5'} flipDirection={flipDirection}>
             <PAGE_ONE_BOX2 /> 
             <WEBDEV />
           </ReactCardFlip>
         }
+
+
         {direction === 'vertical' ? 
-          <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront={'1.5'} flipSpeedFrontToBack={'1.5'}  flipDirection={flipDirection}>
+          <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront={'1.5'} flipSpeedFrontToBack={'1.5'} flipDirection={flipDirection}>
             <OUR_JOURNRY />
             <Blank />
           </ReactCardFlip>
         : <Blank />}
 
+
+
         {/* ROW 2 */}
-        <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront={'1.5'} flipSpeedFrontToBack={'1.5'}  flipDirection={flipDirection}>
+        <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront={'1.5'} flipSpeedFrontToBack={'1.5'} flipDirection={flipDirection}>
             <Blank />
             <AISERVICES />
         </ReactCardFlip>
+
+
          {direction === 'vertical' ? 
-          <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront={'1.5'} flipSpeedFrontToBack={'1.5'}  flipDirection={flipDirection}>
+          <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront={'1.5'} flipSpeedFrontToBack={'1.5'} flipDirection={flipDirection}>
             <COFFEE />
             <PAGE_ONE_BOX4 />
           </ReactCardFlip>
@@ -83,12 +89,11 @@ export default function Screen2() {
             <Blank />
           </ReactCardFlip>
           : 
-          <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront={'1.5'} flipSpeedFrontToBack={'1.5'}  flipDirection={flipDirection}>
+          <ReactCardFlip containerStyle={{ backgroundColor: '#171717' }}  isFlipped={rotate} flipSpeedBackToFront={'1.5'} flipSpeedFrontToBack={'1.5'}  flipDirection={flipDirection}>
             <PAGE_ONE_BOX7 /> 
             <Blank />
           </ReactCardFlip>
          }
-        
 
           {direction === 'vertical' ? 
             <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront={'1.5'} flipSpeedFrontToBack={'1.5'}  flipDirection={flipDirection}>
