@@ -40,7 +40,7 @@ export function PAGE_ONE_BOX7 () {
 }
 
 export function PAGE_ONE_BOX9 () {
-  return <Link to='/services/staffing' className={`block thumbnailBox h-full relative bg-[#2D68FF]`}>
+  return <Link to='/services/mobile' className={`block thumbnailBox h-full relative bg-[#2D68FF]`}>
           <div className=" text-white p-2 sm:p-3 md:p-4 lg:p-6 ">       
             <h2 className="font-neuebit text-base sm:text-1xl md:text-2xl lg:text-4xl xl:text-5xl leading-none text-[#A9D6DD] mb-2">Mobile Application</h2>
             <p className="font-GoshaSans  text-sm sm:text-sm md:text-base lg:text-lg xl:text-xl leading-none text-[#A9D6DD]">
