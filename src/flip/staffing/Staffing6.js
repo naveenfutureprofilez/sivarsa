@@ -3,7 +3,7 @@ import {  PreBg,nextBg,sivarsaLogo,messageUs } from "../../Icons";
 import ReactCardFlip from '../../Flip';
 import { Link, useNavigate } from 'react-router-dom';
 import { PAGE_ONE_BOX2, PAGE_ONE_BOX4, PAGE_ONE_BOX7, PAGE_ONE_BOX9 } from "../../home/Landing";
-import { DISCOVERY, TALENT_SOURCING, MATCHING, ONBOARDING, ONGOING_SUPPORT, TALENT_TAP  } from "../../home/staffing/StaffFour";
+import { RECRUITMENT, LINKEDIN, INDEED, GLASSDOOR, TALENT_TAP  } from "../../home/staffing/StaffSix";
 import Blank from "../../contents/Blank";
 import { MyContext } from "../../context/Mycontext";
 export default function Staffing6(){
@@ -37,11 +37,11 @@ export default function Staffing6(){
           
           <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
               <Blank />
-              <DISCOVERY />
+              <RECRUITMENT />
           </ReactCardFlip>
           <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
               <Blank />
-              <TALENT_SOURCING />
+              <LINKEDIN />
           </ReactCardFlip>
           <Blank /> 
 
@@ -51,20 +51,17 @@ export default function Staffing6(){
 
           {/* ROW 2 */}
           
+          <Blank />
           <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
               <PAGE_ONE_BOX4 />
-              <MATCHING />
-          </ReactCardFlip>
-          <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
-              <PAGE_ONE_BOX4 />
-              <ONBOARDING />
+              <INDEED />
           </ReactCardFlip>
           <Blank />
          
           {/* ROW 3 */}
           <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
               <PAGE_ONE_BOX7/>
-              <ONGOING_SUPPORT />
+              <GLASSDOOR />
           </ReactCardFlip>
           <Blank />
           <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
