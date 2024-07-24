@@ -3,10 +3,10 @@ import {  PreBg,nextBg,sivarsaLogo,messageUs } from "../../Icons";
 import ReactCardFlip from '../../Flip';
 import { Link, useNavigate } from 'react-router-dom';
 import { PAGE_ONE_BOX2, PAGE_ONE_BOX4, PAGE_ONE_BOX7, PAGE_ONE_BOX9 } from "../../home/Landing";
-import { RETENTION, CLIENT_SERVED, PROFESSIONAL, TALENT_TAP  } from "../../home/staffing/StaffTwo";
+import { TURNING, CLIENT_SERVED, PROFESSIONAL, TALENT_TAP  } from "../../home/staffing/StaffTwo";
 import Blank from "../../contents/Blank";
 import { MyContext } from "../../context/Mycontext";
-export default function Staffing2(){
+export default function Staffing4(){
 
   const { direction, setDirection, shouldRatate, setShouldRatate } = useContext(MyContext);
   const [flipDirection, setFlipDirection] = useState(direction);
@@ -21,27 +21,25 @@ export default function Staffing2(){
      const handleNext = () => {
         setDirection('vertical');
         setRotate(prevRotate => !prevRotate);
-        navigate("/services/staffing/3");
+        navigate("/");
       };
 
       const handlePrev = () => {
         setDirection('vertical');
         setRotate(prevRotate => !prevRotate);
-        navigate("/services/staffing");
+        navigate("/services/staffing/3");
       };
   
     return <>
       {shouldRatate ?
         <div className="grid w-full overflow-hidden h-screen gap-1 grid-cols-3 grid-rows-custome bg-black">
           {/* ROW 1 */}
-          
           <Blank />
           <Blank />
           <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
               <Blank />
-              <RETENTION />
+              <TURNING />
           </ReactCardFlip>
-          
 
          
 
