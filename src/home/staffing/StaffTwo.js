@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React, { useERETENTIONffect, useState } from "react";
 import {  arrowblackUP } from "../../Icons";
 import tanentbg from "../../images/tanentbg.png";
 
-export function TURNING(){
+export function RETENTION(){
   return <>
     <div className={`thumbnailBox h-full relative  bg-[#F5BB0B;] `}>
         <div className="wall text-white left p-2 sm:p-3 md:p-4 lg:p-6 ">       
@@ -54,16 +54,4 @@ export function TALENT_TAP(){
   </>
 }
 
-
-// screen Skills
-
-export function SKILL(){
-  return <>
-  <style>{`
-    .bg-tanent {  }
-  `}</style>
-    <div style={{backgroundImage:`url(${tanentbg})`}} className={`thumbnailBox h-full bg-tanent  p-2 sm:p-3 md:p-4 lg:p-6 relative bg-repeat bg-cover `}>
-        <h2 className="font-neuebit  text-4xl md:text-4xl lg:text-6xl xl:text-6xl leading-[40px]  xl:leading-[50px] text-[#9D5209]  mb-5">Skills</h2>
-    </div>
-  </>
-}
+ 
