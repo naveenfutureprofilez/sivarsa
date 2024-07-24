@@ -3,7 +3,7 @@ import {  PreBg,nextBg,sivarsaLogo,messageUs } from "../../Icons";
 import ReactCardFlip from '../../Flip';
 import { Link, useNavigate } from 'react-router-dom';
 import { PAGE_ONE_BOX2, PAGE_ONE_BOX4, PAGE_ONE_BOX7, PAGE_ONE_BOX9 } from "../../home/Landing";
-import { TURNING, CLIENT_SERVED, PROFESSIONAL, TALENT_TAP  } from "../../home/staffing/StaffTwo";
+import { RETENTION, CLIENT_SERVED, PROFESSIONAL, TALENT_TAP  } from "../../home/staffing/StaffTwo";
 import Blank from "../../contents/Blank";
 import { MyContext } from "../../context/Mycontext";
 export default function Staffing1(){
@@ -34,12 +34,14 @@ export default function Staffing1(){
       {shouldRatate ?
         <div className="grid w-full overflow-hidden h-screen gap-1 grid-cols-3 grid-rows-custome bg-black">
           {/* ROW 1 */}
+          
           <Blank />
           <Blank />
           <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
               <Blank />
-              <TURNING />
+              <RETENTION />
           </ReactCardFlip>
+          
 
          
 
