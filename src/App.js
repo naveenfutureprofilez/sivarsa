@@ -24,6 +24,8 @@ import Staffing1 from './flip/staffing/Staffing1';
 import Staffing2 from './flip/staffing/Staffing2';
 import Staffing3 from './flip/staffing/Staffing3';
 import Staffing4 from './flip/staffing/Staffing4';
+import Staffing5 from './flip/staffing/Staffing5';
+import Staffing6 from './flip/staffing/Staffing6';
 
 function App() {
   return (
@@ -51,6 +53,8 @@ function App() {
                   <Route path="/services/staffing/2" element={<Staffing2 />} />
                   <Route path="/services/staffing/3" element={<Staffing3 />} />
                   <Route path="/services/staffing/4" element={<Staffing4 />} />
+                  <Route path="/services/staffing/5" element={<Staffing5 />} />
+                  <Route path="/services/staffing/6" element={<Staffing6 />} />
 
                   
                   {/* dummy */}
