@@ -3,7 +3,7 @@ import {  PreBg,nextBg,sivarsaLogo,messageUs } from "../../Icons";
 import ReactCardFlip from '../../Flip';
 import { Link, useNavigate } from 'react-router-dom';
 import { PAGE_ONE_BOX2, PAGE_ONE_BOX4, PAGE_ONE_BOX7, PAGE_ONE_BOX9 } from "../../home/Landing";
-import { TURNING, CLIENT_SERVED, PROFESSIONAL, TALENT_TAP  } from "../../home/staffing/StaffTwo";
+import { DISCOVERY, TALENT_SOURCING, MATCHING, ONBOARDING, ONGOING_SUPPORT, TALENT_TAP  } from "../../home/staffing/StaffFour";
 import Blank from "../../contents/Blank";
 import { MyContext } from "../../context/Mycontext";
 export default function Staffing4(){
@@ -12,7 +12,7 @@ export default function Staffing4(){
   const [flipDirection, setFlipDirection] = useState(direction);
 
     const [rotate, setRotate] = useState(false);
-     useEffect(() => {
+     useEffect(() => { 
       setRotate(true);
       setShouldRatate(true);
      },[]);
@@ -34,32 +34,37 @@ export default function Staffing4(){
       {shouldRatate ?
         <div className="grid w-full overflow-hidden h-screen gap-1 grid-cols-3 grid-rows-custome bg-black">
           {/* ROW 1 */}
-          <Blank />
-          <Blank />
+          
           <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
               <Blank />
-              <TURNING />
+              <DISCOVERY />
           </ReactCardFlip>
+          <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
+              <Blank />
+              <TALENT_SOURCING />
+          </ReactCardFlip>
+          <Blank /> 
 
-         
+          
 
          
 
           {/* ROW 2 */}
+          
+          <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
+              <PAGE_ONE_BOX4 />
+              <MATCHING />
+          </ReactCardFlip>
+          <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
+              <PAGE_ONE_BOX4 />
+              <ONBOARDING />
+          </ReactCardFlip>
           <Blank />
-          <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
-              <PAGE_ONE_BOX4 />
-              <PROFESSIONAL />
-          </ReactCardFlip>
-          <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
-              <PAGE_ONE_BOX4 />
-              <CLIENT_SERVED />
-          </ReactCardFlip>
          
           {/* ROW 3 */}
           <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
               <PAGE_ONE_BOX7/>
-              <Blank />
+              <ONGOING_SUPPORT />
           </ReactCardFlip>
           <Blank />
           <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
