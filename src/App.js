@@ -22,6 +22,8 @@ import Editor from './Editor';
 import { MyProvider } from './context/Mycontext';
 import Staffing1 from './flip/staffing/Staffing1';
 import Staffing2 from './flip/staffing/Staffing2';
+import Staffing3 from './flip/staffing/Staffing3';
+import Staffing4 from './flip/staffing/Staffing4';
 
 function App() {
   return (
@@ -47,6 +49,8 @@ function App() {
                   {/* Staffing */}
                   <Route path="/services/staffing" element={<Staffing1 />} />
                   <Route path="/services/staffing/2" element={<Staffing2 />} />
+                  <Route path="/services/staffing/3" element={<Staffing3 />} />
+                  <Route path="/services/staffing/4" element={<Staffing4 />} />
 
                   
                   {/* dummy */}
