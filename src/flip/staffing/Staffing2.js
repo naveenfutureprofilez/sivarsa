@@ -48,15 +48,17 @@ export default function Staffing2(){
          
 
           {/* ROW 2 */}
-          <Blank />
+         
           <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
               <PAGE_ONE_BOX4 />
               <PROFESSIONAL />
           </ReactCardFlip>
+          
           <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
               <PAGE_ONE_BOX4 />
               <CLIENT_SERVED />
           </ReactCardFlip>
+          <Blank />
          
           {/* ROW 3 */}
           <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
