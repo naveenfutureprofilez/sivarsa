@@ -3,7 +3,7 @@ import {  PreBg,nextBg,sivarsaLogo,messageUs } from "../../Icons";
 import ReactCardFlip from '../../Flip';
 import { Link, useNavigate } from 'react-router-dom';
 import { PAGE_ONE_BOX2, PAGE_ONE_BOX4, PAGE_ONE_BOX7, PAGE_ONE_BOX9 } from "../../home/Landing";
-import { SKILL, SKILL_CATEGORY_1, SKILL_CATEGORY_2, SKILL_CATEGORY_3, SKILL_CATEGORY_4, BACKEND_POWER } from "../../home/mobile/MobileThree";
+import { DISCOVERY, DESIGN, DEVELOPMENT, TESTING, DEPLOYMENT, BACKEND_POWER } from "../../home/mobile/MobileFour";
 import Blank from "../../contents/Blank";
 import { MyContext } from "../../context/Mycontext";
 export default function Mobile4(){
@@ -37,16 +37,13 @@ export default function Mobile4(){
           {/* ROW 1 */}
           <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
               <Blank />
-              <SKILL />
+              <DISCOVERY />
           </ReactCardFlip>
           <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
               <PAGE_ONE_BOX4 />
-              <SKILL_CATEGORY_1 />
+              <DESIGN />
           </ReactCardFlip>
-          <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
-              <PAGE_ONE_BOX4 />
-              <SKILL_CATEGORY_2 />
-          </ReactCardFlip>
+           <Blank />
         
 
          
@@ -56,17 +53,24 @@ export default function Mobile4(){
           {/* ROW 2 */}
           <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
               <PAGE_ONE_BOX4 />
-              <SKILL_CATEGORY_3 />
+              <DEVELOPMENT />
+          </ReactCardFlip>
+          
+          <Blank />
+          <Blank />
+          
+
+         
+          {/* ROW 3 */}
+          <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
+              <PAGE_ONE_BOX4 />
+              <TESTING />
           </ReactCardFlip>
           <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
               <PAGE_ONE_BOX4 />
-              <SKILL_CATEGORY_4 />
+              <DEPLOYMENT />
           </ReactCardFlip>
-          <Blank />
-         
-          {/* ROW 3 */}
-          <Blank />
-          <Blank />
+          
           <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
               <PAGE_ONE_BOX9 />
               <BACKEND_POWER />

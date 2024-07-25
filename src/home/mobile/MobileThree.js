@@ -12,7 +12,7 @@ export function SKILL(){
       .bg-tanent {  }
     `}</style>
       <div  className={`thumbnailBox h-full p-2 sm:p-3 md:p-4 lg:p-6 relative  bg-[#171717]`}>
-          <h2 className="font-neuebit  text-[40px] lg:text-[50px] leading-[40px]  xl:leading-[50px] text-[#89C9E5] xl:text-[#F1C5AA] mb-5">Skills</h2>
+          <h2 className="font-neuebit  text-[40px] lg:text-[50px] leading-[40px]  xl:leading-[50px] text-[#89C9E5] mb-5">Skills</h2>
       </div>
     </> 
   }

@@ -3,7 +3,7 @@ import {  PreBg,nextBg,sivarsaLogo,messageUs } from "../../Icons";
 import ReactCardFlip from '../../Flip';
 import { Link, useNavigate } from 'react-router-dom';
 import { PAGE_ONE_BOX2, PAGE_ONE_BOX4, PAGE_ONE_BOX7, PAGE_ONE_BOX9 } from "../../home/Landing";
-import { SKILL, SKILL_CATEGORY_1, SKILL_CATEGORY_2, SKILL_CATEGORY_3, SKILL_CATEGORY_4, BACKEND_POWER } from "../../home/mobile/MobileThree";
+import { PLATFORMS, FIREBASE, XCODE, BACKEND_POWER } from "../../home/mobile/MobileEight";
 import Blank from "../../contents/Blank";
 import { MyContext } from "../../context/Mycontext";
 export default function Mobile8(){
@@ -37,32 +37,26 @@ export default function Mobile8(){
           {/* ROW 1 */}
           <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
               <Blank />
-              <SKILL />
+              <PLATFORMS />
           </ReactCardFlip>
           <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
               <PAGE_ONE_BOX4 />
-              <SKILL_CATEGORY_1 />
+              <FIREBASE />
           </ReactCardFlip>
-          <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
-              <PAGE_ONE_BOX4 />
-              <SKILL_CATEGORY_2 />
-          </ReactCardFlip>
-        
+          <Blank />
 
          
 
          
 
           {/* ROW 2 */}
-          <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
-              <PAGE_ONE_BOX4 />
-              <SKILL_CATEGORY_3 />
-          </ReactCardFlip>
-          <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
-              <PAGE_ONE_BOX4 />
-              <SKILL_CATEGORY_4 />
-          </ReactCardFlip>
           <Blank />
+          <Blank />
+          <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
+              <PAGE_ONE_BOX4 />
+              <XCODE />
+          </ReactCardFlip>
+          
          
           {/* ROW 3 */}
           <Blank />

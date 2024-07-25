@@ -3,7 +3,7 @@ import {  PreBg,nextBg,sivarsaLogo,messageUs } from "../../Icons";
 import ReactCardFlip from '../../Flip';
 import { Link, useNavigate } from 'react-router-dom';
 import { PAGE_ONE_BOX2, PAGE_ONE_BOX4, PAGE_ONE_BOX7, PAGE_ONE_BOX9 } from "../../home/Landing";
-import { CRAFTING, MOBILEVIDEO_ONE, BACKEND_POWER  } from "../../home/mobile/MobileOne";
+import { WHY_US, BOOST_1, BOOST_2, BOOST_3  } from "../../home/mobile/MobileNine";
 import Blank from "../../contents/Blank";
 import { MyContext } from "../../context/Mycontext";
 export default function Mobile9(){
@@ -12,7 +12,7 @@ export default function Mobile9(){
   const [flipDirection, setFlipDirection] = useState(direction);
 
     const [rotate, setRotate] = useState(false);
-     useEffect(() => { 
+     useEffect(() => {  
       setRotate(true);
       setShouldRatate(true);
      },[]);
@@ -37,10 +37,13 @@ export default function Mobile9(){
           {/* ROW 1 */}
           <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
               <Blank />
-              <CRAFTING />
+              <WHY_US />
           </ReactCardFlip>
           <Blank />
-          <Blank />
+          <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
+              <Blank />
+              <BOOST_1 />
+          </ReactCardFlip>
         
 
          
@@ -50,8 +53,8 @@ export default function Mobile9(){
           {/* ROW 2 */}
           <Blank />
           <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
-              <PAGE_ONE_BOX4 />
-              <MOBILEVIDEO_ONE />
+              <Blank />
+              <BOOST_2 />
           </ReactCardFlip>
           <Blank />
          
@@ -59,8 +62,8 @@ export default function Mobile9(){
           <Blank />
           <Blank />
           <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
-              <PAGE_ONE_BOX9 />
-              <BACKEND_POWER />
+              <Blank />
+              <BOOST_3/>
           </ReactCardFlip>
 
 

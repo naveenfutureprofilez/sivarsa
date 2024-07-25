@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import {  arrowblackUP } from "../../Icons";
 import backendbg from "../../images/backend_power.png";
-
+ 
 export function USER_SATISFACTION(){
   return <>
     <div className={`thumbnailBox h-full relative  bg-[#101D68] `}>
