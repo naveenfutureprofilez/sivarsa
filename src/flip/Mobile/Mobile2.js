@@ -3,6 +3,7 @@ import {  PreBg,nextBg,sivarsaLogo,messageUs } from "../../Icons";
 import ReactCardFlip from '../../Flip';
 import { Link, useNavigate } from 'react-router-dom';
 import { PAGE_ONE_BOX2, PAGE_ONE_BOX4, PAGE_ONE_BOX7, PAGE_ONE_BOX9 } from "../../home/Landing";
+import { USER_SATISFACTION, APP_LAUNCHED, DOWNLOAD } from "../../home/mobile/MobileTwo";
 import { SKILL, SKILL_CATEGORY_1, SKILL_CATEGORY_2, SKILL_CATEGORY_3, SKILL_CATEGORY_4, BACKEND_POWER } from "../../home/mobile/MobileThree";
 import Blank from "../../contents/Blank";
 import { MyContext } from "../../context/Mycontext";
@@ -21,32 +22,26 @@ export default function Mobile2(){
      const handleNext = () => {
         setDirection('vertical');
         setRotate(prevRotate => !prevRotate);
-        navigate("/");
+        navigate("/services/mobile/3");
       };
 
       const handlePrev = () => {
         setDirection('vertical');
         setRotate(prevRotate => !prevRotate);
-        navigate("/services/mobile/2");
+        navigate("/services/mobile");
       };
   
-    return <>
+      return <>
       {shouldRatate ?
         <div className="grid w-full overflow-hidden h-screen gap-1 grid-cols-3 grid-rows-custome bg-black">
           
           {/* ROW 1 */}
           <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
               <Blank />
-              <SKILL />
+              <USER_SATISFACTION />
           </ReactCardFlip>
-          <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
-              <PAGE_ONE_BOX4 />
-              <SKILL_CATEGORY_1 />
-          </ReactCardFlip>
-          <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
-              <PAGE_ONE_BOX4 />
-              <SKILL_CATEGORY_2 />
-          </ReactCardFlip>
+          <Blank />
+          <Blank />
         
 
          
@@ -54,18 +49,18 @@ export default function Mobile2(){
          
 
           {/* ROW 2 */}
+          <Blank />
           <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
               <PAGE_ONE_BOX4 />
-              <SKILL_CATEGORY_3 />
-          </ReactCardFlip>
-          <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
-              <PAGE_ONE_BOX4 />
-              <SKILL_CATEGORY_4 />
+              <APP_LAUNCHED />
           </ReactCardFlip>
           <Blank />
          
           {/* ROW 3 */}
-          <Blank />
+          <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
+              <PAGE_ONE_BOX7 />
+              <DOWNLOAD/>
+          </ReactCardFlip>
           <Blank />
           <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
               <PAGE_ONE_BOX9 />

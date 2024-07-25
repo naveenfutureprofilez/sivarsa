@@ -28,9 +28,15 @@ import Staffing5 from './flip/staffing/Staffing5';
 import Staffing6 from './flip/staffing/Staffing6';
 import Staffing7 from './flip/staffing/Staffing7';
 import Staffing8 from './flip/staffing/Staffing8';
-import Mobile from './flip/Mobile/Mobile';
 import Mobile1 from './flip/Mobile/Mobile1';
 import Mobile2 from './flip/Mobile/Mobile2';
+import Mobile3 from './flip/Mobile/Mobile3';
+import Mobile4 from './flip/Mobile/Mobile4';
+import Mobile5 from './flip/Mobile/Mobile5';
+import Mobile6 from './flip/Mobile/Mobile6';
+import Mobile7 from './flip/Mobile/Mobile7';
+import Mobile8 from './flip/Mobile/Mobile8';
+import Mobile9 from './flip/Mobile/Mobile9';
 
 function App() {
   return (
@@ -64,9 +70,16 @@ function App() {
                   <Route path="/services/staffing/8" element={<Staffing8 />} />
 
                   {/* Mobile Applications */}
-                  <Route path="/services/mobile" element={<Mobile />} />
-                  <Route path="/services/mobile/2" element={<Mobile1 />} />
-                  <Route path="/services/mobile/3" element={<Mobile2 />} />
+                  <Route path="/services/mobile" element={<Mobile1 />} />
+                  <Route path="/services/mobile/2" element={<Mobile2 />} />
+                  <Route path="/services/mobile/3" element={<Mobile3 />} />
+                  <Route path="/services/mobile/4" element={<Mobile4 />} />
+                  <Route path="/services/mobile/5" element={<Mobile5 />} />
+                  <Route path="/services/mobile/6" element={<Mobile6 />} />
+                  <Route path="/services/mobile/7" element={<Mobile7 />} />
+                  <Route path="/services/mobile/8" element={<Mobile8 />} />
+                  <Route path="/services/mobile/9" element={<Mobile9 />} />
+
                   
                   {/* dummy */}
                   <Route path="/editor" element={<Editor />} />

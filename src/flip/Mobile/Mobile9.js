@@ -6,7 +6,7 @@ import { PAGE_ONE_BOX2, PAGE_ONE_BOX4, PAGE_ONE_BOX7, PAGE_ONE_BOX9 } from "../.
 import { CRAFTING, MOBILEVIDEO_ONE, BACKEND_POWER  } from "../../home/mobile/MobileOne";
 import Blank from "../../contents/Blank";
 import { MyContext } from "../../context/Mycontext";
-export default function Mobile(){
+export default function Mobile9(){
 
   const { direction, setDirection, shouldRatate, setShouldRatate } = useContext(MyContext);
   const [flipDirection, setFlipDirection] = useState(direction);
@@ -21,13 +21,13 @@ export default function Mobile(){
      const handleNext = () => {
         setDirection('vertical');
         setRotate(prevRotate => !prevRotate);
-        navigate("/services/mobile/2");
+        navigate("/");
       };
 
       const handlePrev = () => {
         setDirection('vertical');
         setRotate(prevRotate => !prevRotate);
-        navigate("/");
+        navigate("/services/mobile/8");
       };
   
     return <>
