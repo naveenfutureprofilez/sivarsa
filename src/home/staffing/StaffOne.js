@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import {  arrowblackUP } from "../../Icons";
+import tanentbg from "../../images/tanentbg.png";
 
 export function TURNING(){
   return <>
@@ -8,7 +9,7 @@ export function TURNING(){
   `}</style>
     <div className={`thumbnailBox h-full relative turn `}>
         <div className="wall text-white left p-2 sm:p-3 md:p-4 lg:p-6 ">       
-        <h2 className="font-neuebit  text-base sm:text-1xl md:text-2xl lg:text-4xl xl:text-5xl max-w-[300px] leading-none text-[#F5DCAE] mb-5">Turning Data into Magic Moments</h2>
+        <h2 className="font-neuebit  text-[15px] md:text-2xl lg:text-3xl  max-w-[180px] leading-[28px]  lg:leading-[32px]  text-[#F5DCAE] mb-5">Turning Data into Magic Moments</h2>
     </div>
     </div>
   </>
@@ -31,12 +32,11 @@ export function STAFFINGVIDEO_ONE(){
 export function TALENT_TAP(){
   return <>
   <style>{`
-    .turn {background: linear-gradient(90deg, rgba(23, 23, 23, 1) 0%, rgba(184, 141, 1, 1) 100%);}
+    .bg-tanent {  }
   `}</style>
-    <div className={`thumbnailBox h-full turn2 p-6 relative `}>
-        <h2 className="font-neuebit text-base text-2xl md:text-2xl lg:text-4xl xl:text-6xl leading-none text-[#9D5209]  mb-5">Talent 
+    <div style={{backgroundImage:`url(${tanentbg})`}} className={`thumbnailBox h-full bg-tanent  p-2 sm:p-3 md:p-4 lg:p-6 relative bg-repeat bg-cover `}>
+        <h2 className="font-neuebit  text-4xl md:text-4xl lg:text-6xl xl:text-6xl leading-[40px]  xl:leading-[50px] text-[#9D5209]  mb-5">Talent<br></br>
         on Tap</h2>
     </div>
   </>
 }
- 
