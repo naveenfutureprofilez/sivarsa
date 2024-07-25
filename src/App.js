@@ -26,6 +26,8 @@ import Staffing3 from './flip/staffing/Staffing3';
 import Staffing4 from './flip/staffing/Staffing4';
 import Staffing5 from './flip/staffing/Staffing5';
 import Staffing6 from './flip/staffing/Staffing6';
+import Staffing7 from './flip/staffing/Staffing7';
+import Staffing8 from './flip/staffing/Staffing8';
 import Mobile from './flip/Mobile/Mobile';
 import Mobile1 from './flip/Mobile/Mobile1';
 import Mobile2 from './flip/Mobile/Mobile2';
@@ -58,6 +60,8 @@ function App() {
                   <Route path="/services/staffing/4" element={<Staffing4 />} />
                   <Route path="/services/staffing/5" element={<Staffing5 />} />
                   <Route path="/services/staffing/6" element={<Staffing6 />} />
+                  <Route path="/services/staffing/7" element={<Staffing7 />} />
+                  <Route path="/services/staffing/8" element={<Staffing8 />} />
 
                   {/* Mobile Applications */}
                   <Route path="/services/mobile" element={<Mobile />} />

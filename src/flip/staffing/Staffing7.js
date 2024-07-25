@@ -6,7 +6,7 @@ import { PAGE_ONE_BOX2, PAGE_ONE_BOX4, PAGE_ONE_BOX7, PAGE_ONE_BOX9 } from "../.
 import { RECRUITMENT, LINKEDIN, INDEED, GLASSDOOR, TALENT_TAP  } from "../../home/staffing/StaffSix";
 import Blank from "../../contents/Blank";
 import { MyContext } from "../../context/Mycontext";
-export default function Staffing6(){
+export default function Staffing7(){
 
   const { direction, setDirection, shouldRatate, setShouldRatate } = useContext(MyContext);
   const [flipDirection, setFlipDirection] = useState(direction);
@@ -21,13 +21,13 @@ export default function Staffing6(){
      const handleNext = () => {
         setDirection('vertical');
         setRotate(prevRotate => !prevRotate);
-        navigate("/services/staffing/7");
+        navigate("/services/staffing/8");
       };
 
       const handlePrev = () => {
         setDirection('vertical');
         setRotate(prevRotate => !prevRotate);
-        navigate("/services/staffing/5");
+        navigate("/services/staffing/6");
       };
   
     return <>
