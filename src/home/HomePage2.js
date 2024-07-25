@@ -1,14 +1,17 @@
 import React, { useEffect, useState } from "react";
 import { arrowblackRT, arrowblackDW,arrowblackUP,weavingSoft,PreBg,nextBg,sivarsaLogo,messageUs } from "../Icons";
+import { Link } from "react-router-dom";
 
 export function WEBDEV(){
-  return <div className={` overflow-hidden thumbnailBox h-full relative bg-[#6FF04A] `}>
+  return <Link to="/services/web"> 
+  <div className={` overflow-hidden thumbnailBox h-full relative bg-[#6FF04A] `}>
       <div className="wall text-white p-2 sm:p-3 md:p-4 lg:p-6 ">       
         <h2 className="font-neuebit text-base sm:text-1xl md:text-xl lg:text-3xl xl:text-4xl leading-none text-[#0B6222]">Web Development </h2>
         <p className="font-GoshaSans  text-sm sm:text-sm md:text-base lg:text-base xl:text-lg leading-none text-[#0B6222]">Unleash the power of AI to <br /> transform your business</p>
         <div className="absolute absolute  bottom-2 xm:bottom-4 md:bottom-5 lg:bottom-7 xl:bottom-8 right-2 sm:right-4 md:right-5 lg:right-7 xl:right-8" dangerouslySetInnerHTML={{ __html: arrowblackUP }}></div>
       </div>
-  </div>
+      </div>
+  </Link>
 }
 export function AISERVICES(){
   return <div className={`thumbnailBox h-full relative bg-[#FF7E2D] `}>

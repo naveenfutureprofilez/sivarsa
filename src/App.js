@@ -37,6 +37,15 @@ import Mobile6 from './flip/Mobile/Mobile6';
 import Mobile7 from './flip/Mobile/Mobile7';
 import Mobile8 from './flip/Mobile/Mobile8';
 import Mobile9 from './flip/Mobile/Mobile9';
+import Web1 from './flip/Web/Web1';
+import Web2 from './flip/Web/Web2';
+import Web3 from './flip/Web/Web3';
+import Web4 from './flip/Web/Web4';
+import Web5 from './flip/Web/Web5';
+import Web6 from './flip/Web/Web6';
+import Web7 from './flip/Web/Web7';
+import Web8 from './flip/Web/Web8';
+import Web9 from './flip/Web/Web9';
 
 function App() {
   return (
@@ -79,6 +88,17 @@ function App() {
                   <Route path="/services/mobile/7" element={<Mobile7 />} />
                   <Route path="/services/mobile/8" element={<Mobile8 />} />
                   <Route path="/services/mobile/9" element={<Mobile9 />} />
+
+                  {/* Web Applications */}
+                  <Route path="/services/web" element={<Web1 />} />
+                  <Route path="/services/web/2" element={<Web2 />} />
+                  <Route path="/services/web/3" element={<Web3 />} />
+                  <Route path="/services/web/4" element={<Web4 />} />
+                  <Route path="/services/web/5" element={<Web5 />} />
+                  <Route path="/services/web/6" element={<Web6 />} />
+                  <Route path="/services/web/7" element={<Web7 />} />
+                  <Route path="/services/web/8" element={<Web8 />} />
+                  <Route path="/services/web/9" element={<Web9 />} />
 
                   
                   {/* dummy */}
