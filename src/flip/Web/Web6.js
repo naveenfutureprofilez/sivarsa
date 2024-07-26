@@ -3,7 +3,7 @@ import {  PreBg,nextBg,sivarsaLogo,messageUs } from "../../Icons";
 import ReactCardFlip from '../../Flip';
 import { Link, useNavigate } from 'react-router-dom';
 import { PAGE_ONE_BOX2, PAGE_ONE_BOX4, PAGE_ONE_BOX7, PAGE_ONE_BOX9 } from "../../home/Landing";
-import { USER_SATISFACTION, APP_LAUNCHED, DOWNLOAD, BACKEND_POWER  } from "../../home/mobile/MobileTwo";
+import { LANGUAGES, HTML_WEB, JAVASCRIPT, CSS3_STYLE, WEB_TAP  } from "../../home/web/WebSix"; 
 import { CRAFTING, MOBILEVIDEO_ONE } from "../../home/mobile/MobileOne";
 import Blank from "../../contents/Blank";
 import { MyContext } from "../../context/Mycontext";
@@ -40,33 +40,32 @@ export default function Web6(){
           {/* ROW 1 */}
           <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
               <Blank />
-              <Languages />
+              <LANGUAGES />
           </ReactCardFlip>
           <Blank />
           <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
               <Blank />
-              <WEbHTML />
+              <HTML_WEB />
           </ReactCardFlip>
-        
-
-         
-
          
 
           {/* ROW 2 */}
           <Blank />
           <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
               <PAGE_ONE_BOX4 />
-              <WEbJS/>
+              <JAVASCRIPT />
           </ReactCardFlip>
           <Blank />
          
-          {/* ROW 3 */}
-          <WEB_TAP />
+         {/* ROW 3 */}
+         <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
+              <PAGE_ONE_BOX9 />
+              <WEB_TAP />
+          </ReactCardFlip>
           <Blank />
           <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
-              <PAGE_ONE_BOX9 />
-              <WEbCSS />
+              <PAGE_ONE_BOX4 />
+              <CSS3_STYLE />
           </ReactCardFlip>
 
 

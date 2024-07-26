@@ -3,8 +3,7 @@ import {  PreBg,nextBg,sivarsaLogo,messageUs } from "../../Icons";
 import ReactCardFlip from '../../Flip';
 import { Link, useNavigate } from 'react-router-dom';
 import { PAGE_ONE_BOX2, PAGE_ONE_BOX4, PAGE_ONE_BOX7, PAGE_ONE_BOX9 } from "../../home/Landing";
-import { USER_SATISFACTION, APP_LAUNCHED, DOWNLOAD, BACKEND_POWER  } from "../../home/mobile/MobileTwo";
-import { CRAFTING, MOBILEVIDEO_ONE } from "../../home/mobile/MobileOne";
+import {  PLATFORMS, GOOGLE_CLOUD, AZURE, AWS_PLAT, WEB_TAP  } from "../../home/web/WebEight";  
 import Blank from "../../contents/Blank";
 import { MyContext } from "../../context/Mycontext";
 import { AWS, Azure, GoogleCloud, Platforms } from "../../home/web/WebEight";
@@ -40,11 +39,11 @@ export default function Web8(){
           {/* ROW 1 */}
           <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
               <Blank />
-              <Platforms />
+              <PLATFORMS />
           </ReactCardFlip>
           <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
               <Blank />
-              <GoogleCloud />
+              <GOOGLE_CLOUD />
           </ReactCardFlip>
           <Blank />
         
@@ -56,17 +55,20 @@ export default function Web8(){
           {/* ROW 2 */}
           <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
               <PAGE_ONE_BOX4 />
-              <Azure />
+              <AZURE />
           </ReactCardFlip>
-          <Blank />
+          <Blank />         
           <Blank />
          
           {/* ROW 3 */}
-          <WEB_TAP />
-          <Blank />
           <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
               <PAGE_ONE_BOX9 />
-              <AWS />
+              <WEB_TAP />
+          </ReactCardFlip>
+          <Blank />
+          <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
+              <PAGE_ONE_BOX4 />
+              <AWS_PLAT />
           </ReactCardFlip>
 
 

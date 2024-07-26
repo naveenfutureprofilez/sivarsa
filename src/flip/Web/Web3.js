@@ -3,8 +3,7 @@ import {  PreBg,nextBg,sivarsaLogo,messageUs } from "../../Icons";
 import ReactCardFlip from '../../Flip';
 import { Link, useNavigate } from 'react-router-dom';
 import { PAGE_ONE_BOX2, PAGE_ONE_BOX4, PAGE_ONE_BOX7, PAGE_ONE_BOX9 } from "../../home/Landing";
-import { USER_SATISFACTION, APP_LAUNCHED, DOWNLOAD, BACKEND_POWER  } from "../../home/mobile/MobileTwo";
-import { CRAFTING, MOBILEVIDEO_ONE } from "../../home/mobile/MobileOne";
+import { SKILL, SKILL_CATEGORY_1, SKILL_CATEGORY_2, SKILL_CATEGORY_3, SKILL_CATEGORY_4, WEB_TAP  } from "../../home/web/WebThree"; 
 import Blank from "../../contents/Blank";
 import { MyContext } from "../../context/Mycontext";
 import { CMS, Custom, ECom, Responsive, Skill } from "../../home/web/WebThree";
@@ -40,38 +39,36 @@ export default function Web3(){
           {/* ROW 1 */}
           <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
               <Blank />
-              <Skill />
+              <SKILL />
           </ReactCardFlip>
           <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
               <Blank />
-              <Responsive />
+              <SKILL_CATEGORY_1 />
           </ReactCardFlip>
           <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
               <Blank />
-              <ECom />
+              <SKILL_CATEGORY_2 />
           </ReactCardFlip>
-        
-
-         
-
          
 
           {/* ROW 2 */}
-          <Blank />
           <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
-              <PAGE_ONE_BOX4 />
-              <Custom />
+              <Blank />
+              <SKILL_CATEGORY_3 />
           </ReactCardFlip>
+          <Blank />        
           <Blank />
          
-          {/* ROW 3 */}
-          <WEB_TAP />
+        {/* ROW 3 */}
+        <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
+              <PAGE_ONE_BOX9 />
+              <WEB_TAP />
+          </ReactCardFlip>
           <Blank />
           <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
-              <PAGE_ONE_BOX9 />
-              <CMS />
+              <Blank />
+              <SKILL_CATEGORY_4 />
           </ReactCardFlip>
-
 
           {/* BOTTOM */}
           <div onClick={handlePrev} className="relative thumbnailBox h-full bg-[#171717] p-2 sm:p-3 md:p-4 lg:p-6 ">

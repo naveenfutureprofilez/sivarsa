@@ -3,8 +3,7 @@ import {  PreBg,nextBg,sivarsaLogo,messageUs } from "../../Icons";
 import ReactCardFlip from '../../Flip';
 import { Link, useNavigate } from 'react-router-dom';
 import { PAGE_ONE_BOX2, PAGE_ONE_BOX4, PAGE_ONE_BOX7, PAGE_ONE_BOX9 } from "../../home/Landing";
-import { USER_SATISFACTION, APP_LAUNCHED, DOWNLOAD, BACKEND_POWER  } from "../../home/mobile/MobileTwo";
-import { CRAFTING, MOBILEVIDEO_ONE } from "../../home/mobile/MobileOne";
+import { UPTIME, MONTHLY, DELIVERED, WEB_TAP  } from "../../home/web/WebTwo"; 
 import Blank from "../../contents/Blank";
 import { MyContext } from "../../context/Mycontext";
 import { Delievered, Monthly, Uptime } from "../../home/web/WebTwo";
@@ -25,7 +24,7 @@ export default function Web2(){
         setDirection('vertical');
         setRotate(prevRotate => !prevRotate);
         navigate("/services/web/3");
-      };
+      }; 
 
       const handlePrev = () => {
         setDirection('vertical');
@@ -40,7 +39,7 @@ export default function Web2(){
           {/* ROW 1 */}
           <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
               <Blank />
-              <Uptime/>
+              <UPTIME />
           </ReactCardFlip>
           <Blank />
           <Blank />
@@ -54,17 +53,21 @@ export default function Web2(){
           <Blank />
           <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
               <PAGE_ONE_BOX4 />
-              <Monthly />
+              <MONTHLY />
           </ReactCardFlip>
           <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
               <PAGE_ONE_BOX4 />
-              <Delievered />
+              <DELIVERED />
           </ReactCardFlip>
          
           {/* ROW 3 */}
-          <WEB_TAP />
+          <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
+              <PAGE_ONE_BOX9 />
+              <WEB_TAP />
+          </ReactCardFlip>
           <Blank />
           <Blank />
+          
 
 
           {/* BOTTOM */}
