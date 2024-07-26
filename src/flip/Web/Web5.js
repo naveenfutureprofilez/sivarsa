@@ -7,6 +7,8 @@ import { USER_SATISFACTION, APP_LAUNCHED, DOWNLOAD, BACKEND_POWER  } from "../..
 import { CRAFTING, MOBILEVIDEO_ONE } from "../../home/mobile/MobileOne";
 import Blank from "../../contents/Blank";
 import { MyContext } from "../../context/Mycontext";
+import { WEB_TAP } from "../../home/web/WebOne";
+import { Angular, FrameWorks, Vue, WebReact } from "../../home/web/WebFive";
 export default function Web5(){
 
   const { direction, setDirection, shouldRatate, setShouldRatate } = useContext(MyContext);
@@ -38,9 +40,12 @@ export default function Web5(){
           {/* ROW 1 */}
           <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
               <Blank />
-              <CRAFTING />
+              <FrameWorks />
           </ReactCardFlip>
-          <Blank />
+          <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
+              <Blank />
+              <WebReact />
+          </ReactCardFlip>
           <Blank />
         
 
@@ -52,16 +57,19 @@ export default function Web5(){
           <Blank />
           <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
               <PAGE_ONE_BOX4 />
-              <MOBILEVIDEO_ONE />
+              <Angular />
           </ReactCardFlip>
-          <Blank />
+          <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
+              <PAGE_ONE_BOX4 />
+              <Vue />
+          </ReactCardFlip>
          
           {/* ROW 3 */}
-          <Blank />
+          <WEB_TAP />
           <Blank />
           <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
               <PAGE_ONE_BOX9 />
-              <BACKEND_POWER />
+              <Blank />
           </ReactCardFlip>
 
 

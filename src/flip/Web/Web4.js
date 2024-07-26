@@ -7,6 +7,8 @@ import { USER_SATISFACTION, APP_LAUNCHED, DOWNLOAD, BACKEND_POWER  } from "../..
 import { CRAFTING, MOBILEVIDEO_ONE } from "../../home/mobile/MobileOne";
 import Blank from "../../contents/Blank";
 import { MyContext } from "../../context/Mycontext";
+import { WEB_TAP } from "../../home/web/WebOne";
+import { WebDevelopment, WebDiscovery, WebIntegration, WebMonitoring } from "../../home/web/WebFour";
 export default function Web4(){
 
   const { direction, setDirection, shouldRatate, setShouldRatate } = useContext(MyContext);
@@ -35,13 +37,16 @@ export default function Web4(){
       {shouldRatate ?
         <div className="grid w-full overflow-hidden h-screen gap-1 grid-cols-3 grid-rows-custome bg-black">
           
-          {/* ROW 1 */}
+          {/* ROW 1 */}          
+              <Blank />
           <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
               <Blank />
-              <CRAFTING />
+              <WebDiscovery />
           </ReactCardFlip>
-          <Blank />
-          <Blank />
+          <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
+              <Blank />
+              <WebIntegration />
+          </ReactCardFlip>
         
 
          
@@ -52,16 +57,19 @@ export default function Web4(){
           <Blank />
           <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
               <PAGE_ONE_BOX4 />
-              <MOBILEVIDEO_ONE />
+              <WebDevelopment />
           </ReactCardFlip>
-          <Blank />
+          <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
+              <PAGE_ONE_BOX4 />
+              <WebMonitoring />
+          </ReactCardFlip>
          
           {/* ROW 3 */}
-          <Blank />
+          <WEB_TAP />
           <Blank />
           <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
               <PAGE_ONE_BOX9 />
-              <BACKEND_POWER />
+              <WebIntegration />
           </ReactCardFlip>
 
 

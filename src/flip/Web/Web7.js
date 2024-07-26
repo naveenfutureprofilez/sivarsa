@@ -7,6 +7,8 @@ import { USER_SATISFACTION, APP_LAUNCHED, DOWNLOAD, BACKEND_POWER  } from "../..
 import { CRAFTING, MOBILEVIDEO_ONE } from "../../home/mobile/MobileOne";
 import Blank from "../../contents/Blank";
 import { MyContext } from "../../context/Mycontext";
+import { CMS, Drupal, Joomia, WordPress } from "../../home/web/WebSeven";
+import { WEB_TAP } from "../../home/web/WebOne";
 export default function Web7(){
 
   const { direction, setDirection, shouldRatate, setShouldRatate } = useContext(MyContext);
@@ -38,9 +40,12 @@ export default function Web7(){
           {/* ROW 1 */}
           <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
               <Blank />
-              <CRAFTING />
+              <CMS />
           </ReactCardFlip>
-          <Blank />
+          <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
+              <Blank />
+              <Joomia/>
+          </ReactCardFlip>
           <Blank />
         
 
@@ -49,19 +54,19 @@ export default function Web7(){
          
 
           {/* ROW 2 */}
-          <Blank />
           <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
               <PAGE_ONE_BOX4 />
-              <MOBILEVIDEO_ONE />
+              <Drupal />
           </ReactCardFlip>
+          <Blank />
           <Blank />
          
           {/* ROW 3 */}
-          <Blank />
+          <WEB_TAP />
           <Blank />
           <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
               <PAGE_ONE_BOX9 />
-              <BACKEND_POWER />
+              <WordPress/>
           </ReactCardFlip>
 
 

@@ -7,6 +7,9 @@ import { USER_SATISFACTION, APP_LAUNCHED, DOWNLOAD, BACKEND_POWER  } from "../..
 import { CRAFTING, MOBILEVIDEO_ONE } from "../../home/mobile/MobileOne";
 import Blank from "../../contents/Blank";
 import { MyContext } from "../../context/Mycontext";
+import { Efficiency1, Efficiency2, Efficiency3 } from "../../home/web/WebNine";
+import { WEB_TAP } from "../../home/web/WebOne";
+
 export default function Web9(){
 
   const { direction, setDirection, shouldRatate, setShouldRatate } = useContext(MyContext);
@@ -36,12 +39,12 @@ export default function Web9(){
         <div className="grid w-full overflow-hidden h-screen gap-1 grid-cols-3 grid-rows-custome bg-black">
           
           {/* ROW 1 */}
+          <WEB_TAP />
+          <Blank />
           <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
               <Blank />
-              <CRAFTING />
+              <Efficiency1 />
           </ReactCardFlip>
-          <Blank />
-          <Blank />
         
 
          
@@ -52,7 +55,7 @@ export default function Web9(){
           <Blank />
           <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
               <PAGE_ONE_BOX4 />
-              <MOBILEVIDEO_ONE />
+              <Efficiency2 />
           </ReactCardFlip>
           <Blank />
          
@@ -61,7 +64,7 @@ export default function Web9(){
           <Blank />
           <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
               <PAGE_ONE_BOX9 />
-              <BACKEND_POWER />
+              <Efficiency3 />
           </ReactCardFlip>
 
 
