@@ -19,7 +19,7 @@ export default function Staffing8(){
 
      const navigate = useNavigate();
      const handleNext = () => {
-        setDirection('vertical');
+        setDirection('vertical-reverse');
         setRotate(prevRotate => !prevRotate);
         navigate("/");
       };

@@ -6,6 +6,9 @@ import { PAGE_ONE_BOX2, PAGE_ONE_BOX4, PAGE_ONE_BOX7, PAGE_ONE_BOX9 } from "../.
 import { SKILL, SKILL_CATEGORY_1, SKILL_CATEGORY_2, SKILL_CATEGORY_3, SKILL_CATEGORY_4, TALENT_TAP  } from "../../home/staffing/StaffThree";
 import Blank from "../../contents/Blank";
 import { MyContext } from "../../context/Mycontext";
+import { RETENTION, CLIENT_SERVED, PROFESSIONAL  } from "../../home/staffing/StaffTwo";
+import { DISCOVERY, TALENT_SOURCING, MATCHING, ONBOARDING, ONGOING_SUPPORT } from "../../home/staffing/StaffFour";
+
 export default function Staffing3(){
 
   const { direction, setDirection, shouldRatate, setShouldRatate } = useContext(MyContext);
@@ -19,7 +22,7 @@ export default function Staffing3(){
 
      const navigate = useNavigate();
      const handleNext = () => {
-        setDirection('vertical');
+        setDirection('vertical-reverse');
         setRotate(prevRotate => !prevRotate);
         navigate("/services/staffing/4");
       };
@@ -35,42 +38,88 @@ export default function Staffing3(){
         <div className="grid w-full overflow-hidden h-screen gap-1 grid-cols-3 grid-rows-custome bg-black">
           
           {/* ROW 1 */}
-          <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
-              <Blank />
-              <SKILL />
-          </ReactCardFlip>
-          <Blank />
-          <Blank />
-        
+          {direction === "vertical" ?
+            <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
+                <DISCOVERY />
+                <SKILL />
+            </ReactCardFlip>
+          :
+            <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
+                <Blank />
+                <SKILL />
+            </ReactCardFlip>
+          }
 
-         
+          {direction === "vertical" ?
+            <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
+                <TALENT_SOURCING />
+                <Blank />
+            </ReactCardFlip>
+          :
+            <Blank />
+          }
+
+          {direction === "vertical" ?
+            // <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
+                <Blank />
+                // {/* <Blank /> */}
+            // {/* </ReactCardFlip> */}
+          :
+            <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
+                <RETENTION />
+                <Blank />
+            </ReactCardFlip>
+          }
 
          
 
           {/* ROW 2 */}
+          {direction === "vertical" ?
+            <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
+                <MATCHING />
+                <SKILL_CATEGORY_1 />
+            </ReactCardFlip>
+            :
+            <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
+                <PROFESSIONAL />
+                <SKILL_CATEGORY_1 />
+            </ReactCardFlip>
+          }
+
+          {direction === "vertical" ?
           <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
-              <PAGE_ONE_BOX4 />
-              <SKILL_CATEGORY_1 />
-          </ReactCardFlip>
-          <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
-              <PAGE_ONE_BOX4 />
+              <ONBOARDING />
               <SKILL_CATEGORY_2 />
           </ReactCardFlip>
+          :
           <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
-              <PAGE_ONE_BOX4 />
+              <CLIENT_SERVED />
+              <SKILL_CATEGORY_2 />
+          </ReactCardFlip>
+          }
+
+          <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
+              <Blank />
               <SKILL_CATEGORY_3 />
           </ReactCardFlip>
+
+
          
           {/* ROW 3 */}
-          <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
-              <PAGE_ONE_BOX7 />
+          {direction === "vertical" ?
+            <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
+                <ONGOING_SUPPORT />
+                <SKILL_CATEGORY_4 />
+            </ReactCardFlip>
+            :
+            <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
+              <Blank />
               <SKILL_CATEGORY_4 />
-          </ReactCardFlip>
+            </ReactCardFlip>
+          }
+
           <Blank />
-          <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
-              <PAGE_ONE_BOX9 />
-              <TALENT_TAP />
-          </ReactCardFlip>
+          <TALENT_TAP />
 
 
           {/* BOTTOM */}

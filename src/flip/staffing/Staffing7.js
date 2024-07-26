@@ -19,7 +19,7 @@ export default function Staffing7(){
 
      const navigate = useNavigate();
      const handleNext = () => {
-        setDirection('vertical');
+        setDirection('vertical-reverse');
         setRotate(prevRotate => !prevRotate);
         navigate("/services/staffing/8");
       };
@@ -34,7 +34,6 @@ export default function Staffing7(){
       {shouldRatate ?
         <div className="grid w-full overflow-hidden h-screen gap-1 grid-cols-3 grid-rows-custome bg-black">
           {/* ROW 1 */}
-          
           <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
               <Blank />
               <SCREENING />
@@ -46,26 +45,23 @@ export default function Staffing7(){
           </ReactCardFlip>
         
 
-          
-
          
 
           {/* ROW 2 */}
-          
           <Blank />
           <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
               <PAGE_ONE_BOX4 />
               <CODILITY />
           </ReactCardFlip>
           <Blank />
-         
+          
+
+
+
           {/* ROW 3 */}
           <Blank />
           <Blank />
-          <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
-              <PAGE_ONE_BOX9 />
-              <TALENT_TAP />
-          </ReactCardFlip>
+          <TALENT_TAP />
 
 
           {/* BOTTOM */}

@@ -6,6 +6,9 @@ import { PAGE_ONE_BOX2, PAGE_ONE_BOX4, PAGE_ONE_BOX7, PAGE_ONE_BOX9 } from "../.
 import { DISCOVERY, TALENT_SOURCING, MATCHING, ONBOARDING, ONGOING_SUPPORT, TALENT_TAP  } from "../../home/staffing/StaffFour";
 import Blank from "../../contents/Blank";
 import { MyContext } from "../../context/Mycontext";
+import { SKILL, SKILL_CATEGORY_1, SKILL_CATEGORY_2, SKILL_CATEGORY_3, SKILL_CATEGORY_4  } from "../../home/staffing/StaffThree";
+import { OFFERING, PERMANENT_EMP, CONTRACT_EMP, PARTTIME_EMP   } from "../../home/staffing/StaffFive";
+
 export default function Staffing4(){
 
   const { direction, setDirection, shouldRatate, setShouldRatate } = useContext(MyContext);
@@ -19,7 +22,7 @@ export default function Staffing4(){
 
      const navigate = useNavigate();
      const handleNext = () => {
-        setDirection('vertical');
+        setDirection('vertical-reverse');
         setRotate(prevRotate => !prevRotate);
         navigate("/services/staffing/5");
       };
@@ -35,42 +38,109 @@ export default function Staffing4(){
         <div className="grid w-full overflow-hidden h-screen gap-1 grid-cols-3 grid-rows-custome bg-black">
           {/* ROW 1 */}
           
-          <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
-              <Blank />
-              <DISCOVERY />
-          </ReactCardFlip>
-          <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
-              <Blank />
-              <TALENT_SOURCING />
-          </ReactCardFlip>
-          <Blank /> 
+          {direction === 'vertical' ?  
+            <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
+                <OFFERING />
+                <DISCOVERY />
+            </ReactCardFlip>
+            :
+            <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
+                <SKILL />
+                <DISCOVERY />
+            </ReactCardFlip>
+          }
 
-          
+          {direction === 'vertical' ?  
+            <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
+                <Blank />
+                <TALENT_SOURCING />
+            </ReactCardFlip>
+            :
+            <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
+                <Blank />
+                <TALENT_SOURCING />
+            </ReactCardFlip>
+          }
+
+
+          {direction === 'vertical' ?  
+            <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
+                <PERMANENT_EMP />
+                <Blank />
+            </ReactCardFlip>
+            :
+              <Blank />
+          }
+
 
          
 
           {/* ROW 2 */}
+
+          { direction === 'vertical' ?  
+            <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
+                <CONTRACT_EMP />
+                <MATCHING />
+            </ReactCardFlip>
+            :
+            <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
+                <SKILL_CATEGORY_1 />
+                <MATCHING />
+            </ReactCardFlip>
+          }
+
+          { direction === 'vertical' ?
+            <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
+                <Blank />
+                <ONBOARDING />
+            </ReactCardFlip>
+            :
+            <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
+                <SKILL_CATEGORY_2 />
+                <ONBOARDING />
+            </ReactCardFlip>
+          }
+
+
+          { direction === 'vertical' ? 
+              <Blank />
+          : 
+            <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
+              <SKILL_CATEGORY_3 />
+              <Blank />
+            </ReactCardFlip>
+          }
+
+
+
+
+
+
           
-          <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
-              <PAGE_ONE_BOX4 />
-              <MATCHING />
-          </ReactCardFlip>
-          <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
-              <PAGE_ONE_BOX4 />
-              <ONBOARDING />
-          </ReactCardFlip>
-          <Blank />
          
           {/* ROW 3 */}
-          <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
-              <PAGE_ONE_BOX7/>
-              <ONGOING_SUPPORT />
-          </ReactCardFlip>
-          <Blank />
-          <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
-              <PAGE_ONE_BOX9 />
-              <TALENT_TAP />
-          </ReactCardFlip>
+          {direction === 'vertical' ?
+            <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
+                <Blank/>
+                <ONGOING_SUPPORT />
+            </ReactCardFlip>
+            :
+            <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
+                <SKILL_CATEGORY_4/>
+                <ONGOING_SUPPORT />
+            </ReactCardFlip>
+          }
+
+          {direction === 'vertical' ?
+            <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
+                <PARTTIME_EMP />
+                <Blank/>
+            </ReactCardFlip>
+            :
+              <Blank />
+          }
+          
+          <TALENT_TAP />
 
 
           {/* BOTTOM */}

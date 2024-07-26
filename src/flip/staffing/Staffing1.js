@@ -6,6 +6,8 @@ import { PAGE_ONE_BOX2, PAGE_ONE_BOX4, PAGE_ONE_BOX7, PAGE_ONE_BOX9 } from "../.
 import { TURNING, STAFFINGVIDEO_ONE, TALENT_TAP  } from "../../home/staffing/StaffOne";
 import Blank from "../../contents/Blank";
 import { MyContext } from "../../context/Mycontext";
+import { RETENTION, CLIENT_SERVED, PROFESSIONAL  } from "../../home/staffing/StaffTwo";
+
 export default function Staffing1(){
 
   const { direction, setDirection, shouldRatate, setShouldRatate } = useContext(MyContext);
@@ -19,7 +21,7 @@ export default function Staffing1(){
 
      const navigate = useNavigate();
      const handleNext = () => {
-        setDirection('vertical');
+        setDirection('vertical-reverse');
         setRotate(prevRotate => !prevRotate);
         navigate("/services/staffing/2");
       };
@@ -34,36 +36,72 @@ export default function Staffing1(){
       {shouldRatate ?
         <div className="grid w-full overflow-hidden h-screen gap-1 grid-cols-3 grid-rows-custome bg-black">
           {/* ROW 1 */}
+          {direction === "vertical" ?
           <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
               <Blank />
               <TURNING />
           </ReactCardFlip>
-
+          :
           <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
-              <PAGE_ONE_BOX2 />
               <Blank />
+              <TURNING />
           </ReactCardFlip>
-
+          }
           <Blank />
+          
+          {direction === "vertical" ?
+            <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
+              <RETENTION />
+              <Blank />
+            </ReactCardFlip>
+          :
+            <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
+                <PAGE_ONE_BOX2 />
+                <Blank />
+            </ReactCardFlip>
+          }
+
+          
 
           {/* ROW 2 */}
-          <Blank />
+
+          {direction === "vertical" ?
+            <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
+                <PROFESSIONAL />
+                <Blank />
+            </ReactCardFlip>
+          :
+            <Blank />
+          }
+
+          {direction === "vertical" ?
+            <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
+                <CLIENT_SERVED />
+                <STAFFINGVIDEO_ONE />
+            </ReactCardFlip>
+          :
           <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
-              <PAGE_ONE_BOX4 />
-              <STAFFINGVIDEO_ONE />
-          </ReactCardFlip>
+                <Blank />
+                <STAFFINGVIDEO_ONE />
+            </ReactCardFlip>
+          }
           <Blank />
 
+
           {/* ROW 3 */}
-          <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
-              <PAGE_ONE_BOX7/>
-              <Blank />
-          </ReactCardFlip>
           <Blank />
-          <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
-              <PAGE_ONE_BOX9 />
-              <TALENT_TAP />
-          </ReactCardFlip>
+          <Blank />
+          {direction === "vertical" ?
+            <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
+                <TALENT_TAP />
+                <TALENT_TAP />
+            </ReactCardFlip> 
+            : 
+            <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
+                <PAGE_ONE_BOX9 />
+                <TALENT_TAP />
+            </ReactCardFlip> 
+          }
 
 
           {/* BOTTOM */}
@@ -87,7 +125,6 @@ export default function Staffing1(){
             </div>
             <div className="absolute top-0 bottom-0 left-0 h-full nextpreimg" dangerouslySetInnerHTML={{ __html: nextBg }}></div>
           </div>
-          
         </div>
        : 
          <div className="grid w-full overflow-hidden h-screen gap-1 grid-cols-3 grid-rows-custome bg-black">
