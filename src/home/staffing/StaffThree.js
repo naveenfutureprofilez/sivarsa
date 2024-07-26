@@ -33,7 +33,7 @@ export function SKILL_CATEGORY_1(){
 export function SKILL_CATEGORY_2(){
     return <> 
       <div className={`thumbnailBox h-full relative bg-[#171717]`}>
-          <div className="wall text-white left p-2 sm:p-3 md:p-4 lg:p-6 ">       
+          <div className="wall text-white left p-2 sm:p-3 md:p-4 lg:p-6 opacity-80">       
               <h2 className="relative font-neuebit text-[#F5BB0B] text-[25px] md:text-[32px] lg:text-[40px] xl:text-[50px] leading-[30px] lg:leading-[50px] xl:leading-10  mb-3">Flexible   <br className="hidden md:block"></br> Staffing</h2>
               <div className="md:absolute md:right-[30px] text-[#9D5209] text-lg lg:text-xl font-GoshaSans md:bottom-[20px]  xl:bottom-[40px] md:text-right"> 
                   <img className="w-[40px] lg:w-[60px]" src={SKILL_CATEGORY2} alt="Dynamic Image" />
@@ -46,7 +46,7 @@ export function SKILL_CATEGORY_2(){
   export function SKILL_CATEGORY_3(){
     return <> 
       <div className={`thumbnailBox h-full relative bg-[#171717]`}>
-          <div className="wall text-white left p-2 sm:p-3 md:p-4 lg:p-6 ">       
+          <div className="wall text-white left p-2 sm:p-3 md:p-4 lg:p-6 opacity-60">       
               <h2 className="relative font-neuebit text-[#F5BB0B] text-[25px] md:text-[32px] lg:text-[40px] xl:text-[50px] leading-[30px] lg:leading-[50px] xl:leading-10  mb-3">Domain  <br className="hidden md:block"></br> Specialists</h2>
               <div className="md:absolute md:right-[30px] text-[#9D5209] text-lg lg:text-xl font-GoshaSans md:bottom-[20px]  xl:bottom-[40px] md:text-right"> 
                   <img className="w-[40px] lg:w-[60px]" src={SKILL_CATEGORY3} alt="Dynamic Image" />
@@ -59,7 +59,7 @@ export function SKILL_CATEGORY_2(){
   export function SKILL_CATEGORY_4(){
     return <> 
       <div className={`thumbnailBox h-full relative bg-[#171717]`}>
-          <div className="wall text-white opacity-40 left p-2 sm:p-3 md:p-4 lg:p-6 ">       
+          <div className="wall text-white opacity-40 left p-2 sm:p-3 md:p-4 lg:p-6 opacity-40">       
               <h2 className="relative font-neuebit text-[#F5BB0B] text-[25px] md:text-[32px] lg:text-[40px] xl:text-[50px] leading-[30px] lg:leading-[50px] xl:leading-10  mb-3">Global  <br className="hidden md:block"></br> Reach</h2>
               <div className="md:absolute md:right-[30px] text-[#9D5209] text-lg lg:text-xl font-GoshaSans md:bottom-[20px]  xl:bottom-[40px] md:text-right"> 
                   <img className="w-[40px] lg:w-[60px]" src={SKILL_CATEGORY4} alt="Dynamic Image" />

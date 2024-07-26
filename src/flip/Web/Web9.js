@@ -3,8 +3,7 @@ import {  PreBg,nextBg,sivarsaLogo,messageUs } from "../../Icons";
 import ReactCardFlip from '../../Flip';
 import { Link, useNavigate } from 'react-router-dom';
 import { PAGE_ONE_BOX2, PAGE_ONE_BOX4, PAGE_ONE_BOX7, PAGE_ONE_BOX9 } from "../../home/Landing";
-import { USER_SATISFACTION, APP_LAUNCHED, DOWNLOAD, BACKEND_POWER  } from "../../home/mobile/MobileTwo";
-import { CRAFTING, MOBILEVIDEO_ONE } from "../../home/mobile/MobileOne";
+import {  BOOST_1, BOOST_2, BOOST_3, WEB_TAP  } from "../../home/web/WebNine";  
 import Blank from "../../contents/Blank";
 import { MyContext } from "../../context/Mycontext";
 export default function Web9(){
@@ -38,10 +37,13 @@ export default function Web9(){
           {/* ROW 1 */}
           <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
               <Blank />
-              <CRAFTING />
+              <WEB_TAP />
           </ReactCardFlip>
           <Blank />
-          <Blank />
+          <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
+              <Blank />
+              <BOOST_1 />
+          </ReactCardFlip>
         
 
          
@@ -51,8 +53,8 @@ export default function Web9(){
           {/* ROW 2 */}
           <Blank />
           <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
-              <PAGE_ONE_BOX4 />
-              <MOBILEVIDEO_ONE />
+              <Blank />
+              <BOOST_2 />
           </ReactCardFlip>
           <Blank />
          
@@ -61,10 +63,9 @@ export default function Web9(){
           <Blank />
           <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
               <PAGE_ONE_BOX9 />
-              <BACKEND_POWER />
+              <BOOST_3 />
           </ReactCardFlip>
-
-
+         
           {/* BOTTOM */}
           <div onClick={handlePrev} className="relative thumbnailBox h-full bg-[#171717] p-2 sm:p-3 md:p-4 lg:p-6 ">
             <div className="absolute bottom-6 left-5 text-[#B5AAF3] font-neuebit text-xl md:text-3xl lg:text-4xl xl:text-5xl z-10">

@@ -3,8 +3,7 @@ import {  PreBg,nextBg,sivarsaLogo,messageUs } from "../../Icons";
 import ReactCardFlip from '../../Flip';
 import { Link, useNavigate } from 'react-router-dom';
 import { PAGE_ONE_BOX2, PAGE_ONE_BOX4, PAGE_ONE_BOX7, PAGE_ONE_BOX9 } from "../../home/Landing";
-import { USER_SATISFACTION, APP_LAUNCHED, DOWNLOAD, BACKEND_POWER  } from "../../home/mobile/MobileTwo";
-import { CRAFTING, MOBILEVIDEO_ONE } from "../../home/mobile/MobileOne";
+import {  DISCOVERY, INTEGRATION, DEVELOPMENT, MONITORING, WEB_TAP  } from "../../home/web/WebFour";  
 import Blank from "../../contents/Blank";
 import { MyContext } from "../../context/Mycontext";
 export default function Web4(){
@@ -36,12 +35,15 @@ export default function Web4(){
         <div className="grid w-full overflow-hidden h-screen gap-1 grid-cols-3 grid-rows-custome bg-black">
           
           {/* ROW 1 */}
+          <Blank />
           <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
               <Blank />
-              <CRAFTING />
-          </ReactCardFlip>
-          <Blank />
-          <Blank />
+              <DISCOVERY />
+          </ReactCardFlip>         
+          <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
+              <Blank />
+              <INTEGRATION />
+          </ReactCardFlip> 
         
 
          
@@ -52,19 +54,24 @@ export default function Web4(){
           <Blank />
           <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
               <PAGE_ONE_BOX4 />
-              <MOBILEVIDEO_ONE />
+              <DEVELOPMENT />
           </ReactCardFlip>
-          <Blank />
+          <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
+              <PAGE_ONE_BOX4 />
+              <MONITORING />
+          </ReactCardFlip>
          
-          {/* ROW 3 */}
-          <Blank />
+         {/* ROW 3 */}
+         <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
+              <PAGE_ONE_BOX9 />
+              <WEB_TAP />
+          </ReactCardFlip>
           <Blank />
           <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
-              <PAGE_ONE_BOX9 />
-              <BACKEND_POWER />
-          </ReactCardFlip>
-
-
+              <Blank />
+              <INTEGRATION />
+          </ReactCardFlip> 
+         
           {/* BOTTOM */}
           <div onClick={handlePrev} className="relative thumbnailBox h-full bg-[#171717] p-2 sm:p-3 md:p-4 lg:p-6 ">
             <div className="absolute bottom-6 left-5 text-[#B5AAF3] font-neuebit text-xl md:text-3xl lg:text-4xl xl:text-5xl z-10">
