@@ -6,9 +6,6 @@ import { PAGE_ONE_BOX2, PAGE_ONE_BOX4, PAGE_ONE_BOX7, PAGE_ONE_BOX9 } from "../.
 import {  BOOST_1, BOOST_2, BOOST_3, WEB_TAP  } from "../../home/web/WebNine";  
 import Blank from "../../contents/Blank";
 import { MyContext } from "../../context/Mycontext";
-import { Efficiency1, Efficiency2, Efficiency3 } from "../../home/web/WebNine";
-import { WEB_TAP } from "../../home/web/WebOne";
-
 export default function Web9(){
 
   const { direction, setDirection, shouldRatate, setShouldRatate } = useContext(MyContext);
@@ -38,8 +35,6 @@ export default function Web9(){
         <div className="grid w-full overflow-hidden h-screen gap-1 grid-cols-3 grid-rows-custome bg-black">
           
           {/* ROW 1 */}
-          <WEB_TAP />
-          <Blank />
           <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
               <Blank />
               <WEB_TAP />

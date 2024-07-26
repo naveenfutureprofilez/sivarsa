@@ -46,6 +46,17 @@ import Web6 from './flip/Web/Web6';
 import Web7 from './flip/Web/Web7';
 import Web8 from './flip/Web/Web8';
 import Web9 from './flip/Web/Web9';
+import AI1 from './flip/ai/AI1';
+import AI2 from './flip/ai/AI2';
+import AI3 from './flip/ai/AI3';
+import AI4 from './flip/ai/AI4';
+import AI5 from './flip/ai/AI5';
+import AI6 from './flip/ai/AI6';
+import AI7 from './flip/ai/AI7';
+import AI8 from './flip/ai/AI8';
+import AI9 from './flip/ai/AI9';
+import AI10 from './flip/ai/AI10';
+
 
 function App() {
   return (
@@ -99,6 +110,18 @@ function App() {
                   <Route path="/services/web/7" element={<Web7 />} />
                   <Route path="/services/web/8" element={<Web8 />} />
                   <Route path="/services/web/9" element={<Web9 />} />
+
+                  {/* AI Services */}
+                  <Route path="/services/ai" element={<AI1 />} />
+                  <Route path="/services/ai/2" element={<AI2 />} />
+                  <Route path="/services/ai/3" element={<AI3 />} />
+                  <Route path="/services/ai/4" element={<AI4 />} />
+                  <Route path="/services/ai/5" element={<AI5 />} />
+                  <Route path="/services/ai/6" element={<AI6 />} />
+                  <Route path="/services/ai/7" element={<AI7 />} />
+                  <Route path="/services/ai/8" element={<AI8 />} />
+                  <Route path="/services/ai/9" element={<AI9 />} />
+                  <Route path="/services/ai/10" element={<AI10 />} />
 
                   
                   {/* dummy */}

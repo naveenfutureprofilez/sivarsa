@@ -6,8 +6,6 @@ import { PAGE_ONE_BOX2, PAGE_ONE_BOX4, PAGE_ONE_BOX7, PAGE_ONE_BOX9 } from "../.
 import {  PLATFORMS, GOOGLE_CLOUD, AZURE, AWS_PLAT, WEB_TAP  } from "../../home/web/WebEight";  
 import Blank from "../../contents/Blank";
 import { MyContext } from "../../context/Mycontext";
-import { AWS, Azure, GoogleCloud, Platforms } from "../../home/web/WebEight";
-import { WEB_TAP } from "../../home/web/WebOne";
 export default function Web8(){
 
   const { direction, setDirection, shouldRatate, setShouldRatate } = useContext(MyContext);

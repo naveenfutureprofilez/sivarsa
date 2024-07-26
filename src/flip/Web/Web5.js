@@ -6,8 +6,6 @@ import { PAGE_ONE_BOX2, PAGE_ONE_BOX4, PAGE_ONE_BOX7, PAGE_ONE_BOX9 } from "../.
 import {  FRAMEWORK, REACT, ANGULAR, VUE_JS, WEB_TAP  } from "../../home/web/WebFive";  
 import Blank from "../../contents/Blank";
 import { MyContext } from "../../context/Mycontext";
-import { WEB_TAP } from "../../home/web/WebOne";
-import { Angular, FrameWorks, Vue, WebReact } from "../../home/web/WebFive";
 export default function Web5(){
 
   const { direction, setDirection, shouldRatate, setShouldRatate } = useContext(MyContext);

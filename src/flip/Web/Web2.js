@@ -3,11 +3,10 @@ import {  PreBg,nextBg,sivarsaLogo,messageUs } from "../../Icons";
 import ReactCardFlip from '../../Flip';
 import { Link, useNavigate } from 'react-router-dom';
 import { PAGE_ONE_BOX2, PAGE_ONE_BOX4, PAGE_ONE_BOX7, PAGE_ONE_BOX9 } from "../../home/Landing";
-import { UPTIME, MONTHLY, DELIVERED, WEB_TAP  } from "../../home/web/WebTwo"; 
+import { UPTIME, MONTHLY, DELIVERED} from "../../home/web/WebTwo"; 
+import {  DISCOVERY, INTEGRATION, DEVELOPMENT, MONITORING, WEB_TAP  } from "../../home/web/WebFour"; 
 import Blank from "../../contents/Blank";
 import { MyContext } from "../../context/Mycontext";
-import { Delievered, Monthly, Uptime } from "../../home/web/WebTwo";
-import { WEB_TAP } from "../../home/web/WebOne";
 export default function Web2(){
 
   const { direction, setDirection, shouldRatate, setShouldRatate } = useContext(MyContext);

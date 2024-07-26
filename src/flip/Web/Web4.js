@@ -6,8 +6,6 @@ import { PAGE_ONE_BOX2, PAGE_ONE_BOX4, PAGE_ONE_BOX7, PAGE_ONE_BOX9 } from "../.
 import {  DISCOVERY, INTEGRATION, DEVELOPMENT, MONITORING, WEB_TAP  } from "../../home/web/WebFour";  
 import Blank from "../../contents/Blank";
 import { MyContext } from "../../context/Mycontext";
-import { WEB_TAP } from "../../home/web/WebOne";
-import { WebDevelopment, WebDiscovery, WebIntegration, WebMonitoring } from "../../home/web/WebFour";
 export default function Web4(){
 
   const { direction, setDirection, shouldRatate, setShouldRatate } = useContext(MyContext);

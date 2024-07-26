@@ -6,8 +6,6 @@ import { PAGE_ONE_BOX2, PAGE_ONE_BOX4, PAGE_ONE_BOX7, PAGE_ONE_BOX9 } from "../.
 import { SKILL, SKILL_CATEGORY_1, SKILL_CATEGORY_2, SKILL_CATEGORY_3, SKILL_CATEGORY_4, WEB_TAP  } from "../../home/web/WebThree"; 
 import Blank from "../../contents/Blank";
 import { MyContext } from "../../context/Mycontext";
-import { CMS, Custom, ECom, Responsive, Skill } from "../../home/web/WebThree";
-import { WEB_TAP } from "../../home/web/WebOne";
 export default function Web3(){
 
   const { direction, setDirection, shouldRatate, setShouldRatate } = useContext(MyContext);

@@ -7,8 +7,6 @@ import { LANGUAGES, HTML_WEB, JAVASCRIPT, CSS3_STYLE, WEB_TAP  } from "../../hom
 import { CRAFTING, MOBILEVIDEO_ONE } from "../../home/mobile/MobileOne";
 import Blank from "../../contents/Blank";
 import { MyContext } from "../../context/Mycontext";
-import { Languages, WEbCSS, WEbHTML, WEbJS } from "../../home/web/WebSix";
-import { WEB_TAP } from "../../home/web/WebOne";
 export default function Web6(){
 
   const { direction, setDirection, shouldRatate, setShouldRatate } = useContext(MyContext);

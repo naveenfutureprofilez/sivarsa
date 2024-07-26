@@ -3,11 +3,10 @@ import {  PreBg,nextBg,sivarsaLogo,messageUs } from "../../Icons";
 import ReactCardFlip from '../../Flip';
 import { Link, useNavigate } from 'react-router-dom';
 import { PAGE_ONE_BOX2, PAGE_ONE_BOX4, PAGE_ONE_BOX7, PAGE_ONE_BOX9 } from "../../home/Landing";
-import { CMS, JOOMLA, DRUPAL, WORDPRESS, WEB_TAP  } from "../../home/web/WebSeven"; 
-import { CRAFTING, MOBILEVIDEO_ONE } from "../../home/mobile/MobileOne";
+import { FRAMEWORK, REACT, FLUTTER, BACKEND_POWER } from "../../home/mobile/MobileFive";
 import Blank from "../../contents/Blank";
 import { MyContext } from "../../context/Mycontext";
-export default function Web7(){
+export default function AI3(){
 
   const { direction, setDirection, shouldRatate, setShouldRatate } = useContext(MyContext);
   const [flipDirection, setFlipDirection] = useState(direction);
@@ -15,59 +14,55 @@ export default function Web7(){
     const [rotate, setRotate] = useState(false);
      useEffect(() => { 
       setRotate(true);
-      setShouldRatate(true);
+      setShouldRatate(true); 
      },[]);
 
      const navigate = useNavigate();
      const handleNext = () => {
         setDirection('vertical');
         setRotate(prevRotate => !prevRotate);
-        navigate("/services/web/8");
+        navigate("/services/mobile/6");
       };
 
       const handlePrev = () => {
         setDirection('vertical');
         setRotate(prevRotate => !prevRotate);
-        navigate("/services/web/6");
+        navigate("/services/mobile/4");
       };
   
-      return <>
+    return <>
       {shouldRatate ?
         <div className="grid w-full overflow-hidden h-screen gap-1 grid-cols-3 grid-rows-custome bg-black">
           
           {/* ROW 1 */}
           <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
               <Blank />
-              <CMS />
+              <FRAMEWORK />
           </ReactCardFlip>
-          <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
-              <Blank />
-              <JOOMLA />
-          </ReactCardFlip>
-          <Blank />
-        
-
-         
-
-         
-
-          {/* ROW 2 */} 
           <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
               <PAGE_ONE_BOX4 />
-              <DRUPAL />
-          </ReactCardFlip>
+              <REACT />
+          </ReactCardFlip>           
           <Blank />
+
+         
+
+         
+
+          {/* ROW 2 */}
+          <Blank />
+          <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
+              <PAGE_ONE_BOX4 />
+              <FLUTTER />
+          </ReactCardFlip>  
           <Blank />
          
           {/* ROW 3 */}
-          <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
-              <PAGE_ONE_BOX9 />
-              <WEB_TAP />
-          </ReactCardFlip>
+          <Blank />
           <Blank />
           <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
-              <PAGE_ONE_BOX4 />
-              <WORDPRESS />
+              <PAGE_ONE_BOX9 />
+              <BACKEND_POWER />
           </ReactCardFlip>
 
 
