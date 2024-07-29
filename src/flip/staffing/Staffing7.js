@@ -6,6 +6,9 @@ import { PAGE_ONE_BOX2, PAGE_ONE_BOX4, PAGE_ONE_BOX7, PAGE_ONE_BOX9 } from "../.
 import { SCREENING, HACKERRANK, CODILITY, TALENT_TAP  } from "../../home/staffing/StaffSeven";
 import Blank from "../../contents/Blank";
 import { MyContext } from "../../context/Mycontext";
+import { RECRUITMENT, LINKEDIN, INDEED, GLASSDOOR  } from "../../home/staffing/StaffSix";
+import { COLLABORATION, TRELLO, SLACK, JIRA  } from "../../home/staffing/StaffEight";
+
 export default function Staffing7(){
 
   const { direction, setDirection, shouldRatate, setShouldRatate } = useContext(MyContext);
@@ -19,7 +22,7 @@ export default function Staffing7(){
 
      const navigate = useNavigate();
      const handleNext = () => {
-        setDirection('vertical');
+        setDirection('vertical-reverse');
         setRotate(prevRotate => !prevRotate);
         navigate("/services/staffing/8");
       };
@@ -34,38 +37,82 @@ export default function Staffing7(){
       {shouldRatate ?
         <div className="grid w-full overflow-hidden h-screen gap-1 grid-cols-3 grid-rows-custome bg-black">
           {/* ROW 1 */}
-          
-          <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
-              <Blank />
+          {direction === 'vertical' ? 
+            <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
+              <COLLABORATION />
               <SCREENING />
-          </ReactCardFlip>
-          <Blank /> 
-          <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
+            </ReactCardFlip>
+          :
+            <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
+              <RECRUITMENT />
+              <SCREENING />
+            </ReactCardFlip>
+          }
+
+          {direction === 'vertical' ? 
+            <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
+               <TRELLO /> 
+               <Blank /> 
+            </ReactCardFlip>
+          :
+            <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
+               <LINKEDIN /> 
+               <Blank /> 
+            </ReactCardFlip>
+          }
+
+          {direction === 'vertical' ? 
+           <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
               <Blank />
               <HACKERRANK />
-          </ReactCardFlip>
-        
+            </ReactCardFlip>
+          :
+            <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
+                <Blank />
+                <HACKERRANK />
+            </ReactCardFlip>
+          }
 
-          
 
          
 
           {/* ROW 2 */}
-          
+          {direction === 'vertical' ? 
+           <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
+              <SLACK />
+              <Blank />
+            </ReactCardFlip>
+          :
+            <Blank />
+          }
+
+          {direction === 'vertical' ? 
+           <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
+                <JIRA />
+                <CODILITY />
+            </ReactCardFlip>
+          :
+            <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
+                <INDEED />
+                <CODILITY />
+            </ReactCardFlip>
+          }
+
           <Blank />
-          <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
-              <PAGE_ONE_BOX4 />
-              <CODILITY />
-          </ReactCardFlip>
-          <Blank />
-         
+
+
           {/* ROW 3 */}
+          {direction === 'vertical' ? 
+            <Blank />
+          :
+            <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
+                <GLASSDOOR />
+                <Blank />
+            </ReactCardFlip>
+          }
+
           <Blank />
-          <Blank />
-          <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
-              <PAGE_ONE_BOX9 />
-              <TALENT_TAP />
-          </ReactCardFlip>
+          <TALENT_TAP />
 
 
           {/* BOTTOM */}
@@ -83,12 +130,26 @@ export default function Staffing7(){
             </div>
             <div className="flex absolute bottom-0 left-0 right-0 m-auto justify-center sivrsalogo"  dangerouslySetInnerHTML={{ __html: sivarsaLogo }}></div>
           </div>
+           
+          {direction === 'vertical' ? 
+          <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
+            <Blank />
+            <div onClick={handleNext} className="relative thumbnailBox h-full bg-[#171717] p-2 sm:p-3 md:p-4 lg:p-6 ">
+              <div className="absolute bottom-6 right-5 text-[#B5AAF3] font-neuebit font-neuebit text-xl md:text-3xl lg:text-4xl xl:text-5xl z-10">
+                Next
+              </div>
+              <div className="absolute top-0 bottom-0 left-0 h-full nextpreimg" dangerouslySetInnerHTML={{ __html: nextBg }}></div>
+            </div>  
+          </ReactCardFlip> 
+          :
           <div onClick={handleNext} className="relative thumbnailBox h-full bg-[#171717] p-2 sm:p-3 md:p-4 lg:p-6 ">
             <div className="absolute bottom-6 right-5 text-[#B5AAF3] font-neuebit font-neuebit text-xl md:text-3xl lg:text-4xl xl:text-5xl z-10">
               Next
             </div>
             <div className="absolute top-0 bottom-0 left-0 h-full nextpreimg" dangerouslySetInnerHTML={{ __html: nextBg }}></div>
-          </div>
+          </div>  
+        }
+        
           
         </div>
        : 

@@ -3,9 +3,12 @@ import {  PreBg,nextBg,sivarsaLogo,messageUs } from "../../Icons";
 import ReactCardFlip from '../../Flip';
 import { Link, useNavigate } from 'react-router-dom';
 import { PAGE_ONE_BOX2, PAGE_ONE_BOX4, PAGE_ONE_BOX7, PAGE_ONE_BOX9 } from "../../home/Landing";
-import { RETENTION, CLIENT_SERVED, PROFESSIONAL, TALENT_TAP  } from "../../home/staffing/StaffTwo";
+import { TURNING, STAFFINGVIDEO_ONE, TALENT_TAP  } from "../../home/staffing/StaffOne";
+import { RETENTION, CLIENT_SERVED, PROFESSIONAL  } from "../../home/staffing/StaffTwo";
 import Blank from "../../contents/Blank";
 import { MyContext } from "../../context/Mycontext";
+import { SKILL, SKILL_CATEGORY_1, SKILL_CATEGORY_2, SKILL_CATEGORY_3, SKILL_CATEGORY_4  } from "../../home/staffing/StaffThree";
+
 export default function Staffing2(){
 
   const { direction, setDirection, shouldRatate, setShouldRatate } = useContext(MyContext);
@@ -19,7 +22,7 @@ export default function Staffing2(){
 
      const navigate = useNavigate();
      const handleNext = () => {
-        setDirection('vertical');
+        setDirection('vertical-reverse');
         setRotate(prevRotate => !prevRotate);
         navigate("/services/staffing/3");
       };
@@ -31,46 +34,79 @@ export default function Staffing2(){
       };
   
     return <>
-      {shouldRatate ?
+  
+        {shouldRatate ?
         <div className="grid w-full overflow-hidden h-screen gap-1 grid-cols-3 grid-rows-custome bg-black">
           {/* ROW 1 */}
-          
-          <Blank />
+          {direction === "vertical" ?
+          <ReactCardFlip containerStyle={{ backgroundColor: '#171717' }} isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
+             
+              <SKILL />
+              <Blank />
+          </ReactCardFlip>
+          : 
+          <ReactCardFlip containerStyle={{ backgroundColor: '#171717' }} isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
+               <TURNING />
+              <Blank />
+          </ReactCardFlip>
+          } 
+
           <Blank />
           <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
               <Blank />
               <RETENTION />
           </ReactCardFlip>
-          
 
-         
-
-         
 
           {/* ROW 2 */}
-         
-          <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
-              <PAGE_ONE_BOX4 />
+          {direction === "vertical" ?
+            <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
+              <SKILL_CATEGORY_1 />
               <PROFESSIONAL />
-          </ReactCardFlip>
-          
+            </ReactCardFlip>
+            : 
+            <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
+              <Blank />
+              <PROFESSIONAL />
+            </ReactCardFlip> 
+          }
+
+        {direction === "vertical" ?
           <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
-              <PAGE_ONE_BOX4 />
+              <SKILL_CATEGORY_2 />
+              <CLIENT_SERVED />
+          </ReactCardFlip>:
+          <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
+              <STAFFINGVIDEO_ONE />
               <CLIENT_SERVED />
           </ReactCardFlip>
-          <Blank />
-         
-          {/* ROW 3 */}
-          <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
-              <PAGE_ONE_BOX7/>
-              <Blank />
-          </ReactCardFlip>
-          <Blank />
-          <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
-              <PAGE_ONE_BOX9 />
-              <TALENT_TAP />
-          </ReactCardFlip>
+        }
 
+        {direction === "vertical" ?
+          <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
+            <SKILL_CATEGORY_3 />
+            <Blank />
+          </ReactCardFlip>
+          : 
+            <Blank />
+         
+        }
+
+
+          {/* ROW 3 */}
+          {direction === "vertical" ?
+            <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
+              <SKILL_CATEGORY_4 />
+              <Blank />
+            </ReactCardFlip>
+            :
+              <Blank />
+          }
+
+
+          <Blank />
+          <TALENT_TAP />
+          
 
           {/* BOTTOM */}
           <div onClick={handlePrev} className="relative thumbnailBox h-full bg-[#171717] p-2 sm:p-3 md:p-4 lg:p-6 ">
@@ -93,7 +129,6 @@ export default function Staffing2(){
             </div>
             <div className="absolute top-0 bottom-0 left-0 h-full nextpreimg" dangerouslySetInnerHTML={{ __html: nextBg }}></div>
           </div>
-          
         </div>
        : 
          <div className="grid w-full overflow-hidden h-screen gap-1 grid-cols-3 grid-rows-custome bg-black">

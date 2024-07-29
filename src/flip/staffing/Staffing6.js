@@ -6,6 +6,9 @@ import { PAGE_ONE_BOX2, PAGE_ONE_BOX4, PAGE_ONE_BOX7, PAGE_ONE_BOX9 } from "../.
 import { RECRUITMENT, LINKEDIN, INDEED, GLASSDOOR, TALENT_TAP  } from "../../home/staffing/StaffSix";
 import Blank from "../../contents/Blank";
 import { MyContext } from "../../context/Mycontext";
+import { OFFERING, PERMANENT_EMP, CONTRACT_EMP, PARTTIME_EMP } from "../../home/staffing/StaffFive";
+import { SCREENING, HACKERRANK, CODILITY  } from "../../home/staffing/StaffSeven";
+
 export default function Staffing6(){
 
   const { direction, setDirection, shouldRatate, setShouldRatate } = useContext(MyContext);
@@ -19,7 +22,7 @@ export default function Staffing6(){
 
      const navigate = useNavigate();
      const handleNext = () => {
-        setDirection('vertical');
+        setDirection('vertical-reverse');
         setRotate(prevRotate => !prevRotate);
         navigate("/services/staffing/7");
       };
@@ -35,39 +38,80 @@ export default function Staffing6(){
         <div className="grid w-full overflow-hidden h-screen gap-1 grid-cols-3 grid-rows-custome bg-black">
           {/* ROW 1 */}
           
-          <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
-              <Blank />
-              <RECRUITMENT />
-          </ReactCardFlip>
+
+          { direction === 'vertical' ?
+            <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
+                <SCREENING />
+                <RECRUITMENT />
+            </ReactCardFlip>
+            :
+            <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
+                <OFFERING />
+                <RECRUITMENT />
+            </ReactCardFlip>
+          }
           <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
               <Blank />
               <LINKEDIN />
           </ReactCardFlip>
-          <Blank /> 
+          <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
+              <HACKERRANK />
+              <Blank />
+          </ReactCardFlip>
 
-          
-
-         
 
           {/* ROW 2 */}
-          
-          <Blank />
-          <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
-              <PAGE_ONE_BOX4 />
-              <INDEED />
+          { direction === 'vertical' ?
+            <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
+                <Blank />
+                <Blank />
+            </ReactCardFlip>
+            :
+            <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
+              <CONTRACT_EMP />
+              <Blank />
           </ReactCardFlip>
+          }
+
+
+          { direction === 'vertical' ?
+              <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
+                <CODILITY />
+                <INDEED />
+              </ReactCardFlip>
+            :
+              <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
+                  <Blank />
+                  <INDEED />
+              </ReactCardFlip>
+          }
+
           <Blank />
-         
+
+
+
+
           {/* ROW 3 */}
-          <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
-              <PAGE_ONE_BOX7/>
-              <GLASSDOOR />
-          </ReactCardFlip>
-          <Blank />
-          <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
-              <PAGE_ONE_BOX9 />
-              <TALENT_TAP />
-          </ReactCardFlip>
+          {direction === 'vertical' ?
+            <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
+                <Blank />
+                <GLASSDOOR/>
+            </ReactCardFlip>
+            :
+            <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
+                <Blank/>
+                <GLASSDOOR />
+            </ReactCardFlip>
+          }
+
+          {direction === 'vertical' ?
+                <Blank/>
+          : <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
+              <PARTTIME_EMP />
+              <Blank/>
+            </ReactCardFlip>
+          }
+          <TALENT_TAP />
 
 
           {/* BOTTOM */}
