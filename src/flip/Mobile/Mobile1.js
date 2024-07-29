@@ -20,7 +20,7 @@ export default function Mobile1(){
 
      const navigate = useNavigate();
      const handleNext = () => {
-        setDirection('vertical');
+        setDirection('vertical-reverse');
         setRotate(prevRotate => !prevRotate);
         navigate("/services/mobile/2");
       };
@@ -36,10 +36,19 @@ export default function Mobile1(){
         <div className="grid w-full overflow-hidden h-screen gap-1 grid-cols-3 grid-rows-custome bg-black">
           
           {/* ROW 1 */}
+          {direction === 'vertical' ?
+          <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
+              <USER_SATISFACTION />
+              <CRAFTING />
+          </ReactCardFlip>
+          :
           <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
               <Blank />
               <CRAFTING />
           </ReactCardFlip>
+          }
+
+
           <Blank />
           <Blank />
         
@@ -50,19 +59,32 @@ export default function Mobile1(){
 
           {/* ROW 2 */}
           <Blank />
+          {direction === 'vertical' ?
+          <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
+              <APP_LAUNCHED />
+              <MOBILEVIDEO_ONE />
+          </ReactCardFlip>
+          :
           <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
               <PAGE_ONE_BOX4 />
               <MOBILEVIDEO_ONE />
           </ReactCardFlip>
+          }
+          
           <Blank />
          
           {/* ROW 3 */}
-          <Blank />
-          <Blank />
-          <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
-              <PAGE_ONE_BOX9 />
-              <BACKEND_POWER />
+          {direction === 'vertical' ?
+          <ReactCardFlip containerStyle={{ backgroundColor: '#171717' }} isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
+              <DOWNLOAD />
+              <Blank />
           </ReactCardFlip>
+          :
+          <Blank />
+          }
+          <Blank />
+          
+          <BACKEND_POWER />
 
 
           {/* BOTTOM */}

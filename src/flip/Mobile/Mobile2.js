@@ -6,6 +6,7 @@ import { PAGE_ONE_BOX2, PAGE_ONE_BOX4, PAGE_ONE_BOX7, PAGE_ONE_BOX9 } from "../.
 import { USER_SATISFACTION, APP_LAUNCHED, DOWNLOAD } from "../../home/mobile/MobileTwo";
 import { SKILL, SKILL_CATEGORY_1, SKILL_CATEGORY_2, SKILL_CATEGORY_3, SKILL_CATEGORY_4, BACKEND_POWER } from "../../home/mobile/MobileThree";
 import Blank from "../../contents/Blank";
+import { CRAFTING, MOBILEVIDEO_ONE } from "../../home/mobile/MobileOne";
 import { MyContext } from "../../context/Mycontext";
 export default function Mobile2(){
 
@@ -20,7 +21,7 @@ export default function Mobile2(){
 
      const navigate = useNavigate();
      const handleNext = () => {
-        setDirection('vertical');
+        setDirection('vertical-reverse');
         setRotate(prevRotate => !prevRotate);
         navigate("/services/mobile/3");
       };
@@ -36,36 +37,73 @@ export default function Mobile2(){
         <div className="grid w-full overflow-hidden h-screen gap-1 grid-cols-3 grid-rows-custome bg-black">
           
           {/* ROW 1 */}
+          {direction === 'vertical' ?
           <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
-              <Blank />
+              <SKILL />
               <USER_SATISFACTION />
           </ReactCardFlip>
+          :
+          <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
+              <CRAFTING />
+              <USER_SATISFACTION />
+          </ReactCardFlip>
+          }
+          {direction === 'vertical' ?
+          <ReactCardFlip containerStyle={{ backgroundColor: '#171717' }}  isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
+              <SKILL_CATEGORY_1 />
+              <Blank />
+          </ReactCardFlip>
+          :
           <Blank />
-          <Blank />
+          }
+          
+          {direction === 'vertical' ?
+            <ReactCardFlip containerStyle={{ backgroundColor: '#171717' }}  isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
+                <SKILL_CATEGORY_2 />
+                <Blank />
+            </ReactCardFlip>
+          :
+                <Blank />
+          }
         
 
          
 
-         
+          
 
           {/* ROW 2 */}
-          <Blank />
-          <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
-              <PAGE_ONE_BOX4 />
-              <APP_LAUNCHED />
-          </ReactCardFlip>
+          {direction === 'vertical' ?
+            <ReactCardFlip containerStyle={{ backgroundColor: '#171717' }}  isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
+                <SKILL_CATEGORY_3 />
+                <Blank />
+            </ReactCardFlip>
+            :
+            <Blank />
+             
+          }
+          {direction === 'vertical' ?
+            <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
+                <SKILL_CATEGORY_4 />
+                <APP_LAUNCHED />
+            </ReactCardFlip>
+            :
+            <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
+                <MOBILEVIDEO_ONE />
+                <APP_LAUNCHED />
+            </ReactCardFlip>
+          }
           <Blank />
          
+
+
+
           {/* ROW 3 */}
           <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
-              <PAGE_ONE_BOX7 />
+              <Blank />
               <DOWNLOAD/>
           </ReactCardFlip>
           <Blank />
-          <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
-              <PAGE_ONE_BOX9 />
-              <BACKEND_POWER />
-          </ReactCardFlip>
+          <BACKEND_POWER />
 
 
           {/* BOTTOM */}

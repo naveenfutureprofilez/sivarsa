@@ -6,6 +6,9 @@ import { PAGE_ONE_BOX2, PAGE_ONE_BOX4, PAGE_ONE_BOX7, PAGE_ONE_BOX9 } from "../.
 import { FRAMEWORK, REACT, FLUTTER, BACKEND_POWER } from "../../home/mobile/MobileFive";
 import Blank from "../../contents/Blank";
 import { MyContext } from "../../context/Mycontext";
+import { DISCOVERY, DESIGN, DEVELOPMENT, TESTING, DEPLOYMENT } from "../../home/mobile/MobileFour";
+import { LANGUAGE, SWIFT,  JAVASCRIPT, KOTLIN } from "../../home/mobile/MobileSix";
+
 export default function Mobile5(){
 
   const { direction, setDirection, shouldRatate, setShouldRatate } = useContext(MyContext);
@@ -19,7 +22,7 @@ export default function Mobile5(){
 
      const navigate = useNavigate();
      const handleNext = () => {
-        setDirection('vertical');
+        setDirection('vertical-reverse');
         setRotate(prevRotate => !prevRotate);
         navigate("/services/mobile/6");
       };
@@ -35,35 +38,95 @@ export default function Mobile5(){
         <div className="grid w-full overflow-hidden h-screen gap-1 grid-cols-3 grid-rows-custome bg-black">
           
           {/* ROW 1 */}
+          {direction === "vertical" ?
           <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
-              <Blank />
+              <LANGUAGE />
               <FRAMEWORK />
           </ReactCardFlip>
+          :
           <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
-              <PAGE_ONE_BOX4 />
-              <REACT />
-          </ReactCardFlip>           
-          <Blank />
+              <DISCOVERY />
+              <FRAMEWORK />
+          </ReactCardFlip>
+          }
 
-         
+
+          {direction === "vertical" ?
+          <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
+              <Blank />
+              <REACT />
+          </ReactCardFlip>
+          :
+          <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
+              <DISCOVERY />
+              <REACT />
+          </ReactCardFlip>
+          }
+
+          {direction === "vertical" ?
+          <ReactCardFlip containerStyle={{ backgroundColor: '#171717' }}  isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
+              <SWIFT />
+              <Blank />
+          </ReactCardFlip>
+          :
+            <Blank />
+          }
+          
 
          
 
           {/* ROW 2 */}
+          {direction === "vertical" ?
+            // <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
+              <Blank />
+            // </ReactCardFlip> 
+          :
+            <ReactCardFlip containerStyle={{ backgroundColor: '#171717' }}  isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
+              <DEVELOPMENT />
+              <Blank />
+            </ReactCardFlip> 
+          }
+
+          {direction === "vertical" ?
+            <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
+                <JAVASCRIPT />
+                <FLUTTER />
+            </ReactCardFlip> 
+          :
+            <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
+                <Blank />
+                <FLUTTER />
+            </ReactCardFlip> 
+          }
           <Blank />
-          <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
-              <PAGE_ONE_BOX4 />
-              <FLUTTER />
-          </ReactCardFlip>  
-          <Blank />
+
+
+
+
          
           {/* ROW 3 */}
-          <Blank />
-          <Blank />
-          <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
-              <PAGE_ONE_BOX9 />
-              <BACKEND_POWER />
-          </ReactCardFlip>
+          {direction === "vertical" ?
+              <ReactCardFlip containerStyle={{ backgroundColor: '#171717' }}  isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
+                <KOTLIN />
+                <Blank />
+            </ReactCardFlip> 
+          :
+            <ReactCardFlip containerStyle={{ backgroundColor: '#171717' }}  isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
+                <TESTING />
+                <Blank />
+            </ReactCardFlip> 
+          }
+
+
+          {direction === "vertical" ?
+            <Blank />
+          :
+            <ReactCardFlip containerStyle={{ backgroundColor: '#171717' }}  isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
+                <DEPLOYMENT />
+                <Blank />
+            </ReactCardFlip> 
+          }
+          <BACKEND_POWER />
 
 
           {/* BOTTOM */}

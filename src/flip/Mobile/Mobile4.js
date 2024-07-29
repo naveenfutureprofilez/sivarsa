@@ -6,6 +6,9 @@ import { PAGE_ONE_BOX2, PAGE_ONE_BOX4, PAGE_ONE_BOX7, PAGE_ONE_BOX9 } from "../.
 import { DISCOVERY, DESIGN, DEVELOPMENT, TESTING, DEPLOYMENT, BACKEND_POWER } from "../../home/mobile/MobileFour";
 import Blank from "../../contents/Blank";
 import { MyContext } from "../../context/Mycontext";
+import { SKILL, SKILL_CATEGORY_1, SKILL_CATEGORY_2, SKILL_CATEGORY_3, SKILL_CATEGORY_4 } from "../../home/mobile/MobileThree";
+import { FLUTTER } from "../../home/mobile/MobileFive";
+
 export default function Mobile4(){
 
   const { direction, setDirection, shouldRatate, setShouldRatate } = useContext(MyContext);
@@ -19,7 +22,7 @@ export default function Mobile4(){
 
      const navigate = useNavigate();
      const handleNext = () => {
-        setDirection('vertical');
+        setDirection('vertical-reverse');
         setRotate(prevRotate => !prevRotate);
         navigate("/services/mobile/5");
       };
@@ -35,15 +38,45 @@ export default function Mobile4(){
         <div className="grid w-full overflow-hidden h-screen gap-1 grid-cols-3 grid-rows-custome bg-black">
           
           {/* ROW 1 */}
+          {direction === 'vertical' ?
           <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
               <Blank />
               <DISCOVERY />
           </ReactCardFlip>
+          :
           <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
-              <PAGE_ONE_BOX4 />
+              <SKILL />
+              <DISCOVERY />
+          </ReactCardFlip>
+          }
+
+
+          {direction === 'vertical' ?
+          <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
+              <Blank />
+              <DISCOVERY />
+          </ReactCardFlip>
+          :
+          <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
+              <SKILL_CATEGORY_1 />
               <DESIGN />
           </ReactCardFlip>
-           <Blank />
+          }
+
+
+          {direction === 'vertical' ?
+          <ReactCardFlip containerStyle={{ backgroundColor: '#171717' }}  isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
+              <Blank />
+              <Blank />
+          </ReactCardFlip>
+          :
+          <ReactCardFlip containerStyle={{ backgroundColor: '#171717' }}  isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
+              <SKILL_CATEGORY_2 />
+              <Blank />
+          </ReactCardFlip>
+          }
+
+           
         
 
          
@@ -51,31 +84,66 @@ export default function Mobile4(){
          
 
           {/* ROW 2 */}
+
+          {direction === 'vertical' ?
           <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
-              <PAGE_ONE_BOX4 />
+            <Blank />
+            <DEVELOPMENT />
+          </ReactCardFlip>
+          :
+          <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
+              <SKILL_CATEGORY_3 />
               <DEVELOPMENT />
           </ReactCardFlip>
+          }
+
+
+          {direction === 'vertical' ?
+          <ReactCardFlip containerStyle={{ backgroundColor: '#171717' }}  isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
+              <FLUTTER />
+              <Blank />
+          </ReactCardFlip>
+          :
+          <ReactCardFlip containerStyle={{ backgroundColor: '#171717' }}  isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
+              <SKILL_CATEGORY_4 />
+              <Blank />
+          </ReactCardFlip>
+          }
           
-          <Blank />
+          
+
+          
+          
           <Blank />
           
 
          
           {/* ROW 3 */}
+          {direction === 'vertical' ?
           <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
-              <PAGE_ONE_BOX4 />
+              <Blank />
               <TESTING />
           </ReactCardFlip>
+          :
           <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
-              <PAGE_ONE_BOX4 />
+              <Blank />
+              <TESTING />
+          </ReactCardFlip>
+          }
+
+          {direction === 'vertical' ?
+          <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
+            <Blank />
+            <DEPLOYMENT />
+          </ReactCardFlip>
+          :
+          <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
+              <Blank />
               <DEPLOYMENT />
           </ReactCardFlip>
+          }
           
-          <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
-              <PAGE_ONE_BOX9 />
-              <BACKEND_POWER />
-          </ReactCardFlip>
-
+          <BACKEND_POWER />
 
           {/* BOTTOM */}
           <div onClick={handlePrev} className="relative thumbnailBox h-full bg-[#171717] p-2 sm:p-3 md:p-4 lg:p-6 ">

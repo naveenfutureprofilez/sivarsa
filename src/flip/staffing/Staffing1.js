@@ -50,12 +50,12 @@ export default function Staffing1(){
           <Blank />
           
           {direction === "vertical" ?
-            <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
+            <ReactCardFlip containerStyle={{ backgroundColor: '#171717' }} isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
               <RETENTION />
               <Blank />
             </ReactCardFlip>
           :
-            <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
+            <ReactCardFlip containerStyle={{ backgroundColor: '#171717' }} isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
                 <PAGE_ONE_BOX2 />
                 <Blank />
             </ReactCardFlip>
@@ -66,7 +66,7 @@ export default function Staffing1(){
           {/* ROW 2 */}
 
           {direction === "vertical" ?
-            <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
+            <ReactCardFlip isFlipped={rotate} containerStyle={{ backgroundColor: '#171717' }} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
                 <PROFESSIONAL />
                 <Blank />
             </ReactCardFlip>

@@ -64,7 +64,7 @@ export default function Staffing4(){
 
 
           {direction === 'vertical' ?  
-            <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
+            <ReactCardFlip containerStyle={{ backgroundColor: '#171717' }} isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
                 <PERMANENT_EMP />
                 <Blank />
             </ReactCardFlip>
@@ -104,8 +104,8 @@ export default function Staffing4(){
 
           { direction === 'vertical' ? 
               <Blank />
-          : 
-            <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
+            : 
+            <ReactCardFlip containerStyle={{ backgroundColor: '#171717' }} isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
               <SKILL_CATEGORY_3 />
               <Blank />
             </ReactCardFlip>

@@ -54,7 +54,7 @@ export default function Staffing6(){
               <Blank />
               <LINKEDIN />
           </ReactCardFlip>
-          <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
+          <ReactCardFlip containerStyle={{ backgroundColor: '#171717' }} isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
               <HACKERRANK />
               <Blank />
           </ReactCardFlip>
@@ -62,7 +62,7 @@ export default function Staffing6(){
 
           {/* ROW 2 */}
           { direction === 'vertical' ?
-            <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
+            <ReactCardFlip containerStyle={{ backgroundColor: '#171717' }} isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
                 <Blank />
                 <Blank />
             </ReactCardFlip>
@@ -106,7 +106,7 @@ export default function Staffing6(){
 
           {direction === 'vertical' ?
                 <Blank/>
-          : <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
+          : <ReactCardFlip containerStyle={{ backgroundColor: '#171717' }} isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
               <PARTTIME_EMP />
               <Blank/>
             </ReactCardFlip>

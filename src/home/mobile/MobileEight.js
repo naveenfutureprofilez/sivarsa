@@ -31,7 +31,7 @@ export function FIREBASE(){
     </>
   } 
 
-  export function XCODE(){
+  export function AWS(){
     return <> 
       <div className={`thumbnailBox h-full relative bg-[#171717]  flex justify-center items-center`}>
           <div className="wall text-white left p-2 sm:p-3 md:p-4 lg:p-6">       

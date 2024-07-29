@@ -6,6 +6,8 @@ import { PAGE_ONE_BOX2, PAGE_ONE_BOX4, PAGE_ONE_BOX7, PAGE_ONE_BOX9 } from "../.
 import { WHY_US, BOOST_1, BOOST_2, BOOST_3  } from "../../home/mobile/MobileNine";
 import Blank from "../../contents/Blank";
 import { MyContext } from "../../context/Mycontext";
+import { PLATFORMS, FIREBASE, AWS, BACKEND_POWER } from "../../home/mobile/MobileEight";
+
 export default function Mobile9(){
 
   const { direction, setDirection, shouldRatate, setShouldRatate } = useContext(MyContext);
@@ -36,10 +38,13 @@ export default function Mobile9(){
           
           {/* ROW 1 */}
           <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
-              <Blank />
+              <PLATFORMS />
               <WHY_US />
           </ReactCardFlip>
-          <Blank />
+          <ReactCardFlip containerStyle={{ backgroundColor: '#171717' }} isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
+              <FIREBASE />
+              <Blank />
+          </ReactCardFlip>
           <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
               <Blank />
               <BOOST_1 />
@@ -56,15 +61,19 @@ export default function Mobile9(){
               <Blank />
               <BOOST_2 />
           </ReactCardFlip>
-          <Blank />
+
+          <ReactCardFlip containerStyle={{ backgroundColor: '#171717' }} isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
+              <AWS />
+              <Blank />
+          </ReactCardFlip>
          
+
+
+
           {/* ROW 3 */}
           <Blank />
           <Blank />
-          <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
-              <Blank />
-              <BOOST_3/>
-          </ReactCardFlip>
+          <BACKEND_POWER />
 
 
           {/* BOTTOM */}
@@ -82,12 +91,28 @@ export default function Mobile9(){
             </div>
             <div className="flex absolute bottom-0 left-0 right-0 m-auto justify-center sivrsalogo"  dangerouslySetInnerHTML={{ __html: sivarsaLogo }}></div>
           </div>
-          <div onClick={handleNext} className="relative thumbnailBox h-full bg-[#171717] p-2 sm:p-3 md:p-4 lg:p-6 ">
-            <div className="absolute bottom-6 right-5 text-[#B5AAF3] font-neuebit font-neuebit text-xl md:text-3xl lg:text-4xl xl:text-5xl z-10">
-              Next
-            </div>
-            <div className="absolute top-0 bottom-0 left-0 h-full nextpreimg" dangerouslySetInnerHTML={{ __html: nextBg }}></div>
-          </div>
+           
+          {direction === 'vertical' ? 
+          <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
+              <div onClick={handleNext} className="relative thumbnailBox h-full bg-[#171717] p-2 sm:p-3 md:p-4 lg:p-6 ">
+                <div className="absolute bottom-6 right-5 text-[#B5AAF3] font-neuebit font-neuebit text-xl md:text-3xl lg:text-4xl xl:text-5xl z-10">
+                  Next
+                </div>
+                <div className="absolute top-0 bottom-0 left-0 h-full nextpreimg" dangerouslySetInnerHTML={{ __html: nextBg }}></div>
+              </div>  
+              <Blank />
+            </ReactCardFlip> 
+            :
+            <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
+              <div onClick={handleNext} className="relative thumbnailBox h-full bg-[#171717] p-2 sm:p-3 md:p-4 lg:p-6 ">
+                <div className="absolute bottom-6 right-5 text-[#B5AAF3] font-neuebit font-neuebit text-xl md:text-3xl lg:text-4xl xl:text-5xl z-10">
+                  Next
+                </div>
+                <div className="absolute top-0 bottom-0 left-0 h-full nextpreimg" dangerouslySetInnerHTML={{ __html: nextBg }}></div>
+              </div>  
+              <Blank />
+            </ReactCardFlip>  
+          }
           
         </div>
        : 
