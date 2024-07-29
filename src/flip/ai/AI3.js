@@ -3,7 +3,7 @@ import {  PreBg,nextBg,sivarsaLogo,messageUs } from "../../Icons";
 import ReactCardFlip from '../../Flip';
 import { Link, useNavigate } from 'react-router-dom';
 import { PAGE_ONE_BOX2, PAGE_ONE_BOX4, PAGE_ONE_BOX7, PAGE_ONE_BOX9 } from "../../home/Landing";
-import { FRAMEWORK, REACT, FLUTTER, BACKEND_POWER } from "../../home/mobile/MobileFive";
+import { SKILL, SKILL_CATEGORY_1, SKILL_CATEGORY_2, SKILL_CATEGORY_3, SKILL_CATEGORY_4, AI_TAP } from "../../home/AI/AIThree";
 import Blank from "../../contents/Blank";
 import { MyContext } from "../../context/Mycontext";
 export default function AI3(){
@@ -17,7 +17,7 @@ export default function AI3(){
       setShouldRatate(true); 
      },[]);
 
-     const navigate = useNavigate();
+     const navigate = useNavigate(); 
      const handleNext = () => {
         setDirection('vertical');
         setRotate(prevRotate => !prevRotate);
@@ -37,24 +37,30 @@ export default function AI3(){
           {/* ROW 1 */}
           <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
               <Blank />
-              <FRAMEWORK />
+              <SKILL />
           </ReactCardFlip>
           <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
               <PAGE_ONE_BOX4 />
-              <REACT />
+              <SKILL_CATEGORY_1 />
           </ReactCardFlip>           
-          <Blank />
+          <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
+              <PAGE_ONE_BOX4 />
+              <SKILL_CATEGORY_2 />
+          </ReactCardFlip>    
 
          
 
          
 
           {/* ROW 2 */}
-          <Blank />
           <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
               <PAGE_ONE_BOX4 />
-              <FLUTTER />
-          </ReactCardFlip>  
+              <AI_TAP />
+          </ReactCardFlip>   
+          <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
+              <PAGE_ONE_BOX4 />
+              <SKILL_CATEGORY_3 />
+          </ReactCardFlip>     
           <Blank />
          
           {/* ROW 3 */}
@@ -62,7 +68,7 @@ export default function AI3(){
           <Blank />
           <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
               <PAGE_ONE_BOX9 />
-              <BACKEND_POWER />
+              <SKILL_CATEGORY_4 />
           </ReactCardFlip>
 
 

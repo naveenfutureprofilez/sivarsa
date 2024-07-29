@@ -3,7 +3,7 @@ import {  PreBg,nextBg,sivarsaLogo,messageUs } from "../../Icons";
 import ReactCardFlip from '../../Flip';
 import { Link, useNavigate } from 'react-router-dom';
 import { PAGE_ONE_BOX2, PAGE_ONE_BOX4, PAGE_ONE_BOX7, PAGE_ONE_BOX9 } from "../../home/Landing";
-import { FRAMEWORK, REACT, FLUTTER, BACKEND_POWER } from "../../home/mobile/MobileFive";
+import { FRAMEWORK, TENSOR_FLOW, PYTORCH_AI, AI_TAP } from "../../home/AI/AIFive";
 import Blank from "../../contents/Blank";
 import { MyContext } from "../../context/Mycontext";
 export default function AI5(){
@@ -41,7 +41,7 @@ export default function AI5(){
           </ReactCardFlip>
           <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
               <PAGE_ONE_BOX4 />
-              <REACT />
+              <TENSOR_FLOW />
           </ReactCardFlip>           
           <Blank />
 
@@ -50,11 +50,12 @@ export default function AI5(){
          
 
           {/* ROW 2 */}
-          <Blank />
+         
           <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
               <PAGE_ONE_BOX4 />
-              <FLUTTER />
+              <AI_TAP />
           </ReactCardFlip>  
+          <Blank />
           <Blank />
          
           {/* ROW 3 */}
@@ -62,7 +63,7 @@ export default function AI5(){
           <Blank />
           <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
               <PAGE_ONE_BOX9 />
-              <BACKEND_POWER />
+              <PYTORCH_AI />
           </ReactCardFlip>
 
 

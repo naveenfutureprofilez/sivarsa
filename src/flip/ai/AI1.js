@@ -3,7 +3,7 @@ import {  PreBg,nextBg,sivarsaLogo,messageUs } from "../../Icons";
 import ReactCardFlip from '../../Flip';
 import { Link, useNavigate } from 'react-router-dom';
 import { PAGE_ONE_BOX2, PAGE_ONE_BOX4, PAGE_ONE_BOX7, PAGE_ONE_BOX9 } from "../../home/Landing";
-import { FRAMEWORK, REACT, FLUTTER, BACKEND_POWER } from "../../home/mobile/MobileFive";
+import { TURNING_WEB, AIVIDEO_ONE, AI_TAP } from "../../home/AI/AIOne";
 import Blank from "../../contents/Blank";
 import { MyContext } from "../../context/Mycontext";
 export default function AI1(){
@@ -35,13 +35,10 @@ export default function AI1(){
         <div className="grid w-full overflow-hidden h-screen gap-1 grid-cols-3 grid-rows-custome bg-black">
           
           {/* ROW 1 */}
+          <Blank />
           <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
               <Blank />
-              <FRAMEWORK />
-          </ReactCardFlip>
-          <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
-              <PAGE_ONE_BOX4 />
-              <REACT />
+              <TURNING_WEB />
           </ReactCardFlip>           
           <Blank />
 
@@ -50,11 +47,12 @@ export default function AI1(){
          
 
           {/* ROW 2 */}
-          <Blank />
+        
           <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
               <PAGE_ONE_BOX4 />
-              <FLUTTER />
+              <AI_TAP />
           </ReactCardFlip>  
+          <Blank />
           <Blank />
          
           {/* ROW 3 */}
@@ -62,7 +60,7 @@ export default function AI1(){
           <Blank />
           <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
               <PAGE_ONE_BOX9 />
-              <BACKEND_POWER />
+              <AIVIDEO_ONE />
           </ReactCardFlip>
 
 
