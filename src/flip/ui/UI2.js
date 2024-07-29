@@ -7,6 +7,8 @@ import { USER_SATISFACTION, APP_LAUNCHED, DOWNLOAD, BACKEND_POWER  } from "../..
 import { CRAFTING, MOBILEVIDEO_ONE } from "../../home/mobile/MobileOne";
 import Blank from "../../contents/Blank";
 import { MyContext } from "../../context/Mycontext";
+import { Design } from "../../home/ui/UIOne";
+import { Client_Retention, Happy_Users, Projects_Completed } from "../../home/ui/UITwo";
 export default function UI2(){
 
   const { direction, setDirection, shouldRatate, setShouldRatate } = useContext(MyContext);
@@ -36,12 +38,12 @@ export default function UI2(){
         <div className="grid w-full overflow-hidden h-screen gap-1 grid-cols-3 grid-rows-custome bg-black">
           
           {/* ROW 1 */}
+          <Blank />
+          <Blank />
           <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
               <Blank />
-              <CRAFTING />
+              <Client_Retention />
           </ReactCardFlip>
-          <Blank />
-          <Blank />
         
 
          
@@ -49,20 +51,21 @@ export default function UI2(){
          
 
           {/* ROW 2 */}
-          <Blank />
           <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
               <PAGE_ONE_BOX4 />
-              <MOBILEVIDEO_ONE />
+              <Happy_Users />
+          </ReactCardFlip>
+          <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
+              <Blank />
+              <Projects_Completed />
           </ReactCardFlip>
           <Blank />
          
           {/* ROW 3 */}
           <Blank />
+          <Design/>
           <Blank />
-          <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
-              <PAGE_ONE_BOX9 />
-              <BACKEND_POWER />
-          </ReactCardFlip>
+          
 
 
           {/* BOTTOM */}

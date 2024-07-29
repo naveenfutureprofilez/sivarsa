@@ -1,84 +1,52 @@
-import React, { useERETENTIONffect, useState } from "react";
-import {  arrowblackUP } from "../../Icons";
-import tanentbg from "../../images/tanentbg.png";
-import SKILL_CATEGORY1 from "../../images/websites-favorite-rate.png";
-import SKILL_CATEGORY2 from "../../images/search-coding.png";
-import SKILL_CATEGORY3 from "../../images/business-product-startup.png";
-import SKILL_CATEGORY4 from "../../images/global.png";
+import React from "react";
+import UiSkill1 from "../../images/UiSkill1.png";
+import UiSkill2 from "../../images/UiSkill2.png";
+import UiSkill3 from "../../images/UiSkill3.png";
+import UiSkill4 from "../../images/UiSkill4.png";
 
-export function SKILL(){
+
+export function Ui_SKILL(){
     return <>
     <style>{`
       .bg-tanent {  }
     `}</style>
       <div  className={`thumbnailBox h-full p-2 sm:p-3 md:p-4 lg:p-6 relative  bg-[#171717]`}>
-          <h2 className="font-neuebit  text-[40px] lg:text-[50px] leading-[40px]  xl:leading-[50px] text-[#CAAE57] xl:text-[#F1C5AA] mb-5">Skills</h2>
+          <h2 className="font-neuebit  text-[40px] lg:text-[50px] leading-[40px]  xl:leading-[50px] text-[#CFB8E5] xl:text-[#CFB8E5] mb-5">Skills</h2>
       </div>
     </> 
   }
  
-export function SKILL_CATEGORY_1(){
+export function Layout({text1, text2, image}){
   return <> 
     <div className={`thumbnailBox h-full relative bg-[#171717]`}>
         <div className="wall text-white left p-2 sm:p-3 md:p-4 lg:p-6 ">       
-            <h2 className="relative font-neuebit text-[#F5BB0B] text-[25px] md:text-[32px] lg:text-[40px] xl:text-[50px] leading-[30px] lg:leading-[50px] xl:leading-10  mb-3">Technical <br className="hidden md:block"></br> Expertise</h2>
-            <div className="md:absolute md:right-[30px] text-[#9D5209] text-lg lg:text-xl font-GoshaSans md:bottom-[20px]  xl:bottom-[40px] md:text-right"> 
-                <img className="w-[40px] lg:w-[60px]" src={SKILL_CATEGORY1} alt="Dynamic Image" />
+            <h2 className="relative font-neuebit text-[#7030FF] text-[25px] md:text-[32px] lg:text-[40px] xl:text-[50px] leading-[30px] lg:leading-[50px] xl:leading-10  mb-3">{text1} <br className="hidden md:block"></br> {text2}</h2>
+            <div className="md:absolute md:right-[30px] text-[#7030FF] text-lg lg:text-xl font-GoshaSans md:bottom-[20px]  xl:bottom-[40px] md:text-right"> 
+                <img className="w-[40px] lg:w-[60px]" src={image} alt="Dynamic Image" />
             </div>
         </div>
     </div>
   </>
 }
- 
-export function SKILL_CATEGORY_2(){
-    return <> 
-      <div className={`thumbnailBox h-full relative bg-[#171717]`}>
-          <div className="wall text-white left p-2 sm:p-3 md:p-4 lg:p-6 opacity-80">       
-              <h2 className="relative font-neuebit text-[#F5BB0B] text-[25px] md:text-[32px] lg:text-[40px] xl:text-[50px] leading-[30px] lg:leading-[50px] xl:leading-10  mb-3">Flexible   <br className="hidden md:block"></br> Staffing</h2>
-              <div className="md:absolute md:right-[30px] text-[#9D5209] text-lg lg:text-xl font-GoshaSans md:bottom-[20px]  xl:bottom-[40px] md:text-right"> 
-                  <img className="w-[40px] lg:w-[60px]" src={SKILL_CATEGORY2} alt="Dynamic Image" />
-              </div>
-          </div>
-      </div>
-    </>
-  }
- 
-  export function SKILL_CATEGORY_3(){
-    return <> 
-      <div className={`thumbnailBox h-full relative bg-[#171717]`}>
-          <div className="wall text-white left p-2 sm:p-3 md:p-4 lg:p-6 opacity-60">       
-              <h2 className="relative font-neuebit text-[#F5BB0B] text-[25px] md:text-[32px] lg:text-[40px] xl:text-[50px] leading-[30px] lg:leading-[50px] xl:leading-10  mb-3">Domain  <br className="hidden md:block"></br> Specialists</h2>
-              <div className="md:absolute md:right-[30px] text-[#9D5209] text-lg lg:text-xl font-GoshaSans md:bottom-[20px]  xl:bottom-[40px] md:text-right"> 
-                  <img className="w-[40px] lg:w-[60px]" src={SKILL_CATEGORY3} alt="Dynamic Image" />
-              </div>
-          </div>
-      </div>
-    </>
-  }
- 
-  export function SKILL_CATEGORY_4(){
-    return <> 
-      <div className={`thumbnailBox h-full relative bg-[#171717]`}>
-          <div className="wall text-white opacity-40 left p-2 sm:p-3 md:p-4 lg:p-6 opacity-40">       
-              <h2 className="relative font-neuebit text-[#F5BB0B] text-[25px] md:text-[32px] lg:text-[40px] xl:text-[50px] leading-[30px] lg:leading-[50px] xl:leading-10  mb-3">Global  <br className="hidden md:block"></br> Reach</h2>
-              <div className="md:absolute md:right-[30px] text-[#9D5209] text-lg lg:text-xl font-GoshaSans md:bottom-[20px]  xl:bottom-[40px] md:text-right"> 
-                  <img className="w-[40px] lg:w-[60px]" src={SKILL_CATEGORY4} alt="Dynamic Image" />
-              </div>
-          </div>
-      </div>
-    </>
-  }
-   
-export function TALENT_TAP(){
+export function Research(){
   return <>
-  <style>{`
-    .bg-tanent {  }
-  `}</style>
-    <div style={{backgroundImage:`url(${tanentbg})`}} className={`thumbnailBox h-full bg-tanent  p-2 sm:p-3 md:p-4 lg:p-6 relative bg-repeat bg-cover `}>
-        <h2 className="font-neuebit  text-4xl md:text-4xl lg:text-6xl xl:text-6xl leading-[40px]  xl:leading-[50px] text-[#9D5209]  mb-5">Talent<br></br>
-        on Tap</h2>
-    </div>
-  </>
+<Layout text1={"User"} text2={"Research"} image={UiSkill1}/>
+  </> 
+}
+export function Wireframe(){
+  return <>
+<Layout text1={"Wireframes"} image={UiSkill2}/>
+  </> 
+}
+export function Testing(){
+  return <>
+<Layout text1={"Usability"} text2={"Testing"} image={UiSkill3}/>
+  </> 
+}
+export function Visual_Design(){
+  return <>
+<Layout text1={"Visual"} text2={"Design"} image={UiSkill4}/>
+  </> 
 }
 
  

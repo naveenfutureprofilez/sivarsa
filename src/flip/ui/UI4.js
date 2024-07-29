@@ -7,6 +7,8 @@ import { USER_SATISFACTION, APP_LAUNCHED, DOWNLOAD, BACKEND_POWER  } from "../..
 import { CRAFTING, MOBILEVIDEO_ONE } from "../../home/mobile/MobileOne";
 import Blank from "../../contents/Blank";
 import { MyContext } from "../../context/Mycontext";
+import { Design } from "../../home/ui/UIOne";
+import { Ui_Design, Ui_Development, Ui_DISCOVERY, Ui_Testing } from "../../home/ui/UIFour";
 export default function UI4(){
 
   const { direction, setDirection, shouldRatate, setShouldRatate } = useContext(MyContext);
@@ -38,10 +40,10 @@ export default function UI4(){
           {/* ROW 1 */}
           <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
               <Blank />
-              <CRAFTING />
+              <Ui_DISCOVERY />
           </ReactCardFlip>
           <Blank />
-          <Blank />
+          <Ui_Design />
         
 
          
@@ -49,20 +51,20 @@ export default function UI4(){
          
 
           {/* ROW 2 */}
-          <Blank />
           <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
               <PAGE_ONE_BOX4 />
-              <MOBILEVIDEO_ONE />
+              <Ui_Development />
+          </ReactCardFlip>
+          <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
+              <PAGE_ONE_BOX4 />
+              <Ui_Testing />
           </ReactCardFlip>
           <Blank />
          
           {/* ROW 3 */}
           <Blank />
+          <Design />
           <Blank />
-          <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
-              <PAGE_ONE_BOX9 />
-              <BACKEND_POWER />
-          </ReactCardFlip>
 
 
           {/* BOTTOM */}
