@@ -3,10 +3,10 @@ import {  PreBg,nextBg,sivarsaLogo,messageUs } from "../../Icons";
 import ReactCardFlip from '../../Flip';
 import { Link, useNavigate } from 'react-router-dom';
 import { PAGE_ONE_BOX2, PAGE_ONE_BOX4, PAGE_ONE_BOX7, PAGE_ONE_BOX9 } from "../../home/Landing";
-import { TURNING, STAFFINGVIDEO_ONE, TALENT_TAP  } from "../../home/staffing/StaffOne";
+import { UPTIME_BACK, SERVED_BACK, TECH_BACK, BACKEND_TAP  } from "../../home/backend/BackendTwo";
 import Blank from "../../contents/Blank";
 import { MyContext } from "../../context/Mycontext";
-import { RETENTION, CLIENT_SERVED, PROFESSIONAL  } from "../../home/staffing/StaffTwo";
+ 
 
 export default function Backend2(){
 
@@ -16,7 +16,7 @@ export default function Backend2(){
     const [rotate, setRotate] = useState(false);
      useEffect(() => {
       setRotate(true);
-      setShouldRatate(true);
+      setShouldRatate(true); 
      },[]);
 
      const navigate = useNavigate();
@@ -35,73 +35,35 @@ export default function Backend2(){
     return <>
       {shouldRatate ?
         <div className="grid w-full overflow-hidden h-screen gap-1 grid-cols-3 grid-rows-custome bg-black">
-          {/* ROW 1 */}
-          {direction === "vertical" ?
-          <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
+           {/* ROW 1 */}
+          
+           <Blank />
+           <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
               <Blank />
-              <TURNING />
-          </ReactCardFlip>
-          :
-          <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
-              <Blank />
-              <TURNING />
-          </ReactCardFlip>
-          }
+              <UPTIME_BACK />
+          </ReactCardFlip>      
           <Blank />
-          
-          {direction === "vertical" ?
-            <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
-              <RETENTION />
-              <Blank />
-            </ReactCardFlip>
-          :
-            <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
-                <PAGE_ONE_BOX2 />
-                <Blank />
-            </ReactCardFlip>
-          }
-
-          
+           
 
           {/* ROW 2 */}
-
-          {direction === "vertical" ?
-            <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
-                <PROFESSIONAL />
-                <Blank />
-            </ReactCardFlip>
-          :
-            <Blank />
-          }
-
-          {direction === "vertical" ?
-            <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
-                <CLIENT_SERVED />
-                <STAFFINGVIDEO_ONE />
-            </ReactCardFlip>
-          :
           <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
-                <Blank />
-                <STAFFINGVIDEO_ONE />
-            </ReactCardFlip>
-          }
-          <Blank />
-
+              <Blank />
+              <BACKEND_TAP />
+          </ReactCardFlip> 
+          <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
+              <Blank />
+              <SERVED_BACK />
+          </ReactCardFlip>          
+          <Blank /> 
 
           {/* ROW 3 */}
           <Blank />
           <Blank />
-          {direction === "vertical" ?
-            <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
-                <TALENT_TAP />
-                <TALENT_TAP />
-            </ReactCardFlip> 
-            : 
-            <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
-                <PAGE_ONE_BOX9 />
-                <TALENT_TAP />
-            </ReactCardFlip> 
-          }
+          <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
+              <Blank />
+              <TECH_BACK />
+          </ReactCardFlip>    
+           
 
 
           {/* BOTTOM */}
