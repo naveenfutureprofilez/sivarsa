@@ -3,11 +3,11 @@ import {  PreBg,nextBg,sivarsaLogo,messageUs } from "../../Icons";
 import ReactCardFlip from '../../Flip';
 import { Link, useNavigate } from 'react-router-dom';
 import { PAGE_ONE_BOX2, PAGE_ONE_BOX4, PAGE_ONE_BOX7, PAGE_ONE_BOX9 } from "../../home/Landing";
-import { FRAMEWORK, REACT, FLUTTER, BACKEND_POWER } from "../../home/mobile/MobileFive";
+import { LANGUAGES, R_LANG, PYTHON_LANG, AI_TAP } from "../../home/AI/AISix";
 import Blank from "../../contents/Blank";
 import { MyContext } from "../../context/Mycontext";
 export default function AI6(){
-
+ 
   const { direction, setDirection, shouldRatate, setShouldRatate } = useContext(MyContext);
   const [flipDirection, setFlipDirection] = useState(direction);
 
@@ -37,33 +37,34 @@ export default function AI6(){
           {/* ROW 1 */}
           <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
               <Blank />
-              <FRAMEWORK />
+              <LANGUAGES />
           </ReactCardFlip>
+                
+          <Blank />
           <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
               <PAGE_ONE_BOX4 />
-              <REACT />
-          </ReactCardFlip>           
-          <Blank />
+              <R_LANG />
+          </ReactCardFlip>    
 
          
 
          
 
           {/* ROW 2 */}
-          <Blank />
           <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
               <PAGE_ONE_BOX4 />
-              <FLUTTER />
+              <AI_TAP />
+          </ReactCardFlip> 
+          <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
+              <PAGE_ONE_BOX4 />
+              <PYTHON_LANG />
           </ReactCardFlip>  
           <Blank />
          
           {/* ROW 3 */}
           <Blank />
           <Blank />
-          <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
-              <PAGE_ONE_BOX9 />
-              <BACKEND_POWER />
-          </ReactCardFlip>
+          <Blank />
 
 
           {/* BOTTOM */}

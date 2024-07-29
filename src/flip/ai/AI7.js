@@ -3,11 +3,11 @@ import {  PreBg,nextBg,sivarsaLogo,messageUs } from "../../Icons";
 import ReactCardFlip from '../../Flip';
 import { Link, useNavigate } from 'react-router-dom';
 import { PAGE_ONE_BOX2, PAGE_ONE_BOX4, PAGE_ONE_BOX7, PAGE_ONE_BOX9 } from "../../home/Landing";
-import { FRAMEWORK, REACT, FLUTTER, BACKEND_POWER } from "../../home/mobile/MobileFive";
+import { TOOLS_AI, JUPYTER_AI, APACHE_AI, AI_TAP } from "../../home/AI/AISeven";
 import Blank from "../../contents/Blank";
 import { MyContext } from "../../context/Mycontext";
 export default function AI7(){
-
+ 
   const { direction, setDirection, shouldRatate, setShouldRatate } = useContext(MyContext);
   const [flipDirection, setFlipDirection] = useState(direction);
 
@@ -37,11 +37,11 @@ export default function AI7(){
           {/* ROW 1 */}
           <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
               <Blank />
-              <FRAMEWORK />
+              <TOOLS_AI />
           </ReactCardFlip>
           <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
               <PAGE_ONE_BOX4 />
-              <REACT />
+              <JUPYTER_AI />
           </ReactCardFlip>           
           <Blank />
 
@@ -50,20 +50,20 @@ export default function AI7(){
          
 
           {/* ROW 2 */}
-          <Blank />
           <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
               <PAGE_ONE_BOX4 />
-              <FLUTTER />
-          </ReactCardFlip>  
+              <AI_TAP />
+          </ReactCardFlip> 
+          <Blank />           
           <Blank />
          
           {/* ROW 3 */}
-          <Blank />
-          <Blank />
+          <Blank />       
           <ReactCardFlip isFlipped={rotate} flipSpeedBackToFront="2" flipSpeedFrontToBack="2" flipDirection={flipDirection}>
               <PAGE_ONE_BOX9 />
-              <BACKEND_POWER />
+              <APACHE_AI />
           </ReactCardFlip>
+          <Blank />
 
 
           {/* BOTTOM */}
