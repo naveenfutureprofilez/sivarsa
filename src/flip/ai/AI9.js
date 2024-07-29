@@ -21,7 +21,7 @@ export default function AI9(){
      const handleNext = () => {
         setDirection('vertical');
         setRotate(prevRotate => !prevRotate);
-        navigate("/services/ai/10");
+        navigate("/services/2");
       };
 
       const handlePrev = () => { 

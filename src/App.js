@@ -55,7 +55,6 @@ import AI6 from './flip/ai/AI6';
 import AI7 from './flip/ai/AI7';
 import AI8 from './flip/ai/AI8';
 import AI9 from './flip/ai/AI9';
-import AI10 from './flip/ai/AI10';
 import Backend1 from './flip/backend/Backend1';
 import Backend2 from './flip/backend/Backend2';
 import Backend3 from './flip/backend/Backend3';
@@ -139,7 +138,6 @@ function App() {
                   <Route path="/services/ai/7" element={<AI7 />} />
                   <Route path="/services/ai/8" element={<AI8 />} />
                   <Route path="/services/ai/9" element={<AI9 />} />
-                  <Route path="/services/ai/10" element={<AI10 />} />
 
                    {/* Backend Services */}
                    <Route path="/services/backend" element={<Backend1 />} />
