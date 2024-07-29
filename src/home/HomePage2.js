@@ -77,6 +77,7 @@ export function BACKEND_SERVICES() {
 
 export function UX_SERVICE() {
   return (
+    <Link to="/services/ui">
     <div className={`thumbnailBox h-full bg-[#763DF8] relative `}>
       <div className="text-white p-2 sm:p-3 md:p-4 lg:p-6 ">
         <h2 className="font-neuebit text-base sm:text-1xl md:text-xl lg:text-3xl xl:text-4xl leading-none text-[#CFB8E5">
@@ -92,5 +93,6 @@ export function UX_SERVICE() {
         ></div>
       </div>
     </div>
+    </Link>
   );
 }

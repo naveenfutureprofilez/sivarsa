@@ -66,6 +66,13 @@ import Backend7 from './flip/backend/Backend7';
 import Backend8 from './flip/backend/Backend8';
 import Backend9 from './flip/backend/Backend9';
 import Backend10 from './flip/backend/Backend10';
+import UI1 from './flip/ui/UI1';
+import UI2 from './flip/ui/UI2';
+import UI3 from './flip/ui/UI3';
+import UI4 from './flip/ui/UI4';
+import UI5 from './flip/ui/UI5';
+import UI6 from './flip/ui/UI6';
+import UI7 from './flip/ui/UI7';
 
 
 
@@ -146,7 +153,15 @@ function App() {
                   <Route path="/services/backend/9" element={<Backend9 />} />
                   <Route path="/services/backend/10" element={<Backend10 />} />
 
-                  
+                  {/* UI & UX services */}
+                  <Route path="/services/ui" element={<UI1 />} />
+                  <Route path="/services/ui/2" element={<UI2 />} />
+                  <Route path="/services/ui/3" element={<UI3 />} />
+                  <Route path="/services/ui/4" element={<UI4 />} />
+                  <Route path="/services/ui/5" element={<UI5 />} />
+                  <Route path="/services/ui/6" element={<UI6 />} />
+                  <Route path="/services/ui/7" element={<UI7 />} />
+
                   {/* dummy */}
                   <Route path="/editor" element={<Editor />} />
               </Routes>
