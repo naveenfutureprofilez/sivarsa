@@ -45,7 +45,7 @@ export function AISERVICES() {
             Unleash the power of AI to <br /> transform your business
           </p>
           <div
-            className="absolute absolute  bottom-2 xm:bottom-4 md:bottom-5 lg:bottom-7 xl:bottom-8 right-2 sm:right-4 md:right-5 lg:right-7 xl:right-8"
+            className="absolute bottom-2 xm:bottom-4 md:bottom-5 lg:bottom-7 xl:bottom-8 right-2 sm:right-4 md:right-5 lg:right-7 xl:right-8"
             dangerouslySetInnerHTML={{ __html: arrowblackUP }}
           ></div>
         </div>
@@ -56,6 +56,7 @@ export function AISERVICES() {
 
 export function BACKEND_SERVICES() {
   return (
+    <Link to="/services/backend">
     <div className={`thumbnailBox h-full relative bg-[#F559C4]`}>
       <div className="wall text-white left  p-2 sm:p-3 md:p-4 lg:p-6 ">
         <h2 className="font-neuebit text-base sm:text-1xl md:text-xl lg:text-3xl xl:text-4xl leading-none text-[#F3C7E7]">
@@ -70,6 +71,7 @@ export function BACKEND_SERVICES() {
         ></div>
       </div>
     </div>
+    </Link>
   );
 }
 

@@ -56,6 +56,17 @@ import AI7 from './flip/ai/AI7';
 import AI8 from './flip/ai/AI8';
 import AI9 from './flip/ai/AI9';
 import AI10 from './flip/ai/AI10';
+import Backend1 from './flip/backend/Backend1';
+import Backend2 from './flip/backend/Backend2';
+import Backend3 from './flip/backend/Backend3';
+import Backend4 from './flip/backend/Backend4';
+import Backend5 from './flip/backend/Backend5';
+import Backend6 from './flip/backend/Backend6';
+import Backend7 from './flip/backend/Backend7';
+import Backend8 from './flip/backend/Backend8';
+import Backend9 from './flip/backend/Backend9';
+import Backend10 from './flip/backend/Backend10';
+
 
 
 function App() {
@@ -122,6 +133,18 @@ function App() {
                   <Route path="/services/ai/8" element={<AI8 />} />
                   <Route path="/services/ai/9" element={<AI9 />} />
                   <Route path="/services/ai/10" element={<AI10 />} />
+
+                   {/* Backend Services */}
+                   <Route path="/services/backend" element={<Backend1 />} />
+                  <Route path="/services/backend/2" element={<Backend2 />} />
+                  <Route path="/services/backend/3" element={<Backend3 />} />
+                  <Route path="/services/backend/4" element={<Backend4 />} />
+                  <Route path="/services/backend/5" element={<Backend5 />} />
+                  <Route path="/services/backend/6" element={<Backend6 />} />
+                  <Route path="/services/backend/7" element={<Backend7 />} />
+                  <Route path="/services/backend/8" element={<Backend8 />} />
+                  <Route path="/services/backend/9" element={<Backend9 />} />
+                  <Route path="/services/backend/10" element={<Backend10 />} />
 
                   
                   {/* dummy */}
